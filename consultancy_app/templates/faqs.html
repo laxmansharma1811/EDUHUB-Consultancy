@@ -1,0 +1,584 @@
+{% extends 'base.html' %}
+{% block title %}FAQs - EDUHUB Universal Services{% endblock %}
+{% block content %}
+
+<!-- Hero Section -->
+<section class="relative min-h-[60vh] flex items-center bg-gradient-to-r from-sky-500 to-sky-700 text-white overflow-hidden">
+    <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/white-diamond.png')] opacity-10"></div>
+    <div class="absolute inset-0 bg-black/40 z-0"></div>
+    <div class="container mx-auto px-4 sm:px-6 py-16 relative z-10 text-center">
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 animate-fade-in tracking-tight">Your Study Abroad Questions Answered</h1>
+        <p class="text-lg sm:text-xl lg:text-2xl mb-8 max-w-3xl mx-auto opacity-90 animate-fade-in delay-100">
+            Find answers to common questions about studying abroad, visas, and academic success with EDUHUB Universal Services.
+        </p>
+        <a href="#faq-list" class="inline-flex items-center bg-white text-sky-600 hover:bg-gray-100 px-8 py-3 rounded-full font-semibold transition duration-300 animate-pulse">
+            Explore FAQs
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+        </a>
+    </div>
+</section>
+
+<!-- FAQ Content -->
+<section class="py-16 bg-white">
+    <div class="container mx-auto px-4 sm:px-6">
+        <div class="flex flex-col lg:flex-row gap-8">
+            <!-- FAQ List -->
+            <div class="lg:w-2/3">
+                <div id="faq-list" class="space-y-6">
+                    <!-- FAQ 1 -->
+                    <article class="faq-item bg-white rounded-xl shadow-md border border-gray-100 hover:shadow-lg transition-all duration-300 animate-slide-up" 
+                             style="animation-delay: 0s;" 
+                             data-question="What is the role of an educational consultant?">
+                        <button class="faq-toggle w-full text-left p-6 flex justify-between items-center" aria-expanded="false">
+                            <div>
+                                <span class="inline-block bg-sky-100 text-sky-600 text-xs font-semibold px-3 py-1 rounded-full mb-3">Consultant</span>
+                                <h3 class="text-xl font-bold text-gray-900">What is the role of an educational consultant?</h3>
+                            </div>
+                            <svg class="h-6 w-6 text-sky-600 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-6 text-gray-600 text-base max-h-0 transition-max-height duration-500 ease-in-out">
+                            <p>Our educational consultants provide personalized guidance on course selection, study strategies, academic planning, visa processes, and enrollment, ensuring a smooth journey to your academic goals.</p>
+                        </div>
+                    </article>
+                    <!-- FAQ 2 -->
+                    <article class="faq-item bg-white rounded-xl shadow-md border border-gray-100 hover:shadow-lg transition-all duration-300 animate-slide-up" 
+                             style="animation-delay: 0.1s;" 
+                             data-question="What outcomes can I expect from working with EDUHUB consultants?">
+                        <button class="faq-toggle w-full text-left p-6 flex justify-between items-center" aria-expanded="false">
+                            <div>
+                                <span class="inline-block bg-sky-100 text-sky-600 text-xs font-semibold px-3 py-1 rounded-full mb-3">Consultant</span>
+                                <h3 class="text-xl font-bold text-gray-900">What outcomes can I expect from working with EDUHUB consultants?</h3>
+                            </div>
+                            <svg class="h-6 w-6 text-sky-600 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-6 text-gray-600 text-base max-h-0 transition-max-height duration-500 ease-in-out">
+                            <p>Expect tailored advice on course selection, visa processing, and academic planning, with expert support to achieve your international education goals.</p>
+                        </div>
+                    </article>
+                    <!-- FAQ 3 -->
+                    <article class="faq-item bg-white rounded-xl shadow-md border border-gray-100 hover:shadow-lg transition-all duration-300 animate-slide-up" 
+                             style="animation-delay: 0.2s;" 
+                             data-question="How can an educational consultant help my child succeed academically?">
+                        <button class="faq-toggle w-full text-left p-6 flex justify-between items-center" aria-expanded="false">
+                            <div>
+                                <span class="inline-block bg-sky-100 text-sky-600 text-xs font-semibold px-3 py-1 rounded-full mb-3">Academic</span>
+                                <h3 class="text-xl font-bold text-gray-900">How can an educational consultant help my child succeed academically?</h3>
+                            </div>
+                            <svg class="h-6 w-6 text-sky-600 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-6 text-gray-600 text-base max-h-0 transition-max-height duration-500 ease-in-out">
+                            <p>We create personalized learning plans, recommend suitable courses, and provide study techniques to ensure academic excellence.</p>
+                        </div>
+                    </article>
+                    <!-- FAQ 4 -->
+                    <article class="faq-item bg-white rounded-xl shadow-md border border-gray-100 hover:shadow-lg transition-all duration-300 animate-slide-up" 
+                             style="animation-delay: 0.3s;" 
+                             data-question="What qualifications do EDUHUB consultants have?">
+                        <button class="faq-toggle w-full text-left p-6 flex justify-between items-center" aria-expanded="false">
+                            <div>
+                                <span class="inline-block bg-sky-100 text-sky-600 text-xs font-semibold px-3 py-1 rounded-full mb-3">Consultant</span>
+                                <h3 class="text-xl font-bold text-gray-900">What qualifications do EDUHUB consultants have?</h3>
+                            </div>
+                            <svg class="h-6 w-6 text-sky-600 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-6 text-gray-600 text-base max-h-0 transition-max-height duration-500 ease-in-out">
+                            <p>Our consultants are TITI-certified and trained by the British Council, with expertise in international education and visa processes.</p>
+                        </div>
+                    </article>
+                    <!-- FAQ 5 -->
+                    <article class="faq-item bg-white rounded-xl shadow-md border border-gray-100 hover:shadow-lg transition-all duration-300 animate-slide-up" 
+                             style="animation-delay: 0.4s;" 
+                             data-question="When does my child need educational consulting services?">
+                        <button class="faq-toggle w-full text-left p-6 flex justify-between items-center" aria-expanded="false">
+                            <div>
+                                <span class="inline-block bg-sky-100 text-sky-600 text-xs font-semibold px-3 py-1 rounded-full mb-3">Consultant</span>
+                                <h3 class="text-xl font-bold text-gray-900">When does my child need educational consulting services?</h3>
+                            </div>
+                            <svg class="h-6 w-6 text-sky-600 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-6 text-gray-600 text-base max-h-0 transition-max-height duration-500 ease-in-out">
+                            <p>Consulting is beneficial when students face challenges in choosing universities, courses, or navigating visa processes. We guide them to the right path.</p>
+                        </div>
+                    </article>
+                    <!-- FAQ 6 -->
+                    <article class="faq-item bg-white rounded-xl shadow-md border border-gray-100 hover:shadow-lg transition-all duration-300 animate-slide-up" 
+                             style="animation-delay: 0.5s;" 
+                             data-question="How do I schedule a consultation with EDUHUB?">
+                        <button class="faq-toggle w-full text-left p-6 flex justify-between items-center" aria-expanded="false">
+                            <div>
+                                <span class="inline-block bg-sky-100 text-sky-600 text-xs font-semibold px-3 py-1 rounded-full mb-3">Consultant</span>
+                                <h3 class="text-xl font-bold text-gray-900">How do I schedule a consultation with EDUHUB?</h3>
+                            </div>
+                            <svg class="h-6 w-6 text-sky-600 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-6 text-gray-600 text-base max-h-0 transition-max-height duration-500 ease-in-out">
+                            <p>Schedule a consultation via our contact form or by calling our branches in Kathmandu, Butwal, Dang, or Banepa.</p>
+                        </div>
+                    </article>
+                    <!-- FAQ 7 -->
+                    <article class="faq-item bg-white rounded-xl shadow-md border border-gray-100 hover:shadow-lg transition-all duration-300 animate-slide-up" 
+                             style="animation-delay: 0.6s;" 
+                             data-question="What documents are required for a student visa?">
+                        <button class="faq-toggle w-full text-left p-6 flex justify-between items-center" aria-expanded="false">
+                            <div>
+                                <span class="inline-block bg-sky-100 text-sky-600 text-xs font-semibold px-3 py-1 rounded-full mb-3">Visa</span>
+                                <h3 class="text-xl font-bold text-gray-900">What documents are required for a student visa?</h3>
+                            </div>
+                            <svg class="h-6 w-6 text-sky-600 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-6 text-gray-600 text-base max-h-0 transition-max-height duration-500 ease-in-out">
+                            <p>You’ll need a valid passport, financial documents, academic transcripts, language test results (e.g., IELTS), health insurance, and proof of ties to your home country.</p>
+                        </div>
+                    </article>
+                    <!-- FAQ 8 -->
+                    <article class="faq-item bg-white rounded-xl shadow-md border border-gray-100 hover:shadow-lg transition-all duration-300 animate-slide-up" 
+                             style="animation-delay: 0.7s;" 
+                             data-question="Why choose the USA for studying abroad?">
+                        <button class="faq-toggle w-full text-left p-6 flex justify-between items-center" aria-expanded="false">
+                            <div>
+                                <span class="inline-block bg-sky-100 text-sky-600 text-xs font-semibold px-3 py-1 rounded-full mb-3">Destination</span>
+                                <h3 class="text-xl font-bold text-gray-900">Why choose the USA for studying abroad?</h3>
+                            </div>
+                            <svg class="h-6 w-6 text-sky-600 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-6 text-gray-600 text-base max-h-0 transition-max-height duration-500 ease-in-out">
+                            <p>The USA offers top-ranked universities, diverse programs, and promising career opportunities in a technologically advanced environment.</p>
+                        </div>
+                    </article>
+                    <!-- FAQ 9 -->
+                    <article class="faq-item bg-white rounded-xl shadow-md border border-gray-100 hover:shadow-lg transition-all duration-300 animate-slide-up" 
+                             style="animation-delay: 0.8s;" 
+                             data-question="What makes Canada an ideal study destination?">
+                        <button class="faq-toggle w-full text-left p-6 flex justify-between items-center" aria-expanded="false">
+                            <div>
+                                <span class="inline-block bg-sky-100 text-sky-600 text-xs font-semibold px-3 py-1 rounded-full mb-3">Destination</span>
+                                <h3 class="text-xl font-bold text-gray-900">What makes Canada an ideal study destination?</h3>
+                            </div>
+                            <svg class="h-6 w-6 text-sky-600 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-6 text-gray-600 text-base max-h-0 transition-max-height duration-500 ease-in-out">
+                            <p>Canada combines quality education, affordable programs, a welcoming environment, and diverse opportunities for international students.</p>
+                        </div>
+                    </article>
+                    <!-- FAQ 10 -->
+                    <article class="faq-item bg-white rounded-xl shadow-md border border-gray-100 hover:shadow-lg transition-all duration-300 animate-slide-up" 
+                             style="animation-delay: 0.9s;" 
+                             data-question="Why study in Australia with EDUHUB?">
+                        <button class="faq-toggle w-full text-left p-6 flex justify-between items-center" aria-expanded="false">
+                            <div>
+                                <span class="inline-block bg-sky-100 text-sky-600 text-xs font-semibold px-3 py-1 rounded-full mb-3">Destination</span>
+                                <h3 class="text-xl font-bold text-gray-900">Why study in Australia with EDUHUB?</h3>
+                            </div>
+                            <svg class="h-6 w-6 text-sky-600 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-6 text-gray-600 text-base max-h-0 transition-max-height duration-500 ease-in-out">
+                            <p>Australia offers world-class universities, cutting-edge facilities, and job opportunities in growing sectors. EDUHUB supports you with visa processing and enrollment.</p>
+                        </div>
+                    </article>
+                </div>
+                <!-- No Results Message -->
+                <div id="no-results" class="hidden text-center py-12">
+                    <p class="text-gray-600 text-lg font-medium">No FAQs match your search.</p>
+                    <button id="clear-search" class="text-sky-600 hover:text-sky-800 font-medium">Clear Search</button>
+                </div>
+            </div>
+            <!-- Sidebar -->
+            <aside class="lg:w-1/3">
+                <div class="sticky top-24 space-y-8">
+                    <!-- Search -->
+                    <div class="bg-white rounded-xl p-6 shadow-md border border-gray-100">
+                        <h3 class="text-xl font-bold text-sky-600 mb-4">Search FAQs</h3>
+                        <div class="flex">
+                            <input type="text" 
+                                   id="search-input" 
+                                   placeholder="Search FAQs..." 
+                                   class="w-full px-4 py-2 border border-gray-200 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-sky-600 text-sm transition-transform duration-300" 
+                                   aria-label="Search FAQs" role="search">
+                            <button id="search-button" 
+                                    class="bg-sky-600 text-white px-4 py-2 rounded-r-lg hover:bg-sky-700 transition duration-300" 
+                                    aria-label="Submit search">
+                                <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Quick Links -->
+                    <div class="bg-white rounded-xl p-6 shadow-md border border-gray-100">
+                        <h3 class="text-xl font-bold text-sky-600 mb-4">Quick Links</h3>
+                        <ul class="space-y-2">
+                            <li>
+                                <a href="{% url 'usa' %}" class="text-gray-600 hover:text-sky-600 hover:bg-sky-50 w-full block px-3 py-2 rounded-md transition-all duration-300">Study in USA</a>
+                            </li>
+                            <li>
+                                <a href="{% url 'canada' %}" class="text-gray-600 hover:text-sky-600 hover:bg-sky-50 w-full block px-3 py-2 rounded-md transition-all duration-300">Study in Canada</a>
+                            </li>
+                            <li>
+                                <a href="{% url 'australia' %}" class="text-gray-600 hover:text-sky-600 hover:bg-sky-50 w-full block px-3 py-2 rounded-md transition-all duration-300">Study in Australia</a>
+                            </li>
+                            <li>
+                                <a href="{% url 'united_kingdom' %}" class="text-gray-600 hover:text-sky-600 hover:bg-sky-50 w-full block px-3 py-2 rounded-md transition-all duration-300">Study in UK</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Contact Form -->
+                    <div class="bg-white rounded-xl p-6 shadow-md border border-gray-100">
+                        <h3 class="text-xl font-bold text-sky-600 mb-4">Ask a Question</h3>
+                        <form id="contact-form" class="space-y-4">
+                            <div>
+                                <label for="contact-name" class="block text-gray-700 mb-1 text-sm">Name</label>
+                                <input type="text" id="contact-name" name="name" required 
+                                       class="w-full px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-600 text-sm transition-transform duration-300">
+                            </div>
+                            <div>
+                                <label for="contact-email" class="block text-gray-700 mb-1 text-sm">Email</label>
+                                <input type="email" id="contact-email" name="email" required 
+                                       class="w-full px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-600 text-sm transition-transform duration-300">
+                            </div>
+                            <div>
+                                <label for="contact-message" class="block text-gray-700 mb-1 text-sm">Question</label>
+                                <textarea id="contact-message" name="message" rows="3" required 
+                                          class="w-full px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-600 text-sm transition-transform duration-300"></textarea>
+                            </div>
+                            <button type="submit" 
+                                    class="w-full bg-sky-600 hover:bg-sky-700 text-white font-semibold py-3 px-4 rounded-lg transition-all duration-300 flex items-center justify-center">
+                                <span id="contact-submit-text">Submit</span>
+                                <svg id="contact-submit-spinner" class="hidden h-5 w-5 animate-spin text-white ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                                </svg>
+                            </button>
+                        </form>
+                        <div id="contact-form-message" class="mt-4 hidden text-sm text-green-600"></div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-16 bg-gradient-to-r from-sky-500 to-sky-700 text-white relative overflow-hidden">
+    <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/white-diamond.png')] opacity-10"></div>
+    <div class="container mx-auto px-4 sm:px-6 text-center">
+        <h2 class="text-3xl sm:text-4xl font-bold mb-6 animate-fade-in">Ready to Start Your Journey?</h2>
+        <p class="text-lg sm:text-xl mb-8 max-w-3xl mx-auto opacity-90 animate-fade-in delay-100">
+            Contact EDUHUB Universal Services for personalized guidance on your study abroad adventure.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4 animate-slide-up">
+            <button data-modal="consultation" 
+                    class="bg-white text-sky-600 hover:bg-gray-100 font-semibold py-4 px-10 rounded-full transition-all duration-300 shadow-lg animate-pulse">
+                Book a Consultation
+            </button>
+            <a href="{% url 'about' %}" 
+               class="border-2 border-white hover:bg-white hover:text-sky-600 font-semibold py-4 px-10 rounded-full transition-all duration-300 shadow-lg animate-pulse">
+                Learn More
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Consultation Modal -->
+<div id="consultationModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center hidden">
+    <div class="bg-white rounded-xl p-6 sm:p-8 max-w-md w-full mx-4 relative shadow-2xl">
+        <button id="closeModal" class="absolute top-4 right-4 text-gray-500 hover:text-gray-700" aria-label="Close modal">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </button>
+        <h2 class="text-2xl font-bold text-sky-600 mb-6">Book a Free Consultation</h2>
+        <form id="consultationForm" class="space-y-4">
+            <div>
+                <label for="name" class="block text-gray-700 mb-1 text-sm">Full Name</label>
+                <input type="text" id="name" name="name" required 
+                       class="w-full px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-600 text-sm">
+            </div>
+            <div>
+                <label for="email" class="block text-gray-700 mb-1 text-sm">Email</label>
+                <input type="email" id="email" name="email" required 
+                       class="w-full px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-600 text-sm">
+            </div>
+            <div>
+                <label for="phone" class="block text-gray-700 mb-1 text-sm">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required 
+                       class="w-full px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-600 text-sm">
+            </div>
+            <div>
+                <label for="country" class="block text-gray-700 mb-1 text-sm">Country of Interest</label>
+                <select id="country" name="country" required 
+                        class="w-full px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-600 text-sm">
+                    <option value="">Select a country</option>
+                    <option value="USA">United States</option>
+                    <option value="UK">United Kingdom</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Other" selected>Other</option>
+                </select>
+            </div>
+            <div>
+                <label for="program" class="block text-gray-700 mb-1 text-sm">Program of Interest</label>
+                <select id="program" name="program" required 
+                        class="w-full px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-600 text-sm">
+                    <option value="">Select a program</option>
+                    <option value="Bachelor's Degree">Bachelor's Degree</option>
+                    <option value="Master's Degree">Master's Degree</option>
+                    <option value="Other" selected>Other</option>
+                </select>
+            </div>
+            <div>
+                <label for="message" class="block text-gray-700 mb-1 text-sm">Additional Information</label>
+                <textarea id="message" name="message" rows="3" 
+                          class="w-full px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-600 text-sm"></textarea>
+            </div>
+            <button type="submit" 
+                    class="w-full bg-sky-600 hover:bg-sky-700 text-white font-semibold py-3 px-4 rounded-lg transition-all duration-300 flex items-center justify-center">
+                <span id="submitText">Submit Request</span>
+                <svg id="submitSpinner" class="hidden h-5 w-5 animate-spin text-white ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                </svg>
+            </button>
+        </form>
+        <div id="formMessage" class="mt-4 hidden text-sm text-green-600"></div>
+    </div>
+</div>
+
+<!-- Inline CSS -->
+<style>
+    /* Animations */
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fade-in {
+        animation: fadeIn 1s ease-out forwards;
+    }
+    .delay-100 {
+        animation-delay: 0.1s;
+    }
+    @keyframes slideUp {
+        from { opacity: 0; transform: translateY(30px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-slide-up {
+        animation: slideUp 1s ease-out forwards;
+    }
+    @keyframes pulse {
+        0%, 100% { transform: scale(1); }
+        50% { transform: scale(1.05); }
+    }
+    .animate-pulse {
+        animation: pulse 2s infinite;
+    }
+    /* Accordion Transition */
+    .faq-content {
+        overflow: hidden;
+    }
+    .faq-content:not(.hidden) {
+        max-height: 500px;
+    }
+    .faq-toggle svg.rotate {
+        transform: rotate(180deg);
+    }
+    /* Responsive Adjustments */
+    @media (max-width: 640px) {
+        .faq-toggle h3 {
+            font-size: 1rem;
+        }
+        .faq-content p {
+            font-size: 0.875rem;
+        }
+    }
+    @media (min-width: 641px) and (max-width: 1023px) {
+        .faq-toggle h3 {
+            font-size: 1.125rem;
+        }
+    }
+</style>
+
+<!-- Inline JavaScript -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Elements
+        const faqs = document.querySelectorAll('.faq-item');
+        const noResults = document.getElementById('no-results');
+        const searchInput = document.getElementById('search-input');
+        const searchButton = document.getElementById('search-button');
+        const clearSearchButton = document.getElementById('clear-search');
+        const modal = document.getElementById('consultationModal');
+        const openModalButtons = document.querySelectorAll('[data-modal="consultation"]');
+        const closeModalButton = document.getElementById('closeModal');
+        const consultationForm = document.getElementById('consultationForm');
+        const formMessage = document.getElementById('formMessage');
+        const submitButton = consultationForm.querySelector('button[type="submit"]');
+        const submitText = document.getElementById('submitText');
+        const submitSpinner = document.getElementById('submitSpinner');
+        const contactForm = document.getElementById('contact-form');
+        const contactFormMessage = document.getElementById('contact-form-message');
+        const contactSubmitButton = contactForm.querySelector('button[type="submit"]');
+        const contactSubmitText = document.getElementById('contact-submit-text');
+        const contactSubmitSpinner = document.getElementById('contact-submit-spinner');
+
+        let searchTerm = '';
+
+        // Accordion Toggle
+        faqs.forEach(faq => {
+            const toggle = faq.querySelector('.faq-toggle');
+            const content = faq.querySelector('.faq-content');
+            const icon = toggle.querySelector('svg');
+
+            toggle.addEventListener('click', () => {
+                const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
+                toggle.setAttribute('aria-expanded', !isExpanded);
+                content.classList.toggle('hidden');
+                icon.classList.toggle('rotate');
+            });
+
+            // Keyboard Accessibility
+            toggle.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    toggle.click();
+                }
+            });
+        });
+
+        // Search Handler
+        function updateFAQs() {
+            let visibleFAQs = Array.from(faqs);
+
+            if (searchTerm) {
+                visibleFAQs = visibleFAQs.filter(faq => 
+                    faq.dataset.question.toLowerCase().includes(searchTerm)
+                );
+            }
+
+            faqs.forEach(faq => {
+                faq.style.display = visibleFAQs.includes(faq) ? 'block' : 'none';
+            });
+
+            noResults.style.display = visibleFAQs.length === 0 ? 'block' : 'none';
+        }
+
+        searchInput.addEventListener('input', () => {
+            searchTerm = searchInput.value.toLowerCase();
+            updateFAQs();
+        });
+        searchButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            updateFAQs();
+        });
+        clearSearchButton.addEventListener('click', () => {
+            searchTerm = '';
+            searchInput.value = '';
+            updateFAQs();
+        });
+
+        // Modal Handlers
+        openModalButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                modal.classList.remove('hidden');
+                document.getElementById('country').value = 'Other';
+                document.getElementById('program').value = 'Other';
+            });
+        });
+        closeModalButton.addEventListener('click', () => {
+            modal.classList.add('hidden');
+            formMessage.classList.add('hidden');
+            consultationForm.reset();
+        });
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.classList.add('hidden');
+                formMessage.classList.add('hidden');
+                consultationForm.reset();
+            }
+        });
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+                modal.classList.add('hidden');
+                formMessage.classList.add('hidden');
+                consultationForm.reset();
+            }
+        });
+
+        // Consultation Form Submission (Client-side Simulation)
+        consultationForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            submitText.classList.add('hidden');
+            submitSpinner.classList.remove('hidden');
+            submitButton.disabled = true;
+
+            setTimeout(() => {
+                formMessage.classList.remove('hidden');
+                formMessage.classList.add('text-green-600');
+                formMessage.textContent = 'Thank you for your request! We’ll get back to you soon.';
+                submitText.classList.remove('hidden');
+                submitSpinner.classList.add('hidden');
+                submitButton.disabled = false;
+                consultationForm.reset();
+                document.getElementById('country').value = 'Other';
+                document.getElementById('program').value = 'Other';
+            }, 1000);
+        });
+
+        // Contact Form Submission (Client-side Simulation)
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            contactSubmitText.classList.add('hidden');
+            contactSubmitSpinner.classList.remove('hidden');
+            contactSubmitButton.disabled = true;
+
+            setTimeout(() => {
+                contactFormMessage.classList.remove('hidden');
+                contactFormMessage.textContent = 'Thank you for your question! Our team will respond soon.';
+                contactSubmitText.classList.remove('hidden');
+                contactSubmitSpinner.classList.add('hidden');
+                contactSubmitButton.disabled = false;
+                contactForm.reset();
+            }, 1000);
+        });
+
+        // Animation on Scroll
+        const animateElements = document.querySelectorAll('.animate-slide-up, .animate-fade-in');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        animateElements.forEach(el => {
+            el.classList.add('opacity-0');
+            observer.observe(el);
+        });
+
+        // Initial Update
+        updateFAQs();
+    });
+</script>
+{% endblock %}

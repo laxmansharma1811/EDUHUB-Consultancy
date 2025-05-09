@@ -1,0 +1,108 @@
+{% extends 'base.html' %}
+
+{% block title %}Become a Partner - EDUHUB Universal Services{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="bg-gradient-to-r from-primary to-blue-700 text-white py-20" data-reveal>
+  <div class="container mx-auto px-6 text-center">
+    <h1 class="text-4xl md:text-5xl font-bold mb-4" data-stagger="1">Become a Partner</h1>
+    <p class="text-lg md:text-xl max-w-2xl mx-auto mb-8" data-stagger="2">Join our global network and collaborate with us to empower students worldwide.</p>
+    <a href="#partner-form" class="bg-white text-primary px-8 py-4 rounded-lg font-bold inline-flex items-center transition duration-300 hover:bg-gray-100 smooth-scroll" aria-label="Apply to become a partner" data-stagger="3">
+      Apply Now
+      <svg class="ml-2 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+      </svg>
+    </a>
+  </div>
+</section>
+
+<!-- Benefits Section -->
+<section class="py-16 bg-gray-50" data-reveal>
+  <div class="container mx-auto px-6">
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-12" data-stagger="1">Why Partner With Us?</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="text-center" data-stagger="2">
+        <svg class="h-12 w-12 mx-auto mb-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+        <h3 class="text-xl font-semibold mb-2">Global Reach</h3>
+        <p class="text-gray-600">Connect with students and institutions across 50+ countries.</p>
+      </div>
+      <div class="text-center" data-stagger="3">
+        <svg class="h-12 w-12 mx-auto mb-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z" />
+        </svg>
+        <h3 class="text-xl font-semibold mb-2">Dedicated Support</h3>
+        <p class="text-gray-600">Access our team for personalized onboarding and resources.</p>
+      </div>
+      <div class="text-center" data-stagger="4">
+        <svg class="h-12 w-12 mx-auto mb-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+        </svg>
+        <h3 class="text-xl font-semibold mb-2">Proven Success</h3>
+        <p class="text-gray-600">Join 100+ partners who have scaled with our platform.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Form Section -->
+<section id="partner-form" class="py-16 bg-white" data-reveal>
+  <div class="container mx-auto px-6">
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-12" data-stagger="1">Apply to Become a Partner</h2>
+    <div class="max-w-lg mx-auto">
+      {% if messages %}
+        {% for message in messages %}
+          <div class="mb-4 p-4 rounded-lg {% if message.tags == 'success' %}bg-green-100 text-green-800{% else %}bg-red-100 text-red-800{% endif %}" data-stagger="2">
+            {{ message }}
+          </div>
+        {% endfor %}
+      {% endif %}
+      <form method="POST" class="space-y-6">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="w-full bg-primary text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-800 transition duration-300" data-stagger="3">Submit Application</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="py-16 bg-gray-50" data-reveal>
+  <div class="container mx-auto px-6">
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-12" data-stagger="1">What Our Partners Say</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="bg-white p-6 rounded-lg shadow-md" data-stagger="2">
+        <p class="text-gray-600 mb-4">"Partnering with this platform has transformed our outreach, connecting us with students globally."</p>
+        <p class="font-semibold">Jane Doe, CEO of EduCorp</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-md" data-stagger="3">
+        <p class="text-gray-600 mb-4">"The support team made onboarding seamless, and we've seen incredible growth."</p>
+        <p class="font-semibold">John Smith, Director at StudyGlobal</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="py-16 bg-white" data-reveal>
+  <div class="container mx-auto px-6">
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-12" data-stagger="1">Frequently Asked Questions</h2>
+    <div class="space-y-6 max-w-3xl mx-auto">
+      <div data-stagger="2">
+        <h3 class="text-xl font-semibold mb-2">Who can become a partner?</h3>
+        <p class="text-gray-600">Any organization or individual offering educational services, such as universities, agencies, or consultants, can apply.</p>
+      </div>
+      <div data-stagger="3">
+        <h3 class="text-xl font-semibold mb-2">What are the benefits of partnering?</h3>
+        <p class="text-gray-600">Partners gain access to our global network, marketing support, and dedicated resources to grow their reach.</p>
+      </div>
+      <div data-stagger="4">
+        <h3 class="text-xl font-semibold mb-2">How long does the application process take?</h3>
+        <p class="text-gray-600">We typically review applications within 5-7 business days and will contact you with next steps.</p>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

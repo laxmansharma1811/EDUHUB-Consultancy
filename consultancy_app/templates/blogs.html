@@ -1,0 +1,534 @@
+{% extends 'base.html' %}
+{% block title %}Blog - EDUHUB Universal Services{% endblock %}
+{% block content %}
+
+<!-- Hero Section -->
+<section class="relative min-h-[60vh] flex items-center bg-gradient-to-r from-sky-500 to-sky-700 text-white overflow-hidden">
+    <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/white-diamond.png')] opacity-10"></div>
+    <div class="absolute inset-0 bg-black/40 z-0"></div>
+    <div class="container mx-auto px-4 sm:px-6 py-16 relative z-10 text-center">
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 animate-fade-in tracking-tight">EDUHUB Universal Services Blog</h1>
+        <p class="text-lg sm:text-xl lg:text-2xl mb-8 max-w-3xl mx-auto opacity-90 animate-fade-in delay-100">
+            Discover expert insights, tips, and updates on education, student life, and global opportunities.
+        </p>
+        <a href="#blog-posts" class="inline-flex items-center bg-white text-sky-600 hover:bg-gray-100 px-8 py-3 rounded-full font-semibold transition duration-300 animate-pulse">
+            Explore Posts
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+        </a>
+    </div>
+</section>
+
+<!-- Blog Content -->
+<section class="py-16 bg-white">
+    <div class="container mx-auto px-4 sm:px-6">
+        <div class="flex flex-col lg:flex-row gap-8">
+            <!-- Blog Posts -->
+            <div class="lg:w-2/3">
+                <div id="blog-posts" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Blog Post 1 -->
+                    <article class="blog-post bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-all duration-300 animate-slide-up border border-gray-100" 
+                             style="animation-delay: 0s;" 
+                             data-title="Top Tips for Studying Abroad" 
+                             data-category="Study Abroad">
+                        <div class="relative">
+                            <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                                 alt="Top Tips for Studying Abroad" 
+                                 class="w-full h-48 sm:h-56 object-cover transition-transform duration-500 hover:scale-105 lazy" 
+                                 loading="lazy">
+                            <span class="absolute top-4 right-4 bg-sky-600 text-white text-xs font-semibold px-3 py-1 rounded-full">Study Abroad</span>
+                        </div>
+                        <div class="p-6">
+                            <span class="text-sky-600 text-sm font-medium block mb-2">April 20, 2025</span>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3 line-clamp-2 hover:text-sky-600 transition-colors">Top Tips for Studying Abroad</h3>
+                            <p class="text-gray-600 text-base line-clamp-3 mb-4">Essential advice for a successful study abroad experience, from visas to cultural adaptation.</p>
+                            <div class="flex items-center">
+                                <img src="https://randomuser.me/api/portraits/men/32.jpg" 
+                                     alt="Dr. Rajesh Sharma" 
+                                     class="w-8 h-8 rounded-full mr-2" 
+                                     loading="lazy">
+                                <span class="text-gray-600 text-sm">Dr. Rajesh Sharma</span>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Blog Post 2 -->
+                    <article class="blog-post bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-all duration-300 animate-slide-up border border-gray-100" 
+                             style="animation-delay: 0.1s;" 
+                             data-title="Why Choose Nepal for Education" 
+                             data-category="Education">
+                        <div class="relative">
+                            <img src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                                 alt="Why Choose Nepal for Education" 
+                                 class="w-full h-48 sm:h-56 object-cover transition-transform duration-500 hover:scale-105 lazy" 
+                                 loading="lazy">
+                            <span class="absolute top-4 right-4 bg-sky-600 text-white text-xs font-semibold px-3 py-1 rounded-full">Education</span>
+                        </div>
+                        <div class="p-6">
+                            <span class="text-sky-600 text-sm font-medium block mb-2">April 15, 2025</span>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3 line-clamp-2 hover:text-sky-600 transition-colors">Why Choose Nepal for Education</h3>
+                            <p class="text-gray-600 text-base line-clamp-3 mb-4">Explore the benefits of studying in Nepal, including affordable programs and rich culture.</p>
+                            <div class="flex items-center">
+                                <img src="https://randomuser.me/api/portraits/women/44.jpg" 
+                                     alt="Anita Gurung" 
+                                     class="w-8 h-8 rounded-full mr-2" 
+                                     loading="lazy">
+                                <span class="text-gray-600 text-sm">Anita Gurung</span>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Blog Post 3 -->
+                    <article class="blog-post bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-all duration-300 animate-slide-up border border-gray-100" 
+                             style="animation-delay: 0.2s;" 
+                             data-title="Preparing for IELTS" 
+                             data-category="Exams">
+                        <div class="relative">
+                            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                                 alt="Preparing for IELTS" 
+                                 class="w-full h-48 sm:h-56 object-cover transition-transform duration-500 hover:scale-105 lazy" 
+                                 loading="lazy">
+                            <span class="absolute top-4 right-4 bg-sky-600 text-white text-xs font-semibold px-3 py-1 rounded-full">Exams</span>
+                        </div>
+                        <div class="p-6">
+                            <span class="text-sky-600 text-sm font-medium block mb-2">April 10, 2025</span>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3 line-clamp-2 hover:text-sky-600 transition-colors">Preparing for IELTS</h3>
+                            <p class="text-gray-600 text-base line-clamp-3 mb-4">Effective strategies to ace your IELTS exam and achieve your desired score.</p>
+                            <div class="flex items-center">
+                                <img src="https://randomuser.me/api/portraits/men/75.jpg" 
+                                     alt="Bikram Thapa" 
+                                     class="w-8 h-8 rounded-full mr-2" 
+                                     loading="lazy">
+                                <span class="text-gray-600 text-sm">Bikram Thapa</span>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Blog Post 4 -->
+                    <article class="blog-post bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-all duration-300 animate-slide-up border border-gray-100" 
+             style="animation-delay: 0.3s;" 
+             data-title="Student Life in Kathmandu" 
+             data-category="Student Life">
+        <div class="relative">
+            <img src="https://images.unsplash.com/photo-1519452575417-564c1401ecc0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                 alt="Student Life in Kathmandu" 
+                 class="w-full h-48 sm:h-56 object-cover transition-transform duration-500 hover:scale-105 lazy" 
+                 loading="lazy">
+            <span class="absolute top-4 right-4 bg-sky-600 text-white text-xs font-semibold px-3 py-1 rounded-full">Student Life</span>
+        </div>
+        <div class="p-6">
+            <span class="text-sky-600 text-sm font-medium block mb-2">April 5, 2025</span>
+            <h3 class="text-xl font-bold text-gray-900 mb-3 line-clamp-2 hover:text-sky-600 transition-colors">Student Life in Kathmandu</h3>
+            <p class="text-gray-600 text-base line-clamp-3 mb-4">A guide to thriving as a student in Nepal’s vibrant capital city.</p>
+            <div class="flex items-center">
+                <img src="https://randomuser.me/api/portraits/women/68.jpg" 
+                     alt="Priya Adhikari" 
+                     class="w-8 h-8 rounded-full mr-2" 
+                     loading="lazy">
+                <span class="text-gray-600 text-sm">Priya Adhikari</span>
+            </div>
+        </div>
+    </article>
+    <!-- Blog Post 5 -->
+    <article class="blog-post bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-all duration-300 animate-slide-up border border-gray-100" 
+             style="animation-delay: 0.4s;" 
+             data-title="Career Paths After Graduation" 
+             data-category="Career">
+        <div class="relative">
+            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                 alt="Career Paths After Graduation" 
+                 class="w-full h-48 sm:h-56 object-cover transition-transform duration-500 hover:scale-105 lazy" 
+                 loading="lazy">
+            <span class="absolute top-4 right-4 bg-sky-600 text-white text-xs font-semibold px-3 py-1 rounded-full">Career</span>
+        </div>
+        <div class="p-6">
+            <span class="text-sky-600 text-sm font-medium block mb-2">March 30, 2025</span>
+            <h3 class="text-xl font-bold text-gray-900 mb-3 line-clamp-2 hover:text-sky-600 transition-colors">Career Paths After Graduation</h3>
+            <p class="text-gray-600 text-base line-clamp-3 mb-4">Explore diverse career options for graduates in today’s global market.</p>
+            <div class="flex items-center">
+                <img src="https://randomuser.me/api/portraits/men/32.jpg" 
+                     alt="Dr. Rajesh Sharma" 
+                     class="w-8 h-8 rounded-full mr-2" 
+                     loading="lazy">
+                <span class="text-gray-600 text-sm">Dr. Rajesh Sharma</span>
+            </div>
+        </div>
+    </article>
+    <!-- Blog Post 6 -->
+    <article class="blog-post bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-all duration-300 animate-slide-up border border-gray-100" 
+             style="animation-delay: 0.5s;" 
+             data-title="The Future of Online Learning" 
+             data-category="Education">
+        <div class="relative">
+            <img src="https://th.bing.com/th/id/OIP.xyVN7581BkmQcw6Xm8zyegHaE7?w=200&h=200&c=10&o=6&dpr=1.3&pid=genserp&rm=2" 
+                 alt="The Future of Online Learning" 
+                 class="w-full h-48 sm:h-56 object-cover transition-transform duration-500 hover:scale-105 lazy" 
+                 loading="lazy">
+            <span class="absolute top-4 right-4 bg-sky-600 text-white text-xs font-semibold px-3 py-1 rounded-full">Education</span>
+        </div>
+        <div class="p-6">
+            <span class="text-sky-600 text-sm font-medium block mb-2">March 25, 2025</span>
+            <h3 class="text-xl font-bold text-gray-900 mb-3 line-clamp-2 hover:text-sky-600 transition-colors">The Future of Online Learning</h3>
+            <p class="text-gray-600 text-base line-clamp-3 mb-4">How technology is shaping the future of education worldwide.</p>
+            <div class="flex items-center">
+                <img src="https://randomuser.me/api/portraits/women/44.jpg" 
+                     alt="Anita Gurung" 
+                     class="w-8 h-8 rounded-full mr-2" 
+                     loading="lazy">
+                <span class="text-gray-600 text-sm">Anita Gurung</span>
+            </div>
+        </div>
+    </article>
+                </div>
+                <!-- No Results Message -->
+                <div id="no-results" class="hidden text-center py-12 col-span-full">
+                    <p class="text-gray-600 text-lg font-medium">No blog posts match your search or filter.</p>
+                    <button id="clear-filters" class="text-sky-600 hover:text-sky-800 font-medium">Clear Filters</button>
+                </div>
+                <!-- Pagination -->
+                <nav id="pagination" class="mt-12 flex justify-center items-center space-x-2" aria-label="Pagination">
+                    <button class="px-4 py-2 text-sky-600 hover:bg-sky-100 rounded-full transition-all duration-300 disabled:opacity-50" 
+                            id="prev-page" 
+                            aria-label="Previous page" 
+                            disabled>
+                        <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                        </svg>
+                    </button>
+                    <button class="px-4 py-2 bg-sky-600 text-white rounded-full font-semibold" 
+                            data-page="1" 
+                            aria-current="page">1</button>
+                    <button class="px-4 py-2 text-sky-600 hover:bg-sky-100 rounded-full transition-all duration-300" 
+                            data-page="2">2</button>
+                    <button class="px-4 py-2 text-sky-600 hover:bg-sky-100 rounded-full transition-all duration-300" 
+                            id="next-page" 
+                            aria-label="Next page">
+                        <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </button>
+                </nav>
+            </div>
+            <!-- Sidebar -->
+            <aside class="lg:w-1/3">
+                <div class="sticky top-24 space-y-8">
+                    <!-- Search -->
+                    <div class="bg-white rounded-xl p-6 shadow-md border border-gray-100">
+                        <h3 class="text-xl font-bold text-sky-600 mb-4">Search Posts</h3>
+                        <div class="flex">
+                            <input type="text" 
+                                   id="search-input" 
+                                   placeholder="Search blog posts..." 
+                                   class="w-full px-4 py-2 border border-gray-200 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-sky-600 text-sm transition-transform duration-300" 
+                                   aria-label="Search blog posts">
+                            <button id="search-button" 
+                                    class="bg-sky-600 text-white px-4 py-2 rounded-r-lg hover:bg-sky-700 transition duration-300" 
+                                    aria-label="Submit search">
+                                <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Categories -->
+                    <div class="bg-white rounded-xl p-6 shadow-md border border-gray-100">
+                        <h3 class="text-xl font-bold text-sky-600 mb-4">Categories</h3>
+                        <ul class="space-y-2">
+                            <li>
+                                <button class="category-filter text-gray-600 hover:text-sky-600 hover:bg-sky-50 w-full text-left px-3 py-2 rounded-md transition-all duration-300 flex justify-between" 
+                                        data-category="Study Abroad">
+                                    <span>Study Abroad</span>
+                                    <span class="text-sky-600 font-medium">(2)</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="category-filter text-gray-600 hover:text-sky-600 hover:bg-sky-50 w-full text-left px-3 py-2 rounded-md transition-all duration-300 flex justify-between" 
+                                        data-category="Education">
+                                    <span>Education</span>
+                                    <span class="text-sky-600 font-medium">(2)</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="category-filter text-gray-600 hover:text-sky-600 hover:bg-sky-50 w-full text-left px-3 py-2 rounded-md transition-all duration-300 flex justify-between" 
+                                        data-category="Exams">
+                                    <span>Exams</span>
+                                    <span class="text-sky-600 font-medium">(1)</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="category-filter text-gray-600 hover:text-sky-600 hover:bg-sky-50 w-full text-left px-3 py-2 rounded-md transition-all duration-300 flex justify-between" 
+                                        data-category="Student Life">
+                                    <span>Student Life</span>
+                                    <span class="text-sky-600 font-medium">(1)</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="category-filter text-gray-600 hover:text-sky-600 hover:bg-sky-50 w-full text-left px-3 py-2 rounded-md transition-all duration-300 flex justify-between" 
+                                        data-category="Career">
+                                    <span>Career</span>
+                                    <span class="text-sky-600 font-medium">(1)</span>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Recent Posts -->
+                    <div class="bg-white rounded-xl p-6 shadow-md border border-gray-100">
+                        <h3 class="text-xl font-bold text-sky-600 mb-4">Recent Posts</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-center hover:bg-gray-50 rounded-md p-2 transition-all duration-300">
+                                <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" 
+                                     alt="Top Tips for Studying Abroad" 
+                                     class="w-16 h-16 object-cover rounded-md mr-3" 
+                                     loading="lazy">
+                                <div>
+                                    <span class="text-gray-800 font-medium line-clamp-2 hover:text-sky-600">Top Tips for Studying Abroad</span>
+                                    <p class="text-gray-600 text-sm">April 20, 2025</p>
+                                </div>
+                            </li>
+                            <li class="flex items-center hover:bg-gray-50 rounded-md p-2 transition-all duration-300">
+                                <img src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" 
+                                     alt="Why Choose Nepal for Education" 
+                                     class="w-16 h-16 object-cover rounded-md mr-3" 
+                                     loading="lazy">
+                                <div>
+                                    <span class="text-gray-800 font-medium line-clamp-2 hover:text-sky-600">Why Choose Nepal for Education</span>
+                                    <p class="text-gray-600 text-sm">April 15, 2025</p>
+                                </div>
+                            </li>
+                            <li class="flex items-center hover:bg-gray-50 rounded-md p-2 transition-all duration-300">
+                                <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" 
+                                     alt="Preparing for IELTS" 
+                                     class="w-16 h-16 object-cover rounded-md mr-3" 
+                                     loading="lazy">
+                                <div>
+                                    <span class="text-gray-800 font-medium line-clamp-2 hover:text-sky-600">Preparing for IELTS</span>
+                                    <p class="text-gray-600 text-sm">April 10, 2025</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-16 bg-gradient-to-r from-sky-500 to-sky-700 text-white relative overflow-hidden">
+    <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/white-diamond.png')] opacity-10"></div>
+    <div class="container mx-auto px-4 sm:px-6 text-center">
+        <h2 class="text-3xl sm:text-4xl font-bold mb-6 animate-fade-in">Stay Informed with EDUHUB Universal Services</h2>
+        <p class="text-lg sm:text-xl mb-8 max-w-3xl mx-auto opacity-90 animate-fade-in delay-100">
+            Subscribe to our blog for the latest insights and tips on education and student success.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4 animate-slide-up">
+            <button data-modal="consultation" 
+                    class="bg-white text-sky-600 hover:bg-gray-100 font-semibold py-4 px-10 rounded-full transition-all duration-300 shadow-lg animate-pulse">
+                Book a Free Consultation
+            </button>
+            <a href="{% url 'about' %}" 
+               class="border-2 border-white hover:bg-white hover:text-sky-600 font-semibold py-4 px-10 rounded-full transition-all duration-300 shadow-lg animate-pulse">
+                Learn More About Us
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Inline CSS -->
+<style>
+    /* Animations */
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fade-in {
+        animation: fadeIn 1s ease-out forwards;
+    }
+    .delay-100 {
+        animation-delay: 0.1s;
+    }
+    @keyframes slideUp {
+        from { opacity: 0; transform: translateY(30px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-slide-up {
+        animation: slideUp 1s ease-out forwards;
+    }
+    @keyframes pulse {
+        0%, 100% { transform: scale(1); }
+        50% { transform: scale(1.05); }
+    }
+    .animate-pulse {
+        animation: pulse 2s infinite;
+    }
+    /* Line Clamp */
+    .line-clamp-2 {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    .line-clamp-3 {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    /* Responsive Adjustments */
+    @media (max-width: 640px) {
+        .blog-post img {
+            height: 40vw;
+        }
+        #blog-posts {
+            grid-template-columns: 1fr;
+        }
+    }
+    @media (min-width: 641px) and (max-width: 1023px) {
+        #blog-posts {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+</style>
+
+<!-- Inline JavaScript -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Elements
+        const posts = document.querySelectorAll('.blog-post');
+        const noResults = document.getElementById('no-results');
+        const searchInput = document.getElementById('search-input');
+        const searchButton = document.getElementById('search-button');
+        const categoryFilters = document.querySelectorAll('.category-filter');
+        const prevPage = document.getElementById('prev-page');
+        const nextPage = document.getElementById('next-page');
+        const pageButtons = document.querySelectorAll('[data-page]');
+        const clearFiltersButton = document.getElementById('clear-filters');
+
+        let currentPage = 1;
+        const postsPerPage = 3;
+        let activeCategory = null;
+        let searchTerm = '';
+
+        // Update Posts Visibility
+        function updatePosts() {
+            let visiblePosts = Array.from(posts);
+
+            // Filter by search term
+            if (searchTerm) {
+                visiblePosts = visiblePosts.filter(post => 
+                    post.dataset.title.toLowerCase().includes(searchTerm)
+                );
+            }
+
+            // Filter by category
+            if (activeCategory) {
+                visiblePosts = visiblePosts.filter(post => 
+                    post.dataset.category === activeCategory
+                );
+            }
+
+            // Pagination
+            const start = (currentPage - 1) * postsPerPage;
+            const end = start + postsPerPage;
+            posts.forEach(post => {
+                post.style.display = 'none';
+            });
+            visiblePosts.forEach((post, index) => {
+                post.style.display = (index >= start && index < end) ? 'block' : 'none';
+            });
+
+            // Show/hide no results message
+            noResults.style.display = visiblePosts.length === 0 ? 'block' : 'none';
+
+            // Update pagination buttons
+            prevPage.disabled = currentPage === 1;
+            nextPage.disabled = end >= visiblePosts.length;
+            pageButtons.forEach(btn => {
+                const isActive = parseInt(btn.dataset.page) === currentPage;
+                btn.classList.toggle('bg-sky-600', isActive);
+                btn.classList.toggle('text-white', isActive);
+                btn.classList.toggle('text-sky-600', !isActive);
+                btn.classList.toggle('hover:bg-sky-100', !isActive);
+            });
+        }
+
+        // Search Handler
+        searchInput.addEventListener('input', () => {
+            searchTerm = searchInput.value.toLowerCase();
+            currentPage = 1;
+            updatePosts();
+        });
+        searchButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            updatePosts();
+        });
+
+        // Category Filter
+        categoryFilters.forEach(button => {
+            button.addEventListener('click', () => {
+                activeCategory = button.dataset.category;
+                currentPage = 1;
+                categoryFilters.forEach(btn => {
+                    const isActive = btn === button;
+                    btn.classList.toggle('bg-sky-600', isActive);
+                    btn.classList.toggle('text-white', isActive);
+                    btn.classList.toggle('text-gray-600', !isActive);
+                    btn.classList.toggle('hover:bg-sky-50', !isActive);
+                });
+                updatePosts();
+            });
+        });
+
+        // Clear Filters
+        clearFiltersButton.addEventListener('click', () => {
+            activeCategory = null;
+            searchTerm = '';
+            searchInput.value = '';
+            currentPage = 1;
+            categoryFilters.forEach(btn => {
+                btn.classList.remove('bg-sky-600', 'text-white');
+                btn.classList.add('text-gray-600', 'hover:bg-sky-50');
+            });
+            updatePosts();
+        });
+
+        // Pagination
+        prevPage.addEventListener('click', () => {
+            if (currentPage > 1) {
+                currentPage--;
+                updatePosts();
+                window.scrollTo({ top: document.getElementById('blog-posts').offsetTop - 80, behavior: 'smooth' });
+            }
+        });
+        nextPage.addEventListener('click', () => {
+            if (currentPage < Math.ceil(posts.length / postsPerPage)) {
+                currentPage++;
+                updatePosts();
+                window.scrollTo({ top: document.getElementById('blog-posts').offsetTop - 80, behavior: 'smooth' });
+            }
+        });
+        pageButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                currentPage = parseInt(button.dataset.page);
+                updatePosts();
+                window.scrollTo({ top: document.getElementById('blog-posts').offsetTop - 80, behavior: 'smooth' });
+            });
+        });
+
+        // Lazy Load Images
+        const lazyImages = document.querySelectorAll('img.lazy');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const img = entry.target;
+                    img.src = img.dataset.src || img.src;
+                    img.classList.remove('lazy');
+                    observer.unobserve(img);
+                }
+            });
+        });
+        lazyImages.forEach(img => observer.observe(img));
+
+        // Initial Update
+        updatePosts();
+    });
+</script>
+{% endblock %}

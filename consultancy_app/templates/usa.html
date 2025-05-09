@@ -1,0 +1,1019 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Study in the USA - EDUHUB Universal Services{% endblock %}
+{% block content %}
+
+    <!-- Hero Section -->
+    <section class="relative min-h-[80vh] flex items-center overflow-hidden bg-gradient-to-r from-sky-600 to-blue-800 text-white">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/always-grey.png')]"></div>
+        
+        <div class="container mx-auto px-6 py-24 relative z-10">
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <div class="lg:w-1/2 mb-10 lg:mb-0 animate-fade-in">
+                    <div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-6 py-2 inline-flex items-center mb-6">
+                        <img src="https://cdn-icons-png.flaticon.com/512/323/323310.png" alt="USA Flag" class="h-5 w-5 mr-2">
+                        <span>STUDY IN USA</span>
+                    </div>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                        Study in the <span class="text-yellow-300">USA</span> - World's Top Education Destination
+                    </h1>
+                    <p class="text-xl mb-8 opacity-90">
+                        Join 1 million+ international students at prestigious American universities with our expert guidance.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#consultation-form" data-modal="consultation" 
+                           class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 px-8 py-4 rounded-lg font-bold inline-flex items-center justify-center transition duration-300 animate-bounce">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                            </svg>
+                            Free Consultation
+                        </a>
+                        <a href="tel:+11234567890" 
+                           class="bg-transparent border-2 border-white hover:bg-white/10 px-8 py-4 rounded-lg font-bold inline-flex items-center justify-center transition duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                            </svg>
+                            Call Now
+                        </a>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 animate-slide-up" style="animation-delay: 0.2s;">
+                    <div class="relative">
+                        <img src="{% static 'assets/student/_16A7668.jpg' %}" 
+                             alt="Students in USA" 
+                             class="rounded-xl shadow-2xl w-full hover:scale-105 transition-transform duration-500">
+                        <div class="absolute -bottom-6 -right-6 bg-white p-4 rounded-xl shadow-lg text-gray-800">
+                            <div class="text-3xl font-bold text-blue-600">#1</div>
+                            <div class="text-sm">Study Abroad Destination</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why USA Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4 text-gray-900">
+                    <span class="text-blue-600">Why Study</span> in the USA?
+                </h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    The United States offers unparalleled academic excellence, cutting-edge research, and global career opportunities.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Benefit 1 -->
+                <div class="bg-gray-50 p-8 rounded-xl hover:shadow-lg hover:-translate-y-2 transition-all duration-300 border border-gray-100">
+                    <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-6 mx-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-center text-gray-900">Top-Ranked Universities</h3>
+                    <p class="text-gray-600 text-center">
+                        8 of the top 10 global universities are in the USA (QS Rankings 2023)
+                    </p>
+                </div>
+                
+                <!-- Benefit 2 -->
+                <div class="bg-gray-50 p-8 rounded-xl hover:shadow-lg hover:-translate-y-2 transition-all duration-300 border border-gray-100">
+                    <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-6 mx-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-center text-gray-900">STEM Career Opportunities</h3>
+                    <p class="text-gray-600 text-center">
+                        3-year OPT for STEM graduates with high employability
+                    </p>
+                </div>
+                
+                <!-- Benefit 3 -->
+                <div class="bg-gray-50 p-8 rounded-xl hover:shadow-lg hover:-translate-y-2 transition-all duration-300 border border-gray-100">
+                    <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-6 mx-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-center text-gray-900">Flexible Education System</h3>
+                    <p class="text-gray-600 text-center">
+                        Customizable programs with interdisciplinary options
+                    </p>
+                </div>
+                
+                <!-- Benefit 4 -->
+                <div class="bg-gray-50 p-8 rounded-xl hover:shadow-lg hover:-translate-y-2 transition-all duration-300 border border-gray-100">
+                    <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-6 mx-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a2 2 0 00-2-2h-3m-2 4H2v-2a2 2 0 012-2h3m5-12V4m0 16v-2m0-4v-2m0-4V4" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-center text-gray-900">Global Recognition</h3>
+                    <p class="text-gray-600 text-center">
+                        Degrees valued by employers worldwide
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Universities Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4 text-gray-900">
+                    <span class="text-blue-600">Top Universities</span> in the USA
+                </h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    We partner with 20+ US institutions including Ivy League and top-ranked universities
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Massachusetts Institute of Technology (MIT) -->
+                <div class="relative group overflow-hidden rounded-xl shadow-lg h-80">
+                    <img src="{% static 'assets/usa/massachusetts.jfif' %}" 
+                         alt="MIT Campus" 
+                         class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-6 w-full">
+                        <div class="flex items-center mb-2">
+                            <img src="{% static 'assets/usa/MIT_logo.svg.png' %}" alt="MIT Logo" class="h-6 w-6 mr-2">
+                            <h3 class="text-xl font-bold text-white">Massachusetts Institute of Technology</h3>
+                        </div>
+                        <p class="text-white/90 mb-4">Cambridge, MA</p>
+                    </div>
+                    <div class="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold">
+                        #1 Worldwide
+                    </div>
+                </div>
+                
+                <!-- Harvard University -->
+                <div class="relative group overflow-hidden rounded-xl shadow-lg h-80">
+                    <img src="https://th.bing.com/th/id/OIP._HlEZKdFGMvqxhvNTgL7bwHaDt?rs=1&pid=ImgDetMain" 
+                         alt="Harvard Campus" 
+                         class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-6 w-full">
+                        <div class="flex items-center mb-2">
+                            <img src="https://th.bing.com/th/id/OSK.i7i4r6jwpkOTRAtRlQ40Fv_ivvC1ox_wGEFfQsUhFiA?w=224&h=200&c=12&rs=1&o=6&dpr=1.3&pid=SANGAM" alt="Harvard Logo" class="h-6 w-6 mr-2">
+                            <h3 class="text-xl font-bold text-white">Harvard University</h3>
+                        </div>
+                        <p class="text-white/90 mb-4">Cambridge, MA</p>
+                    </div>
+                    <div class="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold">
+                        Ivy League
+                    </div>
+                </div>
+                
+                <!-- Stanford University -->
+                <div class="relative group overflow-hidden rounded-xl shadow-lg h-80">
+                    <img src="https://th.bing.com/th/id/R.d7b201216ced3d83d2c2eb682786dec0?rik=qliVXLRhLS0VcA&riu=http%3a%2f%2fwonderfulengineering.com%2fwp-content%2fuploads%2f2013%2f05%2f6.-Stanford-University1.jpg&ehk=bwwrbchLPBP7F3ZiVPjk%2f8pBY1WE1U3D1zm3QUxI%2fNo%3d&risl=&pid=ImgRaw&r=0" 
+                         alt="Stanford Campus" 
+                         class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-6 w-full">
+                        <div class="flex items-center mb-2">
+                            <img src="https://logos-marcas.com/wp-content/uploads/2021/10/Stanford-Emblema.png" alt="Stanford Logo" class="h-6 w-6 mr-2">
+                            <h3 class="text-xl font-bold text-white">Stanford University</h3>
+                        </div>
+                        <p class="text-white/90 mb-4">Stanford, CA</p>
+                    </div>
+                    <div class="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold">
+                        #3 Worldwide
+                    </div>
+                </div>
+                
+                <!-- Princeton University -->
+                <div class="relative group overflow-hidden rounded-xl shadow-lg h-80">
+                    <img src="https://th.bing.com/th/id/R.2107c2e0408c5632be042614e0d474cf?rik=DiHJWv2RteqmDA&riu=http%3a%2f%2faminus3.s3.amazonaws.com%2fimage%2fg0001%2fu00000550%2fi00482731%2f32a6bf9ecc1a599d87e7cea1dc24ce49_large.jpg&ehk=kOU1LjRWT%2bCeGGptBfVit9tP%2bLn5f7vPDy9wXSh7yuA%3d&risl=&pid=ImgRaw&r=0" 
+                         alt="Princeton Campus" 
+                         class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-6 w-full">
+                        <div class="flex items-center mb-2">
+                            <img src="https://www.bing.com/images/search?FORM=IARRTH&q=princeton+university&id=OSK.c09fdeb23618906e5eb4ae95a4ff4512" alt="Princeton Logo" class="h-6 w-6 mr-2">
+                            <h3 class="text-xl font-bold text-white">Princeton University</h3>
+                        </div>
+                        <p class="text-white/90 mb-4">Princeton, NJ</p>
+                    </div>
+                    <div class="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold">
+                        Ivy League
+                    </div>
+                </div>
+                
+                <!-- California Institute of Technology (Caltech) -->
+                <div class="relative group overflow-hidden rounded-xl shadow-lg h-80">
+                    <img src="https://th.bing.com/th/id/OSK.HEROXn3Uy1k4Iif7pi46WIpOaoOYPYv9LNl6YpQQrv3BvBg?w=312&h=200&c=7&rs=1&o=6&dpr=1.3&pid=SANGAM" 
+                         alt="Caltech Campus" 
+                         class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-6 w-full">
+                        <div class="flex items-center mb-2">
+                            <img src="https://th.bing.com/th/id/ODLS.25dee980-2170-4f7d-8d1b-191be60fbbfa?w=32&h=32&qlt=90&pcl=fffffc&o=6&pid=1.2" alt="Caltech Logo" class="h-6 w-6 mr-2">
+                            <h3 class="text-xl font-bold text-white">California Institute of Technology</h3>
+                        </div>
+                        <p class="text-white/90 mb-4">Pasadena, CA</p>
+                    </div>
+                    <div class="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold">
+                        STEM Leader
+                    </div>
+                </div>
+                
+                <!-- Yale University -->
+                <div class="relative group overflow-hidden rounded-xl shadow-lg h-80">
+                    <img src="https://th.bing.com/th/id/OSK.HEROyR6AwyvMEg7rgU8Mk3boUghfy6UUE1zP8PKA3knLlrc?w=312&h=200&c=7&rs=1&o=6&dpr=1.3&pid=SANGAM" 
+                         alt="Yale Campus" 
+                         class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-6 w-full">
+                        <div class="flex items-center mb-2">
+                            <img src="https://th.bing.com/th/id/ODLS.1201a2b1-0466-4eea-b5f4-3277d7cfbc17?w=32&h=32&qlt=90&pcl=fffffc&o=6&pid=1.2" alt="Yale Logo" class="h-6 w-6 mr-2">
+                            <h3 class="text-xl font-bold text-white">Yale University</h3>
+                        </div>
+                        <p class="text-white/90 mb-4">New Haven, CT</p>
+                    </div>
+                    <div class="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold">
+                        Ivy League
+                    </div>
+                </div>
+                
+                <!-- University of Chicago -->
+                <div class="relative group overflow-hidden rounded-xl shadow-lg h-80">
+                    <img src="https://th.bing.com/th/id/OSK.HERO8E3KkKRYUtXA2RbwJfriQiAeFNLPpawsmL6InV0Kyek?w=312&h=200&c=7&rs=1&o=6&dpr=1.3&pid=SANGAM" 
+                         alt="UChicago Campus" 
+                         class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-6 w-full">
+                        <div class="flex items-center mb-2">
+                            <img src="https://th.bing.com/th/id/OSK.DkUpm_1xSItNmYKVc05FhzoZNsUOic9IDWzH8AvAvnc?w=224&h=200&c=12&rs=1&o=6&dpr=1.3&pid=SANGAM" alt="UChicago Logo" class="h-6 w-6 mr-2">
+                            <h3 class="text-xl font-bold text-white">University of Chicago</h3>
+                        </div>
+                        <p class="text-white/90 mb-4">Chicago, IL</p>
+                    </div>
+                    <div class="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold">
+                        Top Research
+                    </div>
+                </div>
+                
+                <!-- University of Pennsylvania -->
+                <div class="relative group overflow-hidden rounded-xl shadow-lg h-80">
+                    <img src="https://th.bing.com/th/id/OSK.HEROindtGBX0cHiXKWOIyth5XbJCGKz1FCHCGyraOJO7OqY?w=312&h=200&c=7&rs=1&o=6&dpr=1.3&pid=SANGAM" 
+                         alt="UPenn Campus" 
+                         class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-6 w-full">
+                        <div class="flex items-center mb-2">
+                            <img src="https://th.bing.com/th/id/ODLS.ae60ad1a-fc31-4b6b-8b14-c4b9e01c42f3?w=32&h=32&qlt=90&pcl=fffffc&o=6&pid=1.2" alt="UPenn Logo" class="h-6 w-6 mr-2">
+                            <h3 class="text-xl font-bold text-white">University of Pennsylvania</h3>
+                        </div>
+                        <p class="text-white/90 mb-4">Philadelphia, PA</p>
+                    </div>
+                    <div class="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold">
+                        Ivy League
+                    </div>
+                </div>
+                
+                <!-- Columbia University -->
+                <div class="relative group overflow-hidden rounded-xl shadow-lg h-80">
+                    <img src="https://th.bing.com/th/id/OSK.HEROt0GCuBNGDFEFa8ZixEqX32rv_TW2A64PcnxORCUkVd4?w=312&h=200&c=7&rs=1&o=6&dpr=1.3&pid=SANGAM" 
+                         alt="Columbia Campus" 
+                         class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-6 w-full">
+                        <div class="flex items-center mb-2">
+                            <img src="https://th.bing.com/th/id/OSK.xLiY8bhdtNw5AmHScUTS8gS017QlXSTD93xknReCImM?w=224&h=200&c=12&rs=1&o=6&dpr=1.3&pid=SANGAM" alt="Columbia Logo" class="h-6 w-6 mr-2">
+                            <h3 class="text-xl font-bold text-white">Columbia University</h3>
+                        </div>
+                        <p class="text-white/90 mb-4">New York, NY</p>
+                    </div>
+                    <div class="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold">
+                        Ivy League
+                    </div>
+                </div>
+                
+                <!-- Cornell University -->
+                <div class="relative group overflow-hidden rounded-xl shadow-lg h-80">
+                    <img src="https://cdnapisec.kaltura.com/p/537811/thumbnail/entry_id/1_ov22y9vj/width/1280/height/720" 
+                         alt="Cornell Campus" 
+                         class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-6 w-full">
+                        <div class="flex items-center mb-2">
+                            <img src="https://th.bing.com/th/id/R.34205ce94dd7da45271993a24eff161c?rik=D9fUxs8QI5UIRg&riu=http%3a%2f%2f4.bp.blogspot.com%2f_V1hbANfFpgg%2fTAWuMWFbqgI%2fAAAAAAAABDA%2fVEand1O8oMs%2fs1600%2fcornell%2buniversity%2b2.gif&ehk=aa6p%2fDDV5IzLf0eKVziFoXcMDsBZZvYAnoGscY68q4s%3d&risl=&pid=ImgRaw&r=0" alt="Cornell Logo" class="h-6 w-6 mr-2">
+                            <h3 class="text-xl font-bold text-white">Cornell University</h3>
+                        </div>
+                        <p class="text-white/90 mb-4">Ithaca, NY</p>
+                    </div>
+                    <div class="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold">
+                        Ivy League
+                    </div>
+                </div>
+                
+                <!-- University of California, Berkeley -->
+                <div class="relative group overflow-hidden rounded-xl shadow-lg h-80">
+                    <img src="https://th.bing.com/th/id/OSK.GBhzfi-A3uF-7LJ7WRhdAEn_eslDZ-8EgbLJDQLpjak?w=224&h=200&c=12&rs=1&o=6&dpr=1.3&pid=SANGAM" 
+                         alt="UC Berkeley Campus" 
+                         class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-6 w-full">
+                        <div class="flex items-center mb-2">
+                            <img src="https://th.bing.com/th/id/ODLS.4c9f0a8e-3bbb-46ed-afd6-cd8b0946df05?w=17&h=17&o=6&pid=1.2" alt="UC Berkeley Logo" class="h-6 w-6 mr-2">
+                            <h3 class="text-xl font-bold text-white">UC Berkeley</h3>
+                        </div>
+                        <p class="text-white/90 mb-4">Berkeley, CA</p>
+                    </div>
+                    <div class="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold">
+                        Top Public University
+                    </div>
+                </div>
+                
+                <!-- University of Michigan, Ann Arbor -->
+                <div class="relative group overflow-hidden rounded-xl shadow-lg h-80">
+                    <img src="https://th.bing.com/th/id/OSK.6Ct_-rH5Q7zPc4erKAb0GuNOoYe7mXUdWL1Gp4AzJwo?w=312&h=200&c=12&rs=1&o=6&dpr=1.3&pid=SANGAM" 
+                         alt="Michigan Campus" 
+                         class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-6 w-full">
+                        <div class="flex items-center mb-2">
+                            <img src="https://th.bing.com/th/id/ODLS.681f2518-bcc6-4b3f-b63d-806267046a86?w=32&h=32&qlt=90&pcl=fffffc&o=6&pid=1.2" alt="Michigan Logo" class="h-6 w-6 mr-2">
+                            <h3 class="text-xl font-bold text-white">University of Michigan, Ann Arbor</h3>
+                        </div>
+                        <p class="text-white/90 mb-4">Ann Arbor, MI</p>
+                    </div>
+                    <div class="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold">
+                        Top Public University
+                    </div>
+                </div>
+                
+                <!-- Northwestern University -->
+                <div class="relative group overflow-hidden rounded-xl shadow-lg h-80">
+                    <img src="https://th.bing.com/th/id/R.7831b34be5d0cb85b58230a12e533d40?rik=%2fnV5ofqVirBokQ&pid=ImgRaw&r=0" 
+                         alt="Northwestern Campus" 
+                         class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-6 w-full">
+                        <div class="flex items-center mb-2">
+                            <img src="https://th.bing.com/th/id/ODLS.49a71173-81f4-4989-be80-b5fa716f7231?w=17&h=17&o=6&pid=1.2" alt="Northwestern Logo" class="h-6 w-6 mr-2">
+                            <h3 class="text-xl font-bold text-white">Northwestern University</h3>
+                        </div>
+                        <p class="text-white/90 mb-4">Evanston, IL</p>
+                    </div>
+                    <div class="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold">
+                        Top Research
+                    </div>
+                </div>
+                
+                <!-- Duke University -->
+                <div class="relative group overflow-hidden rounded-xl shadow-lg h-80">
+                    <img src="https://th.bing.com/th/id/OIP.0VsAFNZBFZb3N6lgRASwFAHaE8?w=204&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" 
+                         alt="Duke Campus" 
+                         class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-6 w-full">
+                        <div class="flex items-center mb-2">
+                            <img src="https://www.bing.com/images/search?view=detailV2&ccid=IKoyzFQC&id=4A4F584EBE0EC7C44C19EE7CDE7E78BABBF78F3C&thid=OIP.IKoyzFQCaCh7n7mcB__Y_AHaHa&mediaurl=https%3a%2f%2fupload.wikimedia.org%2fwikipedia%2fen%2fthumb%2fc%2fce%2fDuke_University_seal.svg%2f1200px-Duke_University_seal.svg.png&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.20aa32cc540268287b9fb99c07ffd8fc%3frik%3dPI%252f3u7p4ft587g%26pid%3dImgRaw%26r%3d0&exph=1200&expw=1200&q=Duke+University+&simid=607999617379159666&FORM=IRPRST&ck=E2C6E08876D7723A18CA4EE7DA75528A&selectedIndex=3&itb=1" alt="Duke Logo" class="h-6 w-6 mr-2">
+                            <h3 class="text-xl font-bold text-white">Duke University</h3>
+                        </div>
+                        <p class="text-white/90 mb-4">Durham, NC</p>
+                    </div>
+                    <div class="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold">
+                        Top Research
+                    </div>
+                </div>
+                
+                <!-- New York University (NYU) -->
+                <div class="relative group overflow-hidden rounded-xl shadow-lg h-80">
+                    <img src="https://media.glassdoor.com/l/2917/nyu-new-york-university-office.jpg" 
+                         alt="NYU Campus" 
+                         class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-6 w-full">
+                        <div class="flex items-center mb-2">
+                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/58/NYU_logo.svg/1200px-NYU_logo.svg.png" alt="NYU Logo" class="h-6 w-6 mr-2">
+                            <h3 class="text-xl font-bold text-white">New York University (NYU)</h3>
+                        </div>
+                        <p class="text-white/90 mb-4">New York, NY</p>
+                    </div>
+                    <div class="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold">
+                        Global Leader
+                    </div>
+                </div>
+                
+                <!-- Johns Hopkins University -->
+                <div class="relative group overflow-hidden rounded-xl shadow-lg h-80">
+                    <img src="https://th.bing.com/th/id/R.4a00bf2251d988514b208d7052c57116?rik=ajcquYcJQ2jdaA&pid=ImgRaw&r=0" 
+                         alt="Johns Hopkins Campus" 
+                         class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-6 w-full">
+                        <div class="flex items-center mb-2">
+                            <img src="https://th.bing.com/th/id/ODLS.fb19c166-c6f1-4878-8441-8ee8741c0064?w=32&h=32&qlt=90&pcl=fffffc&o=6&pid=1.2" alt="Johns Hopkins Logo" class="h-6 w-6 mr-2">
+                            <h3 class="text-xl font-bold text-white">Johns Hopkins University</h3>
+                        </div>
+                        <p class="text-white/90 mb-4">Baltimore, MD</p>
+                    </div>
+                    <div class="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold">
+                        Medical Research
+                    </div>
+                </div>
+                
+                <!-- University of Southern California (USC) -->
+                <div class="relative group overflow-hidden rounded-xl shadow-lg h-80">
+                    <img src="https://th.bing.com/th/id/OIP.RZFDrH1lpXmdMZCDlueMtAHaEK?rs=1&pid=ImgDetMain" 
+                         alt="USC Campus" 
+                         class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-6 w-full">
+                        <div class="flex items-center mb-2">
+                            <img src="https://i.pinimg.com/originals/61/e2/22/61e222e435fcbf9d0c707ad17d9aac31.png" alt="USC Logo" class="h-6 w-6 mr-2">
+                            <h3 class="text-xl font-bold text-white">University of Southern California</h3>
+                        </div>
+                        <p class="text-white/90 mb-4">Los Angeles, CA</p>
+                    </div>
+                    <div class="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold">
+                        Top Private
+                    </div>
+                </div>
+                
+                <!-- University of California, Los Angeles (UCLA) -->
+                <div class="relative group overflow-hidden rounded-xl shadow-lg h-80">
+                    <img src="https://th.bing.com/th/id/OIP.kHBZRztT26CvFd2ITKvbNAHaE6?w=291&h=192&c=7&r=0&o=5&dpr=1.3&pid=1.7" 
+                         alt="UCLA Campus" 
+                         class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-6 w-full">
+                        <div class="flex items-center mb-2">
+                            <img src="https://th.bing.com/th/id/OIP.QrKAkv18yfWsv29tvZb0FgHaEK?w=263&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="UCLA Logo" class="h-6 w-6 mr-2">
+                            <h3 class="text-xl font-bold text-white">University of California, Los Angeles</h3>
+                        </div>
+                        <p class="text-white/90 mb-4">Los Angeles, CA</p>
+                    </div>
+                    <div class="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold">
+                        Top Public University
+                    </div>
+                </div>
+                
+                <!-- Brown University -->
+                <div class="relative group overflow-hidden rounded-xl shadow-lg h-80">
+                    <img src="https://th.bing.com/th/id/OIP.NuO0GPfmeV--s9QpEfPSIQHaG2?w=172&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" 
+                         alt="Brown Campus" 
+                         class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-6 w-full">
+                        <div class="flex items-center mb-2">
+                            <img src="https://th.bing.com/th/id/OIP.P9NzyVRRL31mcNTu2R0yQAHaD3?w=294&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Brown Logo" class="h-6 w-6 mr-2">
+                            <h3 class="text-xl font-bold text-white">Brown University</h3>
+                        </div>
+                        <p class="text-white/90 mb-4">Providence, RI</p>
+                    </div>
+                    <div class="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold">
+                        Ivy League
+                    </div>
+                </div>
+                
+                <!-- University of Illinois Urbana-Champaign -->
+                <div class="relative group overflow-hidden rounded-xl shadow-lg h-80">
+                    <img src="https://th.bing.com/th/id/OIP.vdoCiCzrGeOkZpm1CWjD-AHaEe?w=266&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" 
+                         alt="UIUC Campus" 
+                         class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-6 w-full">
+                        <div class="flex items-center mb-2">
+                            <img src="https://th.bing.com/th/id/ODLS.b84ed727-96a3-47ce-8064-d70ec8b254cd?w=32&h=32&qlt=90&pcl=fffffc&o=6&pid=1.2" alt="UIUC Logo" class="h-6 w-6 mr-2">
+                            <h3 class="text-xl font-bold text-white">University of Illinois Urbana-Champaign</h3>
+                        </div>
+                        <p class="text-white/90 mb-4">Urbana-Champaign, IL</p>
+                    </div>
+                    <div class="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold">
+                        Top Public University
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Programs Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4 text-gray-900">
+                    <span class="text-blue-600">Popular Programs</span> in the USA
+                </h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Choose from 1,000+ programs across diverse disciplines at all study levels
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Engineering -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 border border-gray-100">
+                    <div class="h-48 bg-gradient-to-r from-blue-500 to-blue-700 flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                        </svg>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 text-gray-900">Engineering & Technology</h3>
+                        <p class="text-gray-600 mb-4">
+                            Mechanical, Electrical, Computer, Civil, and more with cutting-edge research facilities.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">3-year OPT</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">High Salary</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">STEM</span>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <!-- Business -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 border border-gray-100">
+                    <div class="h-48 bg-gradient-to-r from-blue-500 to-blue-700 flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 14l6-6m-5.5.5h.01m4.99 5h.01M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16l3.5-2 3.5 2 3.5-2 3.5 2zM10 8.5a.5.5 0 11-1 0 .5.5 0 011 0zm5 5a.5.5 0 11-1 0 .5.5 0 011 0z" />
+                        </svg>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 text-gray-900">Business & Management</h3>
+                        <p class="text-gray-600 mb-4">
+                            MBA, Finance, Marketing, Entrepreneurship at world's top business schools.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Networking</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">High ROI</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Leadership</span>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <!-- Computer Science -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 border border-gray-100">
+                    <div class="h-48 bg-gradient-to-r from-blue-500 to-blue-700 flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 text-gray-900">Computer Science & IT</h3>
+                        <p class="text-gray-600 mb-4">
+                            AI, Machine Learning, Cybersecurity, Software Engineering with Silicon Valley connections.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">High Demand</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">3-year OPT</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">STEM</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Study Levels Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4 text-gray-900">
+                    <span class="text-blue-600">Study Levels</span> in the USA
+                </h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    American education system offers pathways for students at all academic levels
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Undergraduate -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="bg-blue-600 text-white p-6">
+                        <h3 class="text-xl font-bold mb-2">Undergraduate</h3>
+                        <p class="opacity-90">Bachelor's Degrees (4 years)</p>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                                <span>High school diploma required</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                                <span>SAT/ACT scores typically required</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                                <span>Liberal arts curriculum with majors</span>
+                            </li>
+                        </ul>
+                        
+                    </div>
+                </div>
+                
+                <!-- Graduate -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="bg-blue-700 text-white p-6">
+                        <h3 class="text-xl font-bold mb-2">Graduate</h3>
+                        <p class="opacity-90">Master's & PhD Programs</p>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                                <span>Bachelor's degree required</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                                <span>GRE/GMAT often required</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                                <span>Research or coursework options</span>
+                            </li>
+                        </ul>
+                        
+                    </div>
+                </div>
+                
+                <!-- Community College -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="bg-blue-800 text-white p-6">
+                        <h3 class="text-xl font-bold mb-2">Community College</h3>
+                        <p class="opacity-90">Associate Degrees (2 years)</p>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                                <span>Affordable pathway to universities</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                                <span>Transfer agreements with universities</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                                <span>Vocational and technical programs</span>
+                            </li>
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cost & Scholarships Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row gap-12">
+                <div class="lg:w-1/2">
+                    <h2 class="text-4xl font-bold mb-6 text-gray-900">
+                        <span class="text-blue-600">Cost of Study</span> in the USA
+                    </h2>
+                    <div class="bg-gray-50 p-6 rounded-xl shadow-sm">
+                        <div class="flex items-center mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <h3 class="text-xl font-semibold">Tuition Fees</h3>
+                        </div>
+                        <ul class="space-y-4">
+                            <li class="flex justify-between border-b border-gray-200 pb-2">
+                                <span class="text-gray-600">Public Universities</span>
+                                <span class="font-medium">$15,000 - $40,000/year</span>
+                            </li>
+                            <li class="flex justify-between border-b border-gray-200 pb-2">
+                                <span class="text-gray-600">Private Universities</span>
+                                <span class="font-medium">$30,000 - $70,000/year</span>
+                            </li>
+                            <li class="flex justify-between border-b border-gray-200 pb-2">
+                                <span class="text-gray-600">Community Colleges</span>
+                                <span class="font-medium">$8,000 - $15,000/year</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-6 rounded-xl shadow-sm mt-6">
+                        <div class="flex items-center mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                            </svg>
+                            <h3 class="text-xl font-semibold">Living Expenses</h3>
+                        </div>
+                        <ul class="space-y-4">
+                            <li class="flex justify-between border-b border-gray-200 pb-2">
+                                <span class="text-gray-600">Accommodation</span>
+                                <span class="font-medium">$8,000 - $15,000/year</span>
+                            </li>
+                            <li class="flex justify-between border-b border-gray-200 pb-2">
+                                <span class="text-gray-600">Food & Groceries</span>
+                                <span class="font-medium">$3,000 - $5,000/year</span>
+                            </li>
+                            <li class="flex justify-between border-b border-gray-200 pb-2">
+                                <span class="text-gray-600">Transportation</span>
+                                <span class="font-medium">$1,000 - $2,000/year</span>
+                            </li>
+                            <li class="flex justify-between border-b border-gray-200 pb-2">
+                                <span class="text-gray-600">Health Insurance</span>
+                                <span class="font-medium">$1,500 - $2,500/year</span>
+                            </li>
+                            <li class="flex justify-between border-b border-gray-200 pb-2">
+                                <span class="text-gray-600">Books and Supplies</span>
+                                <span class="font-medium">$800 - $1,200/year</span>
+                            </li>
+                            <li class="flex justify-between border-b border-gray-200 pb-2">
+                                <span class="text-gray-600">Total(Approximate)</span>
+                                <span class="font-medium">$15,000 - $30,000/year</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <h2 class="text-4xl font-bold mb-6 text-gray-900">
+                        <span class="text-blue-600">Scholarships</span> & Financial Aid
+                    </h2>
+                    <div class="bg-blue-50 border border-blue-100 rounded-xl p-6 mb-6">
+                        <h3 class="text-xl font-semibold mb-4 text-blue-800">Available Funding Options</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600 mr-3 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                                <div>
+                                    <h4 class="font-medium text-gray-900">Fulbright Scholarships</h4>
+                                    <p class="text-gray-600 text-sm">Prestigious government-funded awards for international students</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600 mr-3 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                                <div>
+                                    <h4 class="font-medium text-gray-900">University Merit Scholarships</h4>
+                                    <p class="text-gray-600 text-sm">Awards based on academic excellence from individual universities</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600 mr-3 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                                <div>
+                                    <h4 class="font-medium text-gray-900">Private Organization Grants</h4>
+                                    <p class="text-gray-600 text-sm">Funding from corporations, foundations, and non-profits</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600 mr-3 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                                <div>
+                                    <h4 class="font-medium text-gray-900">Teaching/Research Assistantships</h4>
+                                    <p class="text-gray-600 text-sm">Graduate student positions with tuition waivers and stipends</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bg-yellow-50 border border-yellow-100 rounded-xl p-6">
+                        <h3 class="text-xl font-semibold mb-4 text-yellow-800">Our Scholarship Success</h3>
+                        <p class="text-gray-700 mb-4">
+                            Our students have secured over $5 million in scholarships last year. We help you identify and apply for the best funding opportunities.
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visa & Work Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row gap-12">
+                <div class="lg:w-1/2">
+                    <h2 class="text-4xl font-bold mb-6 text-gray-900">
+                        <span class="text-blue-600">Visa Process</span> for the USA
+                    </h2>
+                    <div class="bg-white p-6 rounded-xl shadow-sm mb-6">
+                        <h3 class="text-xl font-semibold mb-4">F-1 Student Visa Requirements</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <div class="bg-blue-100 text-blue-800 rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                                    1
+                                </div>
+                                <span class="text-gray-600">Form I-20 from SEVP-approved institution</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-blue-100 text-blue-800 rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                                    2
+                                </div>
+                                <span class="text-gray-600">SEVIS I-901 fee payment</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-blue-100 text-blue-800 rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                                    3
+                                </div>
+                                <span class="text-gray-600">Proof of financial support (tuition + living)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-blue-100 text-blue-800 rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                                    4
+                                </div>
+                                <span class="text-gray-600">Valid passport</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-blue-100 text-blue-800 rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                                    5
+                                </div>
+                                <span class="text-gray-600">Visa interview at US embassy/consulate</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bg-blue-50 border border-blue-100 rounded-xl p-6">
+                        <h3 class="text-xl font-semibold mb-4 text-blue-800">Our Visa Success Rate</h3>
+                        <div class="flex items-center mb-4">
+                            <div class="text-4xl font-bold text-blue-600 mr-4">98%</div>
+                            <div class="text-gray-600">approval rate for our students in 2023</div>
+                        </div>
+                        <p class="text-gray-700">
+                            Our visa experts provide complete documentation support and mock interview preparation to maximize your chances.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <h2 class="text-4xl font-bold mb-6 text-gray-900">
+                        <span class="text-blue-600">Work Opportunities</span> in the USA
+                    </h2>
+                    <div class="bg-white p-6 rounded-xl shadow-sm mb-6">
+                        <h3 class="text-xl font-semibold mb-4">During Studies</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600 mr-3 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                </svg>
+                                <div>
+                                    <h4 class="font-medium text-gray-900">On-Campus Employment</h4>
+                                    <p class="text-gray-600 text-sm">Up to 20 hours/week during academic sessions</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600 mr-3 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                </svg>
+                                <div>
+                                    <h4 class="font-medium text-gray-900">Curricular Practical Training (CPT)</h4>
+                                    <p class="text-gray-600 text-sm">Paid internships related to your field of study</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-xl shadow-sm">
+                        <h3 class="text-xl font-semibold mb-4">After Graduation</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600 mr-3 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                </svg>
+                                <div>
+                                    <h4 class="font-medium text-gray-900">Optional Practical Training (OPT)</h4>
+                                    <p class="text-gray-600 text-sm">12 months of work authorization (36 months for STEM)</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600 mr-3 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                </svg>
+                                <div>
+                                    <h4 class="font-medium text-gray-900">H-1B Visa</h4>
+                                    <p class="text-gray-600 text-sm">Employer-sponsored work visa after OPT</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application Process -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold mb-12 text-center text-gray-900">
+                <span class="text-blue-600">Application Process</span> for US Universities
+            </h2>
+            
+            <div class="relative">
+                <!-- Timeline -->
+                <div class="hidden lg:block absolute left-1/2 h-full w-1 bg-gray-200 -ml-0.5"></div>
+                
+                <!-- Steps -->
+                <div class="space-y-12">
+                    <!-- Step 1 -->
+                    <div class="relative flex flex-col lg:flex-row items-center gap-8">
+                        <div class="lg:w-1/2 lg:pr-12 lg:text-right order-1">
+                            <h3 class="text-2xl font-bold mb-3 text-gray-900">University Selection</h3>
+                            <p class="text-gray-600">
+                                We help you choose 6-8 universities based on your profile, budget, and career goals.
+                            </p>
+                        </div>
+                        <div class="lg:w-1/2 lg:pl-12 order-2">
+                            <div class="w-16 h-16 rounded-full bg-blue-600 text-white flex items-center justify-center text-2xl font-bold shadow-lg mx-auto lg:mx-0 lg:absolute lg:-left-8">
+                                1
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 2 -->
+                    <div class="relative flex flex-col lg:flex-row items-center gap-8">
+                        <div class="lg:w-1/2 lg:pl-12 order-2 lg:order-1">
+                            <div class="w-16 h-16 rounded-full bg-blue-600 text-white flex items-center justify-center text-2xl font-bold shadow-lg mx-auto lg:mx-0 lg:absolute lg:-right-8">
+                                2
+                            </div>
+                        </div>
+                        <div class="lg:w-1/2 lg:pr-12 order-1 lg:order-2">
+                            <h3 class="text-2xl font-bold mb-3 text-gray-900">Test Preparation</h3>
+                            <p class="text-gray-600">
+                                Guidance for SAT/ACT (undergrad), GRE/GMAT (grad), and English tests (TOEFL/IELTS).
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 3 -->
+                    <div class="relative flex flex-col lg:flex-row items-center gap-8">
+                        <div class="lg:w-1/2 lg:pr-12 lg:text-right order-1">
+                            <h3 class="text-2xl font-bold mb-3 text-gray-900">Application Submission</h3>
+                            <p class="text-gray-600">
+                                Crafting compelling essays, securing recommendations, and submitting applications.
+                            </p>
+                        </div>
+                        <div class="lg:w-1/2 lg:pl-12 order-2">
+                            <div class="w-16 h-16 rounded-full bg-blue-600 text-white flex items-center justify-center text-2xl font-bold shadow-lg mx-auto lg:mx-0 lg:absolute lg:-left-8">
+                                3
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 4 -->
+                    <div class="relative flex flex-col lg:flex-row items-center gap-8">
+                        <div class="lg:w-1/2 lg:pl-12 order-2 lg:order-1">
+                            <div class="w-16 h-16 rounded-full bg-blue-600 text-white flex items-center justify-center text-2xl font-bold shadow-lg mx-auto lg:mx-0 lg:absolute lg:-right-8">
+                                4
+                            </div>
+                        </div>
+                        <div class="lg:w-1/2 lg:pr-12 order-1 lg:order-2">
+                            <h3 class="text-2xl font-bold mb-3 text-gray-900">Visa Process</h3>
+                            <p class="text-gray-600">
+                                Financial documentation, SEVIS payment, and interview preparation for F-1 visa.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 5 -->
+                    <div class="relative flex flex-col lg:flex-row items-center gap-8">
+                        <div class="lg:w-1/2 lg:pr-12 lg:text-right order-1">
+                            <h3 class="text-2xl font-bold mb-3 text-gray-900">Pre-Departure</h3>
+                            <p class="text-gray-600">
+                                Orientation, accommodation, flights, and everything you need before traveling.
+                            </p>
+                        </div>
+                        <div class="lg:w-1/2 lg:pl-12 order-2">
+                            <div class="w-16 h-16 rounded-full bg-blue-600 text-white flex items-center justify-center text-2xl font-bold shadow-lg mx-auto lg:mx-0 lg:absolute lg:-left-8">
+                                5
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+    </section>
+
+                
+                                   
+{% endblock %}

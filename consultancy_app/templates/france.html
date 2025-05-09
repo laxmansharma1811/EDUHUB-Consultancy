@@ -1,0 +1,702 @@
+{% extends 'base.html' %}
+
+{% block title %}Study in France - EDUHUB Universal Services{% endblock %}
+{% block content %}
+
+<!-- Hero Section -->
+<section class="relative min-h-[80vh] flex items-center overflow-hidden bg-gradient-to-r from-blue-600 to-blue-900 text-white" data-reveal>
+    <!-- Background Pattern -->
+    <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/always-grey.png')]"></div>
+    
+    <div class="container mx-auto px-6 py-24 relative z-10">
+        <div class="flex flex-col lg:flex-row items-center gap-12">
+            <div class="lg:w-1/2 mb-10 lg:mb-0" data-stagger="1">
+                <div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-6 py-2 inline-flex items-center mb-6">
+                    <img src="https://cdn-icons-png.flaticon.com/512/323/323325.png" alt="France Flag" class="h-5 w-5 mr-2">
+                    <span>STUDY IN FRANCE</span>
+                </div>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                    Study in <span class="text-red-400">France</span> - Europe’s Cultural and Academic Hub
+                </h1>
+                <p class="text-xl mb-8 opacity-90">
+                    Join 400,000+ international students at France’s prestigious universities and grandes écoles.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#consultation-form" data-modal="consultation" 
+                       class="bg-red-400 hover:bg-red-500 text-white px-8 py-4 rounded-lg font-bold inline-flex items-center justify-center transition duration-300 animate-bounce smooth-scroll">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                        </svg>
+                        Free Consultation
+                    </a>
+                    <a href="tel:+11234567890" 
+                       class="bg-transparent border-2 border-white hover:bg-white/10 px-8 py-4 rounded-lg font-bold inline-flex items-center justify-center transition duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                        </svg>
+                        Call Now
+                    </a>
+                </div>
+            </div>
+            <div class="lg:w-1/2" data-stagger="2">
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         alt="Students in France" 
+                         class="rounded-xl shadow-2xl w-full hover:scale-105 transition-transform duration-500">
+                    <div class="absolute -bottom-6 -right-6 bg-white p-4 rounded-xl shadow-lg text-gray-800">
+                        <div class="text-3xl font-bold text-blue-600">#3</div>
+                        <div class="text-sm">Study Abroad Destination in Europe</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Why France Section -->
+<section class="py-16 bg-white" data-reveal>
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-16" data-stagger="1">
+            <h2 class="text-4xl font-bold mb-4 text-gray-900">
+                <span class="text-blue-600">Why Study</span> in France?
+            </h2>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                France offers world-class education, affordable tuition, and a vibrant cultural experience in the heart of Europe.
+            </p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Benefit 1 -->
+            <div class="bg-gray-50 p-8 rounded-xl hover:shadow-lg hover:-translate-y-2 transition-all duration-300 border border-gray-100" data-stagger="2">
+                <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-6 mx-auto">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold mb-3 text-center text-gray-900">Top Universities</h3>
+                <p class="text-gray-600 text-center">
+                    Home to Sorbonne, ENS, and grandes écoles ranked globally
+                </p>
+            </div>
+            
+            <!-- Benefit 2 -->
+            <div class="bg-gray-50 p-8 rounded-xl hover:shadow-lg hover:-translate-y-2 transition-all duration-300 border border-gray-100" data-stagger="3">
+                <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-6 mx-auto">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold mb-3 text-center text-gray-900">Affordable Tuition</h3>
+                <p class="text-gray-600 text-center">
+                    Public universities charge €2,770–€3,770/year
+                </p>
+            </div>
+            
+            <!-- Benefit 3 -->
+            <div class="bg-gray-50 p-8 rounded-xl hover:shadow-lg hover:-translate-y-2 transition-all duration-300 border border-gray-100" data-stagger="4">
+                <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-6 mx-auto">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold mb-3 text-center text-gray-900">Cultural Immersion</h3>
+                <p class="text-gray-600 text-center">
+                    Study in Paris, Lyon, or Bordeaux with rich history and art
+                </p>
+            </div>
+            
+            <!-- Benefit 4 -->
+            <div class="bg-gray-50 p-8 rounded-xl hover:shadow-lg hover:-translate-y-2 transition-all duration-300 border border-gray-100" data-stagger="5">
+                <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-6 mx-auto">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a2 2 0 00-2-2h-3m-2 4H2v-2a2 2 0 012-2h3m5-12V4m0 16v-2m0-4v-2m0-4V4" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold mb-3 text-center text-gray-900">Global Recognition</h3>
+                <p class="text-gray-600 text-center">
+                    Degrees valued by employers across Europe and beyond
+                </p>
+            </div>
+        </div>
+    </section>
+
+<!-- Top Universities Section -->
+<section class="py-16 bg-gray-50" data-reveal>
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-16" data-stagger="1">
+            <h2 class="text-4xl font-bold mb-4 text-gray-900">
+                <span class="text-blue-600">Top Universities</span> in France
+            </h2>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                We partner with 100+ French institutions, including grandes écoles and public universities
+            </p>
+        </div>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Sorbonne Université -->
+            <div class="relative group overflow-hidden rounded-xl shadow-lg h-80" data-stagger="2">
+                <img src="https://th.bing.com/th/id/OIP.TG-HYHBt3jIp8VKqz5I8aQHaEI?w=330&h=184&c=7&r=0&o=5&dpr=1.3&pid=1.7" 
+                     alt="Sorbonne Université" 
+                     class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
+                <div class="absolute bottom-0 left-0 p-6 w-full">
+                    <div class="flex items-center mb-2">
+                        <img src="https://aura-group.com/wp-content/uploads/2021/09/aura-header-logo.png" alt="Sorbonne Logo" class="h-6 w-6 mr-2">
+                        <h3 class="text-xl font-bold text-white">Sorbonne Université</h3>
+                    </div>
+                    <p class="text-white/90 mb-4">#34 in QS World Rankings 2023</p>
+                    
+                </div>
+                <div class="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold">
+                    Top Public
+                </div>
+            </div>
+            
+            <!-- École Normale Supérieure -->
+            <div class="relative group overflow-hidden rounded-xl shadow-lg h-80" data-stagger="3">
+                <img src="https://th.bing.com/th/id/OIP.PiA9suXUaFoAuzppR6hWBwHaEc?w=250&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" 
+                     alt="ENS Paris" 
+                     class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
+                <div class="absolute bottom-0 left-0 p-6 w-full">
+                    <div class="flex items-center mb-2">
+                        <img src="https://th.bing.com/th/id/OIP.vmmaSfzv7S6x4gMsCi0JewAAAA?w=150&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="ENS Logo" class="h-6 w-6 mr-2">
+                        <h3 class="text-xl font-bold text-white">École de Management Appliqué</h3>
+                    </div>
+                    <p class="text-white/90 mb-4">Elite Grande École</p>
+                    
+                </div>
+                <div class="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold">
+                    Elite Institution
+                </div>
+            </div>
+            
+            <!-- Sciences Po -->
+            <div class="relative group overflow-hidden rounded-xl shadow-lg h-80" data-stagger="4">
+                <img src="https://th.bing.com/th/id/OIP.sRAaGBy4bhvUJNYRXDnJ6AGcCX?w=323&h=128&c=7&r=0&o=5&dpr=1.3&pid=1.7" 
+                     alt="Sciences Po" 
+                     class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
+                <div class="absolute bottom-0 left-0 p-6 w-full">
+                    <div class="flex items-center mb-2">
+                        <img src="https://th.bing.com/th/id/OIP.xtnb0se1pD3_Ol9OdcOUKgAAAA?w=161&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Sciences Po Logo" class="h-6 w-6 mr-2">
+                        <h3 class="text-xl font-bold text-white">ICN CREATIVE BUINNESS SCHOOL</h3>
+                    </div>
+                    <p class="text-white/90 mb-4">Leader in Social Sciences</p>
+                    
+                </div>
+                <div class="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold">
+                    #3 in Education
+                </div>
+            </div>
+        
+    </div>
+</section>
+
+<!-- Popular Programs Section -->
+<section class="py-16 bg-white" data-reveal>
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-16" data-stagger="1">
+            <h2 class="text-4xl font-bold mb-4 text-gray-900">
+                <span class="text-blue-600">Popular Programs</span> in France
+            </h2>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                Explore 500+ English-taught programs across diverse disciplines
+            </p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Business -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 border border-gray-100" data-stagger="2">
+                <div class="h-48 bg-gradient-to-r from-blue-500 to-blue-700 flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-white" fill="none" viewBox="0 0volta 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 14l6-6m-5.5.5h.01m4.99 5h.01M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16l3.5-2 3.5 2 3.5-2 3.5 2zM10 8.5a.5.5 0 11-1 0 .5.5 0 011 0zm5 5a.5.5 0 11-1 0 .5.5 0 011 0z" />
+                    </svg>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Business & Management</h3>
+                    <p class="text-gray-600 mb-4">
+                        MBA, International Business, Luxury Management at top schools like HEC Paris.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Networking</span>
+                        <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">High ROI</span>
+                        <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Luxury Sector</span>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <!-- Arts & Humanities -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 border border-gray-100" data-stagger="3">
+                <div class="h-48 bg-gradient-to-r from-blue-500 to-blue-700 flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                    </svg>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Arts & Humanities</h3>
+                    <p class="text-gray-600 mb-4">
+                        History, Literature, Art History, Fashion Design in Paris, the cultural capital.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Cultural Hub</span>
+                        <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Creative Careers</span>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <!-- Engineering -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 border border-gray-100" data-stagger="4">
+                <div class="h-48 bg-gradient-to-r from-blue-500 to-blue-700 flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                    </svg>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Engineering & Technology</h3>
+                    <p class="text-gray-600 mb-4">
+                        Aerospace, Mechanical, Robotics at schools like École Polytechnique.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">High Demand</span>
+                        <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Research Focus</span>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Study Levels Section -->
+<section class="py-16 bg-gray-50" data-reveal>
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-16" data-stagger="1">
+            <h2 class="text-4xl font-bold mb-4 text-gray-900">
+                <span class="text-blue-600">Study Levels</span> in France
+            </h2>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                French education offers pathways for undergraduate, graduate, and short-term programs
+            </p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Undergraduate -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300" data-stagger="2">
+                <div class="bg-blue-600 text-white p-6">
+                    <h3 class="text-xl font-bold mb-2">Undergraduate</h3>
+                    <p class="opacity-90">Licence (3 years)</p>
+                </div>
+                <div class="p-6">
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>High school diploma required</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>English-taught programs available</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>Broad curriculum with specialization</span>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+            
+            <!-- Graduate -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300" data-stagger="3">
+                <div class="bg-blue-700 text-white p-6">
+                    <h3 class="text-xl font-bold mb-2">Graduate</h3>
+                    <p class="opacity-90">Master’s & PhD Programs</p>
+                </div>
+                <div class="p-6">
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>Bachelor’s degree required</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>Many English-taught master’s</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>Research or professional tracks</span>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+            
+            <!-- Short-Term Programs -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300" data-stagger="4">
+                <div class="bg-blue-800 text-white p-6">
+                    <h3 class="text-xl font-bold mb-2">Short-Term Programs</h3>
+                    <p class="opacity-90">Summer & Exchange Programs</p>
+                </div>
+                <div class="p-6">
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>1–6 month programs</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>Language and cultural immersion</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>Credits transferable to home institutions</span>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Cost & Scholarships Section -->
+<section class="py-16 bg-white" data-reveal>
+    <div class="container mx-auto px-6">
+        <div class="flex flex-col lg:flex-row gap-12">
+            <div class="lg:w-1/2">
+                <h2 class="text-4xl font-bold mb-6 text-gray-900" data-stagger="1">
+                    <span class="text-blue-600">Cost of Study</span> in France
+                </h2>
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm" data-stagger="2">
+                    <div class="flex items-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        <h3 class="text-xl font-semibold">Tuition Fees</h3>
+                    </div>
+                    <ul class="space-y-4">
+                        <li class="flex justify-between border-b border-gray-200 pb-2">
+                            <span class="text-gray-600">Public Universities (Licence)</span>
+                            <span class="font-medium">€2,770/year</span>
+                        </li>
+                        <li class="flex justify-between border-b border-gray-200 pb-2">
+                            <span class="text-gray-600">Public Universities (Master’s)</span>
+                            <span class="font-medium">€3,770/year</span>
+                        </li>
+                        <li class="flex justify-between border-b border-gray-200 pb-2">
+                            <span class="text-gray-600">Grandes Écoles/Private</span>
+                            <span class="font-medium">€10,000–€30,000/year</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm mt-6" data-stagger="3">
+                    <div class="flex items-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                        </svg>
+                        <h3 class="text-xl font-semibold">Living Expenses</h3>
+                    </div>
+                    <ul class="space-y-4">
+                        <li class="flex justify-between border-b border-gray-200 pb-2">
+                            <span class="text-gray-600">Accommodation</span>
+                            <span class="font-medium">€4,800–€9,600/year</span>
+                        </li>
+                        <li class="flex justify-between border-b border-gray-200 pb-2">
+                            <span class="text-gray-600">Food & Groceries</span>
+                            <span class="font-medium">€2,400–€4,800/year</span>
+                        </li>
+                        <li class="flex justify-between border-b border-gray-200 pb-2">
+                            <span class="text-gray-600">Transportation</span>
+                            <span class="font-medium">€300–€600/year</span>
+                        </li>
+                        <li class="flex justify-between border-b border-gray-200 pb-2">
+                            <span class="text-gray-600">Health Insurance</span>
+                            <span class="font-medium">€500/year</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="lg:w-1/2">
+                <h2 class="text-4xl font-bold mb-6 text-gray-900" data-stagger="4">
+                    <span class="text-blue-600">Scholarships</span> & Financial Aid
+                </h2>
+                <div class="bg-blue-50 border border-blue-100 rounded-xl p-6 mb-6" data-stagger="5">
+                    <h3 class="text-xl font-semibold mb-4 text-blue-800">Available Funding Options</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600 mr-3 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <div>
+                                <h4 class="font-medium text-gray-900">Eiffel Excellence Scholarships</h4>
+                                <p class="text-gray-600 text-sm">For master’s and PhD students in priority fields</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600 mr-3 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <div>
+                                <h4 class="font-medium text-gray-900">Campus France Scholarships</h4>
+                                <p class="text-gray-600 text-sm">Country-specific awards for international students</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600 mr-3 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <div>
+                                <h4 class="font-medium text-gray-900">University Grants</h4>
+                                <p class="text-gray-600 text-sm">Merit-based awards from institutions</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600 mr-3 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <div>
+                                <h4 class="font-medium text-gray-900">Erasmus+ Funding</h4>
+                                <p class="text-gray-600 text-sm">EU support for exchange and joint programs</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-red-50 border border-red-100 rounded-xl p-6" data-stagger="6">
+                    <h3 class="text-xl font-semibold mb-4 text-red-800">Our Scholarship Success</h3>
+                    <p class="text-gray-700 mb-4">
+                        Our students secured over €2 million in scholarships last year. We guide you to the best funding opportunities.
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Visa & Work Section -->
+<section class="py-16 bg-gray-50" data-reveal>
+    <div class="container mx-auto px-6">
+        <div class="flex flex-col lg:flex-row gap-12">
+            <div class="lg:w-1/2">
+                <h2 class="text-4xl font-bold mb-6 text-gray-900" data-stagger="1">
+                    <span class="text-blue-600">Visa Process</span> for France
+                </h2>
+                <div class="bg-white p-6 rounded-xl shadow-sm mb-6" data-stagger="2">
+                    <h3 class="text-xl font-semibold mb-4">Long-Stay Student Visa Requirements</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <div class="bg-blue-100 text-blue-800 rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                                1
+                            </div>
+                            <span class="text-gray-600">Admission letter from a French institution</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="bg-blue-100 text-blue-800 rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                                2
+                            </div>
+                            <span class="text-gray-600">Campus France registration and interview</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="bg-blue-100 text-blue-800 rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                                3
+                            </div>
+                            <span class="text-gray-600">Proof of financial support (€7,400/year)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="bg-blue-100 text-blue-800 rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                                4
+                            </div>
+                            <span class="text-gray-600">Valid passport</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="bg-blue-100 text-blue-800 rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                                5
+                            </div>
+                            <span class="text-gray-600">Visa application via VFS Global/French embassy</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-blue-50 border border-blue-100 rounded-xl p-6" data-stagger="3">
+                    <h3 class="text-xl font-semibold mb-4 text-blue-800">Our Visa Success Rate</h3>
+                    <div class="flex items-center mb-4">
+                        <div class="text-4xl font-bold text-blue-600 mr-4">95%</div>
+                        <div class="text-gray-600">approval rate for our students in 2023</div>
+                    </div>
+                    <p class="text-gray-700">
+                        Our experts provide full support for Campus France and visa applications, including mock interviews.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="lg:w-1/2">
+                <h2 class="text-4xl font-bold mb-6 text-gray-900" data-stagger="4">
+                    <span class="text-blue-600">Work Opportunities</span> in France
+                </h2>
+                <div class="bg-white p-6 rounded-xl shadow-sm mb-6" data-stagger="5">
+                    <h3 class="text-xl font-semibold mb-4">During Studies</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600 mr-3 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                            </svg>
+                            <div>
+                                <h4 class="font-medium text-gray-900">Part-Time Work</h4>
+                                <p class="text-gray-600 text-sm">Up to 964 hours/year (20 hours/week)</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600 mr-3 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                            </svg>
+                            <div>
+                                <h4 class="font-medium text-gray-900">Internships</h4>
+                                <p class="text-gray-600 text-sm">Paid internships integrated into programs</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-sm" data-stagger="6">
+                    <h3 class="text-xl font-semibold mb-4">After Graduation</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600 mr-3 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                            </svg>
+                            <div>
+                                <h4 class="font-medium text-gray-900">APS (Temporary Residence)</h4>
+                                <p class="text-gray-600 text-sm">12-month job search visa after graduation</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600 mr-3 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                            </svg>
+                            <div>
+                                <h4 class="font-medium text-gray-900">Work Visa</h4>
+                                <p class="text-gray-600 text-sm">Employer-sponsored visa for long-term employment</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Application Process -->
+<section class="py-16 bg-white" data-reveal>
+    <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold mb-12 text-center text-gray-900" data-stagger="1">
+            <span class="text-blue-600">Application Process</span> for French Universities
+        </h2>
+        
+        <div class="relative">
+            <!-- Timeline -->
+            <div class="hidden lg:block absolute left-1/2 h-full w-1 bg-gray-200 -ml-0.5"></div>
+            
+            <!-- Steps -->
+            <div class="space-y-12">
+                <!-- Step 1 -->
+                <div class="relative flex flex-col lg:flex-row items-center gap-8" data-stagger="2">
+                    <div class="lg:w-1/2 lg:pr-12 lg:text-right order-1">
+                        <h3 class="text-2xl font-bold mb-3 text-gray-900">Program Selection</h3>
+                        <p class="text-gray-600">
+                            We help you choose English-taught programs matching your goals and qualifications.
+                        </p>
+                    </div>
+                    <div class="lg:w-1/2 lg:pl-12 order-2">
+                        <div class="w-16 h-16 rounded-full bg-blue-600 text-white flex items-center justify-center text-2xl font-bold shadow-lg mx-auto lg:mx-0 lg:absolute lg:-left-8">
+                            1
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="relative flex flex-col lg:flex-row items-center gap-8" data-stagger="3">
+                    <div class="lg:w-1/2 lg:pl-12 order-2 lg:order-1">
+                        <div class="w-16 h-16 rounded-full bg-blue-600 text-white flex items-center justify-center text-2xl font-bold shadow-lg mx-auto lg:mx-0 lg:absolute lg:-right-8">
+                            2
+                        </div>
+                    </div>
+                    <div class="lg:w-1/2 lg:pr-12 order-1 lg:order-2">
+                        <h3 class="text-2xl font-bold mb-3 text-gray-900">Campus France Registration</h3>
+                        <p class="text-gray-600">
+                            Complete the Campus France procedure, including profile creation and interview.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Step 3 -->
+                <div class="relative flex flex-col lg:flex-row items-center gap-8" data-stagger="4">
+                    <div class="lg:w-1/2 lg:pr-12 lg:text-right order-1">
+                        <h3 class="text-2xl font-bold mb-3 text-gray-900">Application Submission</h3>
+                        <p class="text-gray-600">
+                            Prepare motivation letters, CV, and academic documents for university applications.
+                        </p>
+                    </div>
+                    <div class="lg:w-1/2 lg:pl-12 order-2">
+                        <div class="w-16 h-16 rounded-full bg-blue-600 text-white flex items-center justify-center text-2xl font-bold shadow-lg mx-auto lg:mx-0 lg:absolute lg:-left-8">
+                            3
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Step 4 -->
+                <div class="relative flex flex-col lg:flex-row items-center gap-8" data-stagger="5">
+                    <div class="lg:w-1/2 lg:pl-12 order-2 lg:order-1">
+                        <div class="w-16 h-16 rounded-full bg-blue-600 text-white flex items-center justify-center text-2xl font-bold shadow-lg mx-auto lg:mx-0 lg:absolute lg:-right-8">
+                            4
+                        </div>
+                    </div>
+                    <div class="lg:w-1/2 lg:pr-12 order-1 lg:order-2">
+                        <h3 class="text-2xl font-bold mb-3 text-gray-900">Visa Application</h3>
+                        <p class="text-gray-600">
+                            Financial proof, visa forms, and interview preparation for the long-stay student visa.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Step 5 -->
+                <div class="relative flex flex-col lg:flex-row items-center gap-8" data-stagger="6">
+                    <div class="lg:w-1/2 lg:pr-12 lg:text-right order-1">
+                        <h3 class="text-2xl font-bold mb-3 text-gray-900">Pre-Departure</h3>
+                        <p class="text-gray-600">
+                            Orientation, accommodation, travel arrangements, and cultural preparation.
+                        </p>
+                    </div>
+                    <div class="lg:w-1/2 lg:pl-12 order-2">
+                        <div class="w-16 h-16 rounded-full bg-blue-600 text-white flex items-center justify-center text-2xl font-bold shadow-lg mx-auto lg:mx-0 lg:absolute lg:-left-8">
+                            5
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,689 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Study in Canada - EDUHUB Universal Services{% endblock %}
+{% block content %}
+
+    <!-- Hero Section -->
+    <section class="relative min-h-[80vh] flex items-center overflow-hidden bg-gradient-to-r from-sky-500 to-blue-700 text-white">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/always-grey.png')]"></div>
+        
+        <div class="container mx-auto px-6 py-24 relative z-10">
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <div class="lg:w-1/2 mb-10 lg:mb-0 animate-fade-in">
+                    <div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-6 py-2 inline-flex items-center mb-6">
+                        <img src="https://ts3.mm.bing.net/th?id=OIP.FJZuRfEGH6-THiUxkuyMWwHaEO&pid=15.1" alt="Canada Flag" class="h-5 w-5 mr-2">
+                        <span>STUDY IN CANADA</span>
+                    </div>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                        Study in <span class="text-yellow-300">Canada</span> - World-Class Education
+                    </h1>
+                    <p class="text-xl mb-8 opacity-90">
+                        Experience top-tier education, a multicultural society, and diverse career opportunities in Canada.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#consultation-form" data-modal="consultation" 
+                           class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 px-8 py-4 rounded-lg font-bold inline-flex items-center justify-center transition duration-300 animate-bounce canada-consultation"
+                           data-modal="consultation">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                            </svg>
+                            Free Consultation
+                        </a>
+                        <a href="tel:+11234567890" 
+                           class="bg-transparent border-2 border-white hover:bg-white/10 px-8 py-4 rounded-lg font-bold inline-flex items-center justify-center transition duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                            </svg>
+                            Call Now
+                        </a>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 animate-slide-up" style="animation-delay: 0.2s;">
+                    <div class="relative">
+                        <img src="{% static 'assets/shoot/IMG_2523.JPG' %}" 
+                             alt="Canadian Education" 
+                             class="rounded-xl shadow-2xl w-full hover:scale-105 transition-transform duration-500">
+                        <div class="absolute -bottom-6 -right-6 bg-white p-4 rounded-xl shadow-lg text-gray-800">
+                            <div class="text-3xl font-bold text-sky-600">#1</div>
+                            <div class="text-sm">Welcoming Study Destination</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Study in Canada -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4 text-gray-900">
+                    <span class="text-sky-600">Why Study</span> in Canada?
+                </h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Canada offers world-class education, a welcoming environment, and excellent career prospects.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-8 rounded-xl hover:shadow-lg hover:-translate-y-2 transition-all duration-300 border border-gray-100">
+                    <div class="w-16 h-16 bg-sky-100 rounded-lg flex items-center justify-center mb-6 mx-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-sky-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-center text-gray-900">Top-Quality Education</h3>
+                    <p class="text-gray-600 text-center">
+                        Globally recognized degrees with cutting-edge research opportunities.
+                    </p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-xl hover:shadow-lg hover:-translate-y-2 transition-all duration-300 border border-gray-100">
+                    <div class="w-16 h-16 bg-sky-100 rounded-lg flex items-center justify-center mb-6 mx-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-sky-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a2 2 0 00-2-2h-3m-2 4H2v-2a2 2 0 012-2h3m5-12V4m0 16v-2m0-4v-2m0-4V4" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-center text-gray-900">Welcoming Environment</h3>
+                    <p class="text-gray-600 text-center">
+                        Multicultural society with a high quality of life and inclusivity.
+                    </p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-xl hover:shadow-lg hover:-translate-y-2 transition-all duration-300 border border-gray-100">
+                    <div class="w-16 h-16 bg-sky-100 rounded-lg flex items-center justify-center mb-6 mx-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-sky-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-center text-gray-900">Career Opportunities</h3>
+                    <p class="text-gray-600 text-center">
+                        Skills for the global workforce with work options during and after studies.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Universities -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4 text-gray-900">
+                    <span class="text-sky-600">Top Universities</span> in Canada
+                </h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Study at Canada's prestigious institutions known for academic excellence.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- University of Toronto -->
+                <div class="relative group overflow-hidden rounded-xl shadow-lg h-80">
+                    <img src="{% static 'assets/canada/universityoftoronto.jpeg' %}" 
+                         alt="University of Toronto" 
+                         class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-6 w-full">
+                        <div class="flex items-center mb-2">
+                            <img src="{% static 'assets/canada/Utoronto_coa.svg.png' %}" alt="Toronto Logo" class="h-6 w-6 mr-2">
+                            <h3 class="text-xl font-bold text-white">University of Toronto</h3>
+                        </div>
+                        <p class="text-white/90 mb-4">#23 in QS World Rankings 2023</p>
+                    </div>
+                    <div class="absolute top-4 right-4 bg-sky-600 text-white px-3 py-1 rounded-full text-xs font-bold">
+                        Top Ranked
+                    </div>
+                </div>
+    
+                <!-- University of British Columbia -->
+                <div class="relative group overflow-hidden rounded-xl shadow-lg h-80">
+                    <img src="{% static 'assets/canada/universityBritishColumbia.jfif' %}" 
+                         alt="University of British Columbia" 
+                         class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-6 w-full">
+                        <div class="flex items-center mb-2">
+                            <img src="https://th.bing.com/th/id/OSK.8rpth6Qcf5UVKmyh5mpgP1vuSyfgAKT57hoe5Gg9xYc?w=224&h=200&c=12&rs=1&o=6&dpr=1.3&pid=SANGAM" alt="UBC Logo" class="h-6 w-6 mr-2">
+                            <h3 class="text-xl font-bold text-white">University of British Columbia</h3>
+                        </div>
+                        <p class="text-white/90 mb-4">#34 in QS World Rankings 2023</p>
+                    </div>
+                    <div class="absolute top-4 right-4 bg-sky-600 text-white px-3 py-1 rounded-full text-xs font-bold">
+                        Research Leader
+                    </div>
+                </div>
+    
+                <!-- McGill University -->
+                <div class="relative group overflow-hidden rounded-xl shadow-lg h-80">
+                    <img src="{% static 'assets/canada/mcgill.jfif' %}" 
+                         alt="McGill University" 
+                         class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-6 w-full">
+                        <div class="flex items-center mb-2">
+                            <img src="{% static 'assets/canada/mclogo.jpeg' %}" alt="McGill Logo" class="h-6 w-6 mr-2">
+                            <h3 class="text-xl font-bold text-white">McGill University</h3>
+                        </div>
+                        <p class="text-white/90 mb-4">#27 in QS World Rankings 2023</p>
+                    </div>
+                    <div class="absolute top-4 right-4 bg-sky-600 text-white px-3 py-1 rounded-full text-xs font-bold">
+                        Global Excellence
+                    </div>
+                </div>
+    
+                <!-- University of Alberta -->
+                <div class="relative group overflow-hidden rounded-xl shadow-lg h-80">
+                    <img src="{% static 'assets/canada/universityofalberta.jfif' %}" 
+                         alt="University of Alberta" 
+                         class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-6 w-full">
+                        <div class="flex items-center mb-2">
+                            <img src="{% static 'assets/canada/albertalogo.jfif' %}" alt="Alberta Logo" class="h-6 w-6 mr-2">
+                            <h3 class="text-xl font-bold text-white">University of Alberta</h3>
+                        </div>
+                        <p class="text-white/90 mb-4">Top 100 Worldwide</p>
+                    </div>
+                    <div class="absolute top-4 right-4 bg-sky-600 text-white px-3 py-1 rounded-full text-xs font-bold">
+                        STEM Excellence
+                    </div>
+                </div>
+    
+                <!-- University of Waterloo -->
+                <div class="relative group overflow-hidden rounded-xl shadow-lg h-80">
+                    <img src="{% static 'assets/canada/waterloo.jfif' %}" 
+                         alt="University of Waterloo" 
+                         class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-6 w-full">
+                        <div class="flex items-center mb-2">
+                            <img src="{% static 'assets/canada/waterloo logo.jfif' %}" alt="Waterloo Logo" class="h-6 w-6 mr-2">
+                            <h3 class="text-xl font-bold text-white">University of Waterloo</h3>
+                        </div>
+                        <p class="text-white/90 mb-4">#154 in QS World Rankings 2023</p>
+                    </div>
+                    <div class="absolute top-4 right-4 bg-sky-600 text-white px-3 py-1 rounded-full text-xs font-bold">
+                        Tech Hub
+                    </div>
+                </div>
+    
+                <!-- University of Ottawa -->
+                <div class="relative group overflow-hidden rounded-xl shadow-lg h-80">
+                    <img src="{% static 'assets/canada/ottawa.jfif' %}" 
+                         alt="University of Ottawa" 
+                         class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-6 w-full">
+                        <div class="flex items-center mb-2">
+                            <img src="{% static 'assets/canada/ottawa logo.jfif' %}" alt="Ottawa Logo" class="h-6 w-6 mr-2">
+                            <h3 class="text-xl font-bold text-white">University of Ottawa</h3>
+                        </div>
+                        <p class="text-white/90 mb-4">#237 in QS World Rankings 2023</p>
+                    </div>
+                    <div class="absolute top-4 right-4 bg-sky-600 text-white px-3 py-1 rounded-full text-xs font-bold">
+                        Bilingual Excellence
+                    </div>
+                </div>
+    
+                <!-- Simon Fraser University -->
+                <div class="relative group overflow-hidden rounded-xl shadow-lg h-80">
+                    <img src="{% static 'assets/canada/simon franser.jfif' %}" 
+                         alt="Simon Fraser University" 
+                         class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-6 w-full">
+                        <div class="flex items-center mb-2">
+                            <img src="{% static 'assets/canada/simon franser logo.jfif' %}" alt="SFU Logo" class="h-6 w-6 mr-2">
+                            <h3 class="text-xl font-bold text-white">Simon Fraser University</h3>
+                        </div>
+                        <p class="text-white/90 mb-4">#298 in QS World Rankings 2023</p>
+                    </div>
+                    <div class="absolute top-4 right-4 bg-sky-600 text-white px-3 py-1 rounded-full text-xs font-bold">
+                        Innovative Learning
+                    </div>
+                </div>
+    
+                <!-- Queen's University -->
+                <div class="relative group overflow-hidden rounded-xl shadow-lg h-80">
+                    <img src="{% static 'assets/canada/queen.jfif' %}" 
+                         alt="Queen's University" 
+                         class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-6 w-full">
+                        <div class="flex items-center mb-2">
+                            <img src="{% static 'assets/canada/qweenlogo.jfif' %}" alt="Queen's Logo" class="h-6 w-6 mr-2">
+                            <h3 class="text-xl font-bold text-white">Queen's University</h3>
+                        </div>
+                        <p class="text-white/90 mb-4">#246 in QS World Rankings 2023</p>
+                    </div>
+                    <div class="absolute top-4 right-4 bg-sky-600 text-white px-3 py-1 rounded-full text-xs font-bold">
+                        Tradition & Innovation
+                    </div>
+                </div>
+    
+                <!-- Dalhousie University -->
+                <div class="relative group overflow-hidden rounded-xl shadow-lg h-80">
+                    <img src="{% static 'assets/canada/dalhousie.jfif' %}" 
+                         alt="Dalhousie University" 
+                         class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-6 w-full">
+                        <div class="flex items-center mb-2">
+                            <img src="{% static 'assets/canada/dalhousielogo.jfif' %}" alt="Dalhousie Logo" class="h-6 w-6 mr-2">
+                            <h3 class="text-xl font-bold text-white">Dalhousie University</h3>
+                        </div>
+                        <p class="text-white/90 mb-4">#298 in QS World Rankings 2023</p>
+                    </div>
+                    <div class="absolute top-4 right-4 bg-sky-600 text-white px-3 py-1 rounded-full text-xs font-bold">
+                        East Coast Leader
+                    </div>
+                </div>
+    
+                <!-- Université de Montréal -->
+                <div class="relative group overflow-hidden rounded-xl shadow-lg h-80">
+                    <img src="{% static 'assets/canada/montreal.jfif' %}" 
+                         alt="Université de Montréal" 
+                         class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-6 w-full">
+                        <div class="flex items-center mb-2">
+                            <img src="{% static 'assets/canada/montreal logo.jfif' %}" alt="Montreal Logo" class="h-6 w-6 mr-2">
+                            <h3 class="text-xl font-bold text-white">Université de Montréal</h3>
+                        </div>
+                        <p class="text-white/90 mb-4">#116 in QS World Rankings 2023</p>
+                    </div>
+                    <div class="absolute top-4 right-4 bg-sky-600 text-white px-3 py-1 rounded-full text-xs font-bold">
+                        Francophone Excellence
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Offered -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4 text-gray-900">
+                    <span class="text-sky-600">Popular Programs</span> in Canada
+                </h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Explore diverse programs designed for global career success.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 border border-gray-100">
+                    <div class="h-48 bg-gradient-to-r from-sky-500 to-blue-700 flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 text-gray-900">Business & Management</h3>
+                        <p class="text-gray-600 mb-4">
+                            Globally recognized business programs for leadership skills.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-sky-100 text-sky-800 text-xs px-3 py-1 rounded-full">Networking</span>
+                            <span class="bg-sky-100 text-sky-800 text-xs px-3 py-1 rounded-full">High ROI</span>
+                            <span class="bg-sky-100 text-sky-800 text-xs px-3 py-1 rounded-full">Leadership</span>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 border border-gray-100">
+                    <div class="h-48 bg-gradient-to-r from-sky-500 to-blue-700 flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 text-gray-900">Engineering</h3>
+                        <p class="text-gray-600 mb-4">
+                            Innovative engineering disciplines at top Canadian institutions.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-sky-100 text-sky-800 text-xs px-3 py-1 rounded-full">High Demand</span>
+                            <span class="bg-sky-100 text-sky-800 text-xs px-3 py-1 rounded-full">STEM</span>
+                            <span class="bg-sky-100 text-sky-800 text-xs px-3 py-1 rounded-full">Innovation</span>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 border border-gray-100">
+                    <div class="h-48 bg-gradient-to-r from-sky-500 to-blue-700 flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 text-gray-900">Computer Science</h3>
+                        <p class="text-gray-600 mb-4">
+                            Cutting-edge degrees for a tech career.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-sky-100 text-sky-800 text-xs px-3 py-1 rounded-full">High Demand</span>
+                            <span class="bg-sky-100 text-sky-800 text-xs px-3 py-1 rounded-full">STEM</span>
+                            <span class="bg-sky-100 text-sky-800 text-xs px-3 py-1 rounded-full">Tech Hub</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cost & Scholarships -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row gap-12">
+                <div class="lg:w-1/2">
+                    <h2 class="text-4xl font-bold mb-6 text-gray-900">
+                        <span class="text-sky-600">Cost of Study</span> in Canada
+                    </h2>
+                    <div class="bg-gray-50 p-6 rounded-xl shadow-sm">
+ มีการแปลต่อไปนี้:
+
+```html
+                        <div class="flex items-center mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-sky-600 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <h3 class="text-xl font-semibold">Tuition Fees</h3>
+                        </div>
+                        <ul class="space-y-4">
+                            <li class="flex justify-between border-b border-gray-200 pb-2">
+                                <span class="text-gray-600">Undergraduate Programs</span>
+                                <span class="font-medium">CAD 20,000 - 40,000/year</span>
+                            </li>
+                            <li class="flex justify-between border-b border-gray-200 pb-2">
+                                <span class="text-gray-600">Graduate Programs</span>
+                                <span class="font-medium">CAD 15,000 - 35,000/year</span>
+                            </li>
+                            <li class="flex justify-between border-b border-gray-200 pb-2">
+                                <span class="text-gray-600">Diploma/Certificate</span>
+                                <span class="font-medium">CAD 10,000 - 20,000/year</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-6 rounded-xl shadow-sm mt-6">
+                        <div class="flex items-center mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-sky-600 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                            </svg>
+                            <h3 class="text-xl font-semibold">Living Expenses</h3>
+                        </div>
+                        <ul class="space-y-4">
+                            <li class="flex justify-between border-b border-gray-200 pb-2">
+                                <span class="text-gray-600">Accommodation</span>
+                                <span class="font-medium">$ 8,000 - 15,000/year</span>
+                            </li>
+                            <li class="flex justify-between border-b border-gray-200 pb-2">
+                                <span class="text-gray-600">Food & Groceries</span>
+                                <span class="font-medium">$ 3,000 - 5,000/year</span>
+                            </li>
+                            <li class="flex justify-between border-b border-gray-200 pb-2">
+                                <span class="text-gray-600">Transportation</span>
+                                <span class="font-medium">$ 900 - 1,5000/year</span>
+                            </li>
+                            <li class="flex justify-between border-b border-gray-200 pb-2">
+                                <span class="text-gray-600">Books and Supplies</span>
+                                <span class="font-medium">$ 1,000 - 2,000/year</span>
+                            </li>
+                            <li class="flex justify-between border-b border-gray-200 pb-2">
+                                <span class="text-gray-600">Health and Insurance</span>
+                                <span class="font-medium">$ 600 - 1,000/year</span>
+                            </li>
+                            <li class="flex justify-between border-b border-gray-200 pb-2">
+                                <span class="text-gray-600">Miscellaneous</span>
+                                <span class="font-medium">$ 2,000 - 3,000/year</span>
+                            </li>
+                            <li class="flex justify-between border-b border-gray-200 pb-2">
+                                <span class="text-gray-600">Total Estimate</span>
+                                <span class="font-medium">$ 15,000 - 25,000/year</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <h2 class="text-4xl font-bold mb-6 text-gray-900">
+                        <span class="text-sky-600">Scholarships</span> & Financial Aid
+                    </h2>
+                    <div class="bg-sky-50 border border-sky-100 rounded-xl p-6 mb-6">
+                        <h3 class="text-xl font-semibold mb-4 text-sky-800">Available Funding Options</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-sky-600 mr-3 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                                <div>
+                                    <h4 class="font-medium text-gray-900">Vanier Canada Graduate Scholarships</h4>
+                                    <p class="text-gray-600 text-sm">Prestigious awards for doctoral students with academic excellence</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-sky-600 mr-3 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                                <div>
+                                    <h4 class="font-medium text-gray-900">University Merit Scholarships</h4>
+                                    <p class="text-gray-600 text-sm">Awards based on academic excellence from individual universities</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-sky-600 mr-3 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                                <div>
+                                    <h4 class="font-medium text-gray-900">Government Grants</h4>
+                                    <p class="text-gray-600 text-sm">Funding from Canadian government programs for international students</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bg-yellow-50 border border-yellow-100 rounded-xl p-6">
+                        <h3 class="text-xl font-semibold mb-4 text-yellow-800">Our Scholarship Success</h3>
+                        <p class="text-gray-700 mb-4">
+                            Our students have secured over CAD 3 million in scholarships last year. We guide you to the best funding opportunities.
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visa & Work -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row gap-12">
+                <div class="lg:w-1/2">
+                    <h2 class="text-4xl font-bold mb-6 text-gray-900">
+                        <span class="text-sky-600">Visa Process</span> for Canada
+                    </h2>
+                    <div class="bg-white p-6 rounded-xl shadow-sm mb-6">
+                        <h3 class="text-xl font-semibold mb-4">Study Permit Requirements</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <div class="bg-sky-100 text-sky-800 rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                                    1
+                                </div>
+                                <span class="text-gray-600">Acceptance letter from a Designated Learning Institution (DLI)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-sky-100 text-sky-800 rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                                    2
+                                </div>
+                                <span class="text-gray-600">Proof of financial support for tuition and living expenses</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-sky-100 text-sky-800 rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                                    3
+                                </div>
+                                <span class="text-gray-600">Valid passport and recent passport-sized photos</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-sky-100 text-sky-800 rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                                    4
+                                </div>
+                                <span class="text-gray-600">English proficiency test results (e.g., IELTS, TOEFL)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-sky-100 text-sky-800 rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                                    5
+                                </div>
+                                <span class="text-gray-600">Medical examination (if required)</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bg-sky-50 border border-sky-100 rounded-xl p-6">
+                        <h3 class="text-xl font-semibold mb-4 text-sky-800">Our Visa Success Rate</h3>
+                        <div class="flex items-center mb-4">
+                            <div class="text-4xl font-bold text-sky-600 mr-4">95%</div>
+                            <div class="text-gray-600">approval rate for our students in 2023</div>
+                        </div>
+                        <p class="text-gray-700">
+                            Our visa experts provide comprehensive support, including documentation and interview preparation.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <h2 class="text-4xl font-bold mb-6 text-gray-900">
+                        <span class="text-sky-600">Work Opportunities</span> in Canada
+                    </h2>
+                    <div class="bg-white p-6 rounded-xl shadow-sm mb-6">
+                        <h3 class="text-xl font-semibold mb-4">During Studies</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-sky-600 mr-3 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                </svg>
+                                <div>
+                                    <h4 class="font-medium text-gray-900">Part-Time Work</h4>
+                                    <p class="text-gray-600 text-sm">Up to 20 hours/week on or off-campus during academic sessions</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-sky-600 mr-3 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                </svg>
+                                <div>
+                                    <h4 class="font-medium text-gray-900">Co-op Programs</h4>
+                                    <p class="text-gray-600 text-sm">Paid work terms integrated into your academic program</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-xl shadow-sm">
+                        <h3 class="text-xl font-semibold mb-4">After Graduation</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-sky-600 mr-3 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                </svg>
+                                <div>
+                                    <h4 class="font-medium text-gray-900">Post-Graduation Work Permit (PGWP)</h4>
+                                    <p class="text-gray-600 text-sm">Up to 3 years of work authorization after graduation</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-sky-600 mr-3 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                </svg>
+                                <div>
+                                    <h4 class="font-medium text-gray-900">Permanent Residency Pathways</h4>
+                                    <p class="text-gray-600 text-sm">Express Entry and Provincial Nominee Programs for skilled workers</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-16 bg-gradient-to-r from-sky-500 to-blue-700 text-white text-center">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6 animate-fade-in">
+                Ready to Start Your <span class="text-yellow-300">Canadian Journey</span>?
+            </h2>
+            <p class="text-lg md:text-xl mb-8 opacity-90 animate-fade-in">
+                Contact our expert consultants to guide you through the application process.
+            </p>
+            <a href="#consultation-form" 
+               class="canada-consultation bg-yellow-400 hover:bg-yellow-500 text-gray-900 px-8 py-4 rounded-lg font-bold inline-flex items-center justify-center transition duration-300 animate-bounce"
+               data-modal="consultation">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                </svg>
+                Book a Free Consultation
+            </a>
+        </div>
+    </section>
+
+    <!-- Inline CSS for Animations -->
+    <style>
+        /* Fade-in Animation */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in {
+            animation: fadeIn 1s ease-out forwards;
+        }
+
+        /* Slide-up Animation */
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-slide-up {
+            animation: slideUp 1s ease-out forwards;
+        }
+
+        /* Bounce Animation */
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-10px); }
+            60% { transform: translateY(-5px); }
+        }
+        .animate-bounce:hover {
+            animation: bounce 1s;
+        }
+    </style>
+
+    <!-- Inline JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Smooth Scroll for Anchor Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const target = document.querySelector(anchor.getAttribute('href'));
+                    if (target) {
+                        window.scrollTo({
+                            top: target.offsetTop - 80, // Adjust for navbar height
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+
+            // Pre-select Canada in Consultation Modal
+            document.querySelectorAll('.canada-consultation').forEach(button => {
+                button.addEventListener('click', () => {
+                    const countrySelect = document.getElementById('country');
+                    if (countrySelect) {
+                        countrySelect.value = 'Canada';
+                    }
+                });
+            });
+        });
+    </script>
+{% endblock %}

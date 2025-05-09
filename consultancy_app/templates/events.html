@@ -1,0 +1,575 @@
+{% extends 'base.html' %}
+{% block title %}Events - EDUHUB Universal Services{% endblock %}
+{% block content %}
+
+<!-- Hero Section -->
+<section class="relative min-h-[60vh] flex items-center bg-gradient-to-r from-sky-500 to-sky-700 text-white overflow-hidden">
+    <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/white-diamond.png')] opacity-10"></div>
+    <div class="absolute inset-0 bg-black/40 z-0"></div>
+    <div class="container mx-auto px-4 sm:px-6 py-16 relative z-10 text-center">
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 animate-fade-in tracking-tight">Join Our Educational Events</h1>
+        <p class="text-lg sm:text-xl lg:text-2xl mb-8 max-w-3xl mx-auto opacity-90 animate-fade-in delay-100">
+            Discover workshops, webinars, and fairs to support your study abroad journey with EDUHUB Universal Services.
+        </p>
+        <a href="#event-list" class="inline-flex items-center bg-white text-sky-600 hover:bg-gray-100 px-8 py-3 rounded-full font-semibold transition duration-300 animate-pulse">
+            Explore Events
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+        </a>
+    </div>
+</section>
+
+<!-- Events Content -->
+<section class="py-16 bg-white">
+    <div class="container mx-auto px-4 sm:px-6">
+        <div class="flex flex-col lg:flex-row gap-8">
+            <!-- Events Grid -->
+            <div class="lg:w-2/3">
+                <!-- Category Filters -->
+                <div class="mb-8 flex flex-wrap gap-4 animate-slide-up">
+                    <button class="category-filter bg-sky-600 text-white px-4 py-2 rounded-full font-semibold transition-all duration-300 hover:bg-sky-700" 
+                            data-category="All" 
+                            aria-current="true">All</button>
+                    <button class="category-filter text-sky-600 hover:bg-sky-600 hover:text-white px-4 py-2 rounded-full font-semibold transition-all duration-300" 
+                            data-category="Workshop">Workshop</button>
+                    <button class="category-filter text-sky-600 hover:bg-sky-600 hover:text-white px-4 py-2 rounded-full font-semibold transition-all duration-300" 
+                            data-category="Webinar">Webinar</button>
+                    <button class="category-filter text-sky-600 hover:bg-sky-600 hover:text-white px-4 py-2 rounded-full font-semibold transition-all duration-300" 
+                            data-category="Info Session">Info Session</button>
+                    <button class="category-filter text-sky-600 hover:bg-sky-600 hover:text-white px-4 py-2 rounded-full font-semibold transition-all duration-300" 
+                            data-category="Fair">Fair</button>
+                </div>
+                <!-- Events -->
+                <div id="event-list" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Event 1 -->
+                    <article class="event-item bg-white rounded-xl shadow-md border border-gray-100 hover:shadow-lg transition-all duration-300 animate-slide-up" 
+                             style="animation-delay: 0s;" 
+                             data-title="Study Abroad Fair" 
+                             data-category="Fair">
+                        <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                             alt="Study Abroad Fair" 
+                             class="w-full h-48 sm:h-56 object-cover rounded-t-xl lazy-load">
+                        <div class="p-6">
+                            <span class="inline-block bg-sky-100 text-sky-600 text-xs font-semibold px-3 py-1 rounded-full mb-3">Fair</span>
+                            <span class="text-sky-600 text-sm font-medium block mb-2">May 10, 2025</span>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3 line-clamp-2">Study Abroad Fair</h3>
+                            <p class="text-gray-600 text-base line-clamp-3 mb-4">Meet representatives from top universities in USA, Canada, and Australia in Kathmandu.</p>
+                            <p class="text-gray-600 text-sm"><strong>Location:</strong> Kathmandu</p>
+                        </div>
+                    </article>
+                    <!-- Event 2 -->
+                    <article class="event-item bg-white rounded-xl shadow-md border border-gray-100 hover:shadow-lg transition-all duration-300 animate-slide-up" 
+                             style="animation-delay: 0.1s;" 
+                             data-title="Visa Application Workshop" 
+                             data-category="Workshop">
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                             alt="Visa Application Workshop" 
+                             class="w-full h-48 sm:h-56 object-cover rounded-t-xl lazy-load">
+                        <div class="p-6">
+                            <span class="inline-block bg-sky-100 text-sky-600 text-xs font-semibold px-3 py-1 rounded-full mb-3">Workshop</span>
+                            <span class="text-sky-600 text-sm font-medium block mb-2">May 15, 2025</span>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3 line-clamp-2">Visa Application Workshop</h3>
+                            <p class="text-gray-600 text-base line-clamp-3 mb-4">Learn the step-by-step process for student visa applications and required documents.</p>
+                            <p class="text-gray-600 text-sm"><strong>Location:</strong> Online</p>
+                        </div>
+                    </article>
+                    <!-- Event 3 -->
+                    <article class="event-item bg-white rounded-xl shadow-md border border-gray-100 hover:shadow-lg transition-all duration-300 animate-slide-up" 
+                             style="animation-delay: 0.2s;" 
+                             data-title="IELTS Preparation Webinar" 
+                             data-category="Webinar">
+                        <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                             alt="IELTS Preparation Webinar" 
+                             class="w-full h-48 sm:h-56 object-cover rounded-t-xl lazy-load">
+                        <div class="p-6">
+                            <span class="inline-block bg-sky-100 text-sky-600 text-xs font-semibold px-3 py-1 rounded-full mb-3">Webinar</span>
+                            <span class="text-sky-600 text-sm font-medium block mb-2">May 20, 2025</span>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3 line-clamp-2">IELTS Preparation Webinar</h3>
+                            <p class="text-gray-600 text-base line-clamp-3 mb-4">Get expert tips and strategies to ace your IELTS exam and achieve your desired score.</p>
+                            <p class="text-gray-600 text-sm"><strong>Location:</strong> Online</p>
+                        </div>
+                    </article>
+                    <!-- Event 4 -->
+                    <article class="event-item bg-white rounded-xl shadow-md border border-gray-100 hover:shadow-lg transition-all duration-300 animate-slide-up" 
+                             style="animation-delay: 0.3s;" 
+                             data-title="Career Counseling Session" 
+                             data-category="Workshop">
+                        <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                             alt="Career Counseling Session" 
+                             class="w-full h-48 sm:h-56 object-cover rounded-t-xl lazy-load">
+                        <div class="p-6">
+                            <span class="inline-block bg-sky-100 text-sky-600 text-xs font-semibold px-3 py-1 rounded-full mb-3">Workshop</span>
+                            <span class="text-sky-600 text-sm font-medium block mb-2">May 25, 2025</span>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3 line-clamp-2">Career Counseling Session</h3>
+                            <p class="text-gray-600 text-base line-clamp-3 mb-4">Explore diverse career paths after graduation with personalized guidance in Butwal.</p>
+                            <p class="text-gray-600 text-sm"><strong>Location:</strong> Butwal</p>
+                        </div>
+                    </article>
+                    <!-- Event 5 -->
+                    <article class="event-item bg-white rounded-xl shadow-md border border-gray-100 hover:shadow-lg transition-all duration-300 animate-slide-up" 
+                             style="animation-delay: 0.4s;" 
+                             data-title="University Application Workshop" 
+                             data-category="Workshop">
+                        <img src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                             alt="University Application Workshop" 
+                             class="w-full h-48 sm:h-56 object-cover rounded-t-xl lazy-load">
+                        <div class="p-6">
+                            <span class="inline-block bg-sky-100 text-sky-600 text-xs font-semibold px-3 py-1 rounded-full mb-3">Workshop</span>
+                            <span class="text-sky-600 text-sm font-medium block mb-2">June 5, 2025</span>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3 line-clamp-2">University Application Workshop</h3>
+                            <p class="text-gray-600 text-base line-clamp-3 mb-4">Get guidance on crafting strong university applications and essays in Banepa.</p>
+                            <p class="text-gray-600 text-sm"><strong>Location:</strong> Banepa</p>
+                        </div>
+                    </article>
+                    <!-- Event 6 -->
+                    <article class="event-item bg-white rounded-xl shadow-md border border-gray-100 hover:shadow-lg transition-all duration-300 animate-slide-up" 
+                             style="animation-delay: 0.5s;" 
+                             data-title="Study in Canada Info Session" 
+                             data-category="Info Session">
+                        <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                             alt="Study in Canada Info Session" 
+                             class="w-full h-48 sm:h-56 object-cover rounded-t-xl lazy-load">
+                        <div class="p-6">
+                            <span class="inline-block bg-sky-100 text-sky-600 text-xs font-semibold px-3 py-1 rounded-full mb-3">Info Session</span>
+                            <span class="text-sky-600 text-sm font-medium block mb-2">June 10, 2025</span>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3 line-clamp-2">Study in Canada Info Session</h3>
+                            <p class="text-gray-600 text-base line-clamp-3 mb-4">Learn about the benefits of studying in Canada, including programs and visa processes.</p>
+                            <p class="text-gray-600 text-sm"><strong>Location:</strong> Kathmandu</p>
+                        </div>
+                    </article>
+                </div>
+                <!-- No Results Message -->
+                <div id="no-results" class="hidden text-center py-12 col-span-full">
+                    <p class="text-gray-600 text-lg font-medium">No events match your search or filter.</p>
+                    <button id="clear-search" class="text-sky-600 hover:text-sky-800 font-medium">Clear Search</button>
+                </div>
+            </div>
+            <!-- Sidebar -->
+            <aside class="lg:w-1/3">
+                <div class="sticky top-24 space-y-8">
+                    <!-- Search -->
+                    <div class="bg-white rounded-xl p-6 shadow-md border border-gray-100">
+                        <h3 class="text-xl font-bold text-sky-600 mb-4">Search Events</h3>
+                        <div class="flex">
+                            <input type="text" 
+                                   id="search-input" 
+                                   placeholder="Search events..." 
+                                   class="w-full px-4 py-2 border border-gray-200 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-sky-600 text-sm transition-transform duration-300" 
+                                   aria-label="Search events" role="search">
+                            <button id="search-button" 
+                                    class="bg-sky-600 text-white px-4 py-2 rounded-r-lg hover:bg-sky-700 transition duration-300" 
+                                    aria-label="Submit search">
+                                <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Upcoming Events -->
+                    <div class="bg-white rounded-xl p-6 shadow-md border border-gray-100">
+                        <h3 class="text-xl font-bold text-sky-600 mb-4">Upcoming Events</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-center hover:bg-gray-50 rounded-md p-2 transition-all duration-300">
+                                <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                                     alt="Study Abroad Fair" 
+                                     class="w-20 h-20 object-cover rounded-md mr-3 lazy-load">
+                                <div>
+                                    <span class="text-gray-800 font-medium line-clamp-2">Study Abroad Fair</span>
+                                    <p class="text-gray-600 text-sm">May 10, 2025</p>
+                                </div>
+                            </li>
+                            <li class="flex items-center hover:bg-gray-50 rounded-md p-2 transition-all duration-300">
+                                <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" 
+                                     alt="Visa Application Workshop" 
+                                     class="w-20 h-20 object-cover rounded-md mr-3 lazy-load">
+                                <div>
+                                    <span class="text-gray-800 font-medium line-clamp-2">Visa Application Workshop</span>
+                                    <p class="text-gray-600 text-sm">May 15, 2025</p>
+                                </div>
+                            </li>
+                            <li class="flex items-center hover:bg-gray-50 rounded-md p-2 transition-all duration-300">
+                                <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                                     alt="IELTS Preparation Webinar" 
+                                     class="w-20 h-20 object-cover rounded-md mr-3 lazy-load">
+                                <div>
+                                    <span class="text-gray-800 font-medium line-clamp-2">IELTS Preparation Webinar</span>
+                                    <p class="text-gray-600 text-sm">May 20, 2025</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Contact Form -->
+                    <div class="bg-white rounded-xl p-6 shadow-md border border-gray-100">
+                        <h3 class="text-xl font-bold text-sky-600 mb-4">Contact Us</h3>
+                        <form id="contact-form" class="space-y-4">
+                            <div>
+                                <label for="contact-name" class="block text-gray-700 mb-1 text-sm">Name</label>
+                                <input type="text" id="contact-name" name="name" required 
+                                       class="w-full px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-600 text-sm transition-transform duration-300">
+                            </div>
+                            <div>
+                                <label for="contact-email" class="block text-gray-700 mb-1 text-sm">Email</label>
+                                <input type="email" id="contact-email" name="email" required 
+                                       class="w-full px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-600 text-sm transition-transform duration-300">
+                            </div>
+                            <div>
+                                <label for="contact-message" class="block text-gray-700 mb-1 text-sm">Message</label>
+                                <textarea id="contact-message" name="message" rows="3" required 
+                                          class="w-full px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-600 text-sm transition-transform duration-300"></textarea>
+                            </div>
+                            <button type="submit" 
+                                    class="w-full bg-sky-600 hover:bg-sky-700 text-white font-semibold py-3 px-4 rounded-lg transition-all duration-300 flex items-center justify-center">
+                                <span id="contact-submit-text">Submit</span>
+                                <svg id="contact-submit-spinner" class="hidden h-5 w-5 animate-spin text-white ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                                </svg>
+                            </button>
+                        </form>
+                        <div id="contact-form-message" class="mt-4 hidden text-sm text-green-600"></div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-16 bg-gradient-to-r from-sky-500 to-sky-700 text-white relative overflow-hidden">
+    <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/white-diamond.png')] opacity-10"></div>
+    <div class="container mx-auto px-4 sm:px-6 text-center">
+        <h2 class="text-3xl sm:text-4xl font-bold mb-6 animate-fade-in">Don’t Miss Our Events!</h2>
+        <p class="text-lg sm:text-xl mb-8 max-w-3xl mx-auto opacity-90 animate-fade-in delay-100">
+            Register for workshops, webinars, and fairs to kickstart your study abroad journey with EDUHUB Universal Services
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4 animate-slide-up">
+            <button data-modal="consultation" 
+                    class="bg-white text-sky-600 hover:bg-gray-100 font-semibold py-4 px-10 rounded-full transition-all duration-300 shadow-lg animate-pulse">
+                Book a Consultation
+            </button>
+            <a href="/learn-more" 
+               class="border-2 border-white hover:bg-white hover:text-sky-600 font-semibold py-4 px-10 rounded-full transition-all duration-300 shadow-lg animate-pulse">
+                Learn More
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Consultation Modal -->
+<div id="consultationModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center hidden">
+    <div class="bg-white rounded-xl p-6 sm:p-8 max-w-md w-full mx-4 relative shadow-2xl">
+        <button id="closeModal" class="absolute top-4 right-4 text-gray-500 hover:text-gray-700" aria-label="Close modal">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </button>
+        <h2 class="text-2xl font-bold text-sky-600 mb-6">Book a Free Consultation</h2>
+        <form id="consultationForm" class="space-y-4">
+            <div>
+                <label for="name" class="block text-gray-700 mb-1 text-sm">Full Name</label>
+                <input type="text" id="name" name="name" required 
+                       class="w-full px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-600 text-sm">
+            </div>
+            <div>
+                <label for="email" class="block text-gray-700 mb-1 text-sm">Email</label>
+                <input type="email" id="email" name="email" required 
+                       class="w-full px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-600 text-sm">
+            </div>
+            <div>
+                <label for="phone" class="block text-gray-700 mb-1 text-sm">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required 
+                       class="w-full px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-600 text-sm">
+            </div>
+            <div>
+                <label for="country" class="block text-gray-700 mb-1 text-sm">Country of Interest</label>
+                <select id="country" name="country" required 
+                        class="w-full px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-600 text-sm">
+                    <option value="">Select a country</option>
+                    <option value="USA">United States</option>
+                    <option value="UK">United Kingdom</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Other" selected>Other</option>
+                </select>
+            </div>
+            <div>
+                <label for="program" class="block text-gray-700 mb-1 text-sm">Program of Interest</label>
+                <select id="program" name="program" required 
+                        class="w-full px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-600 text-sm">
+                    <option value="">Select a program</option>
+                    <option value="Bachelor's Degree">Bachelor's Degree</option>
+                    <option value="Master's Degree">Master's Degree</option>
+                    <option value="Other" selected>Other</option>
+                </select>
+            </div>
+            <div>
+                <label for="message" class="block text-gray-700 mb-1 text-sm">Additional Information</label>
+                <textarea id="message" name="message" rows="3" 
+                          class="w-full px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-600 text-sm"></textarea>
+            </div>
+            <button type="submit" 
+                    class="w-full bg-sky-600 hover:bg-sky-700 text-white font-semibold py-3 px-4 rounded-lg transition-all duration-300 flex items-center justify-center">
+                <span id="submitText">Submit Request</span>
+                <svg id="submitSpinner" class="hidden h-5 w-5 animate-spin text-white ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                </svg>
+            </button>
+        </form>
+        <div id="formMessage" class="mt-4 hidden text-sm text-green-600"></div>
+    </div>
+</div>
+
+<!-- Inline CSS -->
+<style>
+    /* Animations */
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fade-in {
+        animation: fadeIn 1s ease-out forwards;
+    }
+    .delay-100 {
+        animation-delay: 0.1s;
+    }
+    @keyframes slideUp {
+        from { opacity: 0; transform: translateY(30px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-slide-up {
+        animation: slideUp 1s ease-out forwards;
+    }
+    @keyframes pulse {
+        0%, 100% { transform: scale(1); }
+        50% { transform: scale(1.05); }
+    }
+    .animate-pulse {
+        animation: pulse 2s infinite;
+    }
+    /* Line Clamp */
+    .line-clamp-2 {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    .line-clamp-3 {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    /* Responsive Adjustments */
+    @media (max-width: 640px) {
+        .event-item h3 {
+            font-size: 1rem;
+        }
+        .event-item p {
+            font-size: 0.875rem;
+        }
+        .event-item img {
+            height: 40vw;
+        }
+    }
+    @media (min-width: 641px) and (max-width: 1023px) {
+        .event-item h3 {
+            font-size: 1.125rem;
+        }
+        .event-item img {
+            height: 20vw;
+        }
+    }
+    @media (min-width: 1024px) {
+        .event-item img {
+            height: 14rem;
+        }
+    }
+</style>
+
+<!-- Inline JavaScript -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Elements
+        const events = document.querySelectorAll('.event-item');
+        const noResults = document.getElementById('no-results');
+        const searchInput = document.getElementById('search-input');
+        const searchButton = document.getElementById('search-button');
+        const clearSearchButton = document.getElementById('clear-search');
+        const categoryFilters = document.querySelectorAll('.category-filter');
+        const modal = document.getElementById('consultationModal');
+        const openModalButtons = document.querySelectorAll('[data-modal="consultation"]');
+        const closeModalButton = document.getElementById('closeModal');
+        const consultationForm = document.getElementById('consultationForm');
+        const formMessage = document.getElementById('formMessage');
+        const submitButton = consultationForm.querySelector('button[type="submit"]');
+        const submitText = document.getElementById('submitText');
+        const submitSpinner = document.getElementById('submitSpinner');
+        const contactForm = document.getElementById('contact-form');
+        const contactFormMessage = document.getElementById('contact-form-message');
+        const contactSubmitButton = contactForm.querySelector('button[type="submit"]');
+        const contactSubmitText = document.getElementById('contact-submit-text');
+        const contactSubmitSpinner = document.getElementById('contact-submit-spinner');
+
+        let activeCategory = 'All';
+        let searchTerm = '';
+
+        // Lazy Load Images
+        const lazyImages = document.querySelectorAll('img.lazy-load');
+        const imageObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const img = entry.target;
+                    img.src = img.src; // Trigger load
+                    img.classList.remove('lazy-load');
+                    observer.unobserve(img);
+                }
+            });
+        });
+        lazyImages.forEach(img => imageObserver.observe(img));
+
+        // Update Events Visibility
+        function updateEvents() {
+            let visibleEvents = Array.from(events);
+
+            // Filter by search term
+            if (searchTerm) {
+                visibleEvents = visibleEvents.filter(event => 
+                    event.dataset.title.toLowerCase().includes(searchTerm)
+                );
+            }
+
+            // Filter by category
+            if (activeCategory !== 'All') {
+                visibleEvents = visibleEvents.filter(event => 
+                    event.dataset.category === activeCategory
+                );
+            }
+
+            // Update visibility
+            events.forEach(event => {
+                event.style.display = visibleEvents.includes(event) ? 'block' : 'none';
+            });
+
+            // Show/hide no results message
+            noResults.style.display = visibleEvents.length === 0 ? 'block' : 'none';
+        }
+
+        // Search Handler
+        searchInput.addEventListener('input', () => {
+            searchTerm = searchInput.value.toLowerCase();
+            updateEvents();
+        });
+        searchButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            updateEvents();
+        });
+        clearSearchButton.addEventListener('click', () => {
+            searchTerm = '';
+            searchInput.value = '';
+            updateEvents();
+        });
+
+        // Category Filter
+        categoryFilters.forEach(button => {
+            button.addEventListener('click', () => {
+                activeCategory = button.dataset.category;
+                categoryFilters.forEach(btn => {
+                    btn.classList.toggle('bg-sky-600', btn === button);
+                    btn.classList.toggle('text-white', btn === button);
+                    btn.classList.toggle('text-sky-600', btn !== button);
+                    btn.classList.toggle('hover:bg-sky-600', btn !== button);
+                    btn.classList.toggle('hover:text-white', btn !== button);
+                    btn.setAttribute('aria-current', btn === button ? 'true' : 'false');
+                });
+                updateEvents();
+            });
+        });
+
+        // Modal Handlers
+        openModalButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                modal.classList.remove('hidden');
+                document.getElementById('country').value = 'Other';
+                document.getElementById('program').value = 'Other';
+            });
+        });
+        closeModalButton.addEventListener('click', () => {
+            modal.classList.add('hidden');
+            formMessage.classList.add('hidden');
+            consultationForm.reset();
+        });
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.classList.add('hidden');
+                formMessage.classList.add('hidden');
+                consultationForm.reset();
+            }
+        });
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+                modal.classList.add('hidden');
+                formMessage.classList.add('hidden');
+                consultationForm.reset();
+            }
+        });
+
+        // Consultation Form Submission (Client-side Simulation)
+        consultationForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            submitText.classList.add('hidden');
+            submitSpinner.classList.remove('hidden');
+            submitButton.disabled = true;
+
+            setTimeout(() => {
+                formMessage.classList.remove('hidden');
+                formMessage.classList.add('text-green-600');
+                formMessage.textContent = 'Thank you for your request! We’ll get back to you soon.';
+                submitText.classList.remove('hidden');
+                submitSpinner.classList.add('hidden');
+                submitButton.disabled = false;
+                consultationForm.reset();
+                document.getElementById('country').value = 'Other';
+                document.getElementById('program').value = 'Other';
+            }, 1000);
+        });
+
+        // Contact Form Submission (Client-side Simulation)
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            contactSubmitText.classList.add('hidden');
+            contactSubmitSpinner.classList.remove('hidden');
+            contactSubmitButton.disabled = true;
+
+            setTimeout(() => {
+                contactFormMessage.classList.remove('hidden');
+                contactFormMessage.textContent = 'Thank you for your message! Our team will respond soon.';
+                contactSubmitText.classList.remove('hidden');
+                contactSubmitSpinner.classList.add('hidden');
+                contactSubmitButton.disabled = false;
+                contactForm.reset();
+            }, 1000);
+        });
+
+        // Animation on Scroll
+        const animateElements = document.querySelectorAll('.animate-slide-up, .animate-fade-in');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        animateElements.forEach(el => {
+            el.classList.add('opacity-0');
+            observer.observe(el);
+        });
+
+        // Initial Update
+        updateEvents();
+    });
+</script>
+{% endblock %}

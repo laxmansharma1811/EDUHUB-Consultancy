@@ -1,0 +1,979 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Home - EDUHUB Universal Services{% endblock %}
+
+
+{% block content %}
+
+<!-- Inline CSS for Animations -->
+<style>
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fade-in {
+        animation: fadeIn 1s ease-out forwards;
+    }
+    @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+        40% { transform: translateY(-10px); }
+        60% { transform: translateY(-5px); }
+    }
+    .animate-bounce {
+        animation: bounce 2s infinite;
+    }
+</style>
+    <!-- Hero Section with Image Background -->
+<section class="relative min-h-[80vh] flex items-center overflow-hidden bg-gradient-to-r from-sky-600 to-blue-800 text-white">
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-gradient-to-r from-blue-900/70 to-sky-600/50 z-0"></div>
+    
+    <!-- Content -->
+    <div class="container mx-auto px-4 sm:px-6 py-16 relative z-10 mb-16">
+        <div class="flex flex-col lg:flex-row items-center justify-between gap-8">
+            <!-- Text Content -->
+            <div class="w-full lg:w-1/2 animate-fade-in text-center lg:text-left">
+                <div class="bg-white/10 backdrop-blur-sm text-white px-3 py-1 sm:px-4 sm:py-2 rounded-full inline-flex items-center mb-4 sm:mb-6 border border-white/20 text-sm sm:text-base">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 sm:h-5 sm:w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    Trusted by 5,000+ Students Worldwide
+                </div>
+                
+                <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 leading-tight text-white">
+                    Your Global Education <span class="text-yellow-400">Dreams</span> Start Here
+                </h1>
+                
+                <p class="text-base sm:text-lg md:text-xl mb-6 sm:mb-8 text-white/90 max-w-xl mx-auto lg:mx-0">
+                    Expert guidance for studying abroad in top destinations like USA, UK, Canada, Australia and more.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start">
+                    <a href="#consultation-form" 
+                       class="bg-yellow-500 hover:bg-yellow-600 text-gray-900 px-6 py-3 sm:px-8 sm:py-4 rounded-lg font-bold inline-flex items-center justify-center transition duration-300 animate-bounce text-sm sm:text-base">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                        </svg>
+                        Book Free Consultation
+                    </a>
+
+                    <a href="tel:+11234567890" 
+                       class="bg-white/10 hover:bg-white/20 text-white px-6 py-3 sm:px-8 sm:py-4 rounded-lg font-bold inline-flex items-center justify-center transition duration-300 border border-white/20 text-sm sm:text-base">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                        </svg>
+                        Call Now: 01-4167621
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Image -->
+            <div class="w-full lg:w-1/2 mt-8 lg:mt-0">
+                <img src="{% static 'assets/image.png' %}" 
+                     alt="Global Education" 
+                     class="w-full h-auto rounded-lg shadow-lg object-cover max-h-[300px] sm:max-h-[400px] lg:max-h-[500px]" 
+                     loading="lazy">
+            </div>
+        </div>
+    </div>
+   
+    
+    <!-- Stats Bar -->
+    <div class="absolute bottom-0 left-0 right-0 bg-white/10 backdrop-blur-md border-t border-white/10 z-10 py-4">
+        <div class="container mx-auto px-4 sm:px-6">
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center text-white">
+                <div class="p-2">
+                    <div class="text-2xl sm:text-3xl font-bold mb-1">12+</div>
+                    <div class="text-xs sm:text-sm opacity-80">Years Experience</div>
+                </div>
+                <div class="p-2">
+                    <div class="text-2xl sm:text-3xl font-bold mb-1">50+</div>
+                    <div class="text-xs sm:text-sm opacity-80">Countries</div>
+                </div>
+                <div class="p-2">
+                    <div class="text-2xl sm:text-3xl font-bold mb-1">50+</div>
+                    <div class="text-xs sm:text-sm opacity-80">Universities</div>
+                </div>
+                <div class="p-2">
+                    <div class="text-2xl sm:text-3xl font-bold mb-1">5K+</div>
+                    <div class="text-xs sm:text-sm opacity-80">Students</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Popular Destinations Section -->
+<section class="py-16 bg-gray-50" id="destinations-section">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-16 reveal fade">
+            <h2 class="text-4xl font-bold mb-4 text-gray-900">Explore Popular Study Destinations</h2>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                We partner with top universities and colleges across the globe to provide you with the best education opportunities.
+            </p>
+        </div>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- USA -->
+            <div class="relative group overflow-hidden rounded-xl shadow-lg h-80 reveal slide-up stagger-1">
+                <img src="https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                     alt="USA" 
+                     class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
+                <div class="absolute bottom-0 left-0 p-6 w-full">
+                    <div class="flex items-center mb-2">
+                        <img src="https://cdn-icons-png.flaticon.com/512/323/323310.png" alt="USA Flag" class="h-6 w-6 mr-2">
+                        <h3 class="text-2xl font-bold text-white">United States</h3>
+                    </div>
+                    <p class="text-white/90 mb-4">Home to Ivy League and top-ranked universities with cutting-edge research facilities.</p>
+                    <a href="{% url 'usa' %}" class="inline-flex items-center text-yellow-400 font-medium hover:text-yellow-300 transition">
+                        Explore USA
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="absolute top-4 right-4 bg-yellow-500 text-gray-900 px-3 py-1 rounded-full text-sm font-bold">
+                    #1 Destination
+                </div>
+            </div>
+            
+            <!-- UK -->
+            <div class="relative group overflow-hidden rounded-xl shadow-lg h-80 reveal slide-up stagger-2">
+                <img src="https://images.unsplash.com/photo-1486299267070-83823f5448dd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                     alt="UK" 
+                     class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
+                <div class="absolute bottom-0 left-0 p-6 w-full">
+                    <div class="flex items-center mb-2">
+                        <img src="https://cdn-icons-png.flaticon.com/512/197/197374.png" alt="UK Flag" class="h-6 w-6 mr-2">
+                        <h3 class="text-2xl font-bold text-white">United Kingdom</h3>
+                    </div>
+                    <p class="text-white/90 mb-4">World-class education with prestigious institutions like Oxford and Cambridge.</p>
+                    <a href="{% url 'united_kingdom' %}" class="inline-flex items-center text-yellow-400 font-medium hover:text-yellow-300 transition">
+                        Explore UK
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Canada -->
+            <div class="relative group overflow-hidden rounded-xl shadow-lg h-80 reveal slide-up stagger-3">
+                <img src="https://images.unsplash.com/photo-1506929562872-bb421503ef21?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                     alt="Canada" 
+                     class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
+                <div class="absolute bottom-0 left-0 p-6 w-full">
+                    <div class="flex items-center mb-2">
+                        <img src="https://cdn-icons-png.flaticon.com/512/197/197430.png" alt="Canada Flag" class="h-6 w-6 mr-2">
+                        <h3 class="text-2xl font-bold text-white">Canada</h3>
+                    </div>
+                    <p class="text-white/90 mb-4">Affordable education with excellent post-study work opportunities.</p>
+                    <a href="{% url 'canada' %}" class="inline-flex items-center text-yellow-400 font-medium hover:text-yellow-300 transition">
+                        Explore Canada
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Australia -->
+            <div class="relative group overflow-hidden rounded-xl shadow-lg h-80 reveal slide-up stagger-4">
+                <img src="https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                     alt="Australia" 
+                     class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
+                <div class="absolute bottom-0 left-0 p-6 w-full">
+                    <div class="flex items-center mb-2">
+                        <img src="https://cdn-icons-png.flaticon.com/512/197/197589.png" alt="Australia Flag" class="h-6 w-6 mr-2">
+                        <h3 class="text-2xl font-bold text-white">Australia</h3>
+                    </div>
+                    <p class="text-white/90 mb-4">High-quality education with a great lifestyle and work opportunities.</p>
+                    <a href="{% url 'australia' %}" class="inline-flex items-center text-yellow-400 font-medium hover:text-yellow-300 transition">
+                        Explore Australia
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Additional Destinations -->
+        <div id="additional-destinations" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-8 collapsed">
+            <!-- France -->
+            <div class="relative group overflow-hidden rounded-xl shadow-lg h-80 reveal zoom-in stagger-1">
+                <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                     alt="France" 
+                     class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
+                <div class="absolute bottom-0 left-0 p-6 w-full">
+                    <div class="flex items-center mb-2">
+                        <img src="https://cdn-icons-png.flaticon.com/512/197/197560.png" alt="France Flag" class="h-6 w-6 mr-2">
+                        <h3 class="text-2xl font-bold text-white">France</h3>
+                    </div>
+                    <p class="text-white/90 mb-4">Renowned for arts, culture, and prestigious institutions like Sorbonne University.</p>
+                    <a href="{% url 'france' %}" class="inline-flex items-center text-yellow-400 font-medium hover:text-yellow-300 transition">
+                        Explore France
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Malta -->
+            <div class="relative group overflow-hidden rounded-xl shadow-lg h-80 reveal zoom-in stagger-2">
+                <img src="https://th.bing.com/th/id/R.4a6c56cea070066dfd6ef1c78a393eaa?rik=n94ZIHt%2fGtDoNg&pid=ImgRaw&r=0" 
+                     alt="Malta" 
+                     class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
+                <div class="absolute bottom-0 left-0 p-6 w-full">
+                    <div class="flex items-center mb-2">
+                        <img src="https://cdn-icons-png.flaticon.com/512/197/197533.png" alt="Malta Flag" class="h-6 w-6 mr-2">
+                        <h3 class="text-2xl font-bold text-white">Malta</h3>
+                    </div>
+                    <p class="text-white/90 mb-4">Affordable education with a Mediterranean lifestyle and English-taught programs.</p>
+                    <a href="{% url 'malta' %}" class="inline-flex items-center text-yellow-400 font-medium hover:text-yellow-300 transition">
+                        Explore Malta
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Denmark -->
+            <div class="relative group overflow-hidden rounded-xl shadow-lg h-80 reveal zoom-in stagger-3">
+                <img src="https://th.bing.com/th/id/OSK.HEROWXnZII3bRa_PgL_J7EJIP0I_4JHle69ux8UzapyBblE?w=312&h=200&c=15&rs=2&o=6&dpr=1.3&pid=SANGAM" 
+                     alt="Denmark" 
+                     class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
+                <div class="absolute bottom-0 left-0 p-6 w-full">
+                    <div class="flex items-center mb-2">
+                        <img src="https://cdn-icons-png.flaticon.com/512/197/197565.png" alt="Denmark Flag" class="h-6 w-6 mr-2">
+                        <h3 class="text-2xl font-bold text-white">Denmark</h3>
+                    </div>
+                    <p class="text-white/90 mb-4">Innovative education system with free tuition for EU students and strong research focus.</p>
+                    <a href="{% url 'denmark' %}" class="inline-flex items-center text-yellow-400 font-medium hover:text-yellow-300 transition">
+                        Explore Denmark
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Korea -->
+            <div class="relative group overflow-hidden rounded-xl shadow-lg h-80 reveal zoom-in stagger-4">
+                <img src="https://images.unsplash.com/photo-1517154421773-0529f29ea451?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                     alt="Korea" 
+                     class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
+                <div class="absolute bottom-0 left-0 p-6 w-full">
+                    <div class="flex items-center mb-2">
+                        <img src="https://cdn-icons-png.flaticon.com/512/197/197582.png" alt="Korea Flag" class="h-6 w-6 mr-2">
+                        <h3 class="text-2xl font-bold text-white">South Korea</h3>
+                    </div>
+                    <p class="text-white/90 mb-4">Cutting-edge technology and vibrant culture with top universities like Seoul National.</p>
+                    <a href="{% url 'south_korea' %}" class="inline-flex items-center text-yellow-400 font-medium hover:text-yellow-300 transition">
+                        Explore Korea
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Hungary -->
+            <div class="relative group overflow-hidden rounded-xl shadow-lg h-80 reveal zoom-in stagger-1">
+                <img src="https://www.internationaltraveller.com/wp-content/uploads/2015/04/FPO_BUD_430.jpg" 
+                     alt="Hungary" 
+                     class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
+                <div class="absolute bottom-0 left-0 p-6 w-full">
+                    <div class="flex items-center mb-2">
+                        <img src="https://cdn-icons-png.flaticon.com/512/197/197375.png" alt="Hungary Flag" class="h-6 w-6 mr-2">
+                        <h3 class="text-2xl font-bold text-white">Hungary</h3>
+                    </div>
+                    <p class="text-white/90 mb-4">Affordable education with a rich history and renowned medical programs.</p>
+                    <a href="{% url 'hungary' %}" class="inline-flex items-center text-yellow-400 font-medium hover:text-yellow-300 transition">
+                        Explore Hungary
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Germany -->
+            <div class="relative group overflow-hidden rounded-xl shadow-lg h-80 reveal zoom-in stagger-2">
+                <img src="https://images.wallpapersden.com/image/download/germany-cologne-bridge-building-city_am5uZ26UmZqaraWkpJRnZWltrWZoa2o.jpg" 
+                     alt="Germany" 
+                     class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
+                <div class="absolute bottom-0 left-0 p-6 w-full">
+                    <div class="flex items-center mb-2">
+                        <img src="https://cdn-icons-png.flaticon.com/512/197/197571.png" alt="Germany Flag" class="h-6 w-6 mr-2">
+                        <h3 class="text-2xl font-bold text-white">Germany</h3>
+                    </div>
+                    <p class="text-white/90 mb-4">Free or low-cost education with world-class engineering and research programs.</p>
+                    <a href="{% url 'germany' %}" class="inline-flex items-center text-yellow-400 font-medium hover:text-yellow-300 transition">
+                        Explore Germany
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center mt-12">
+            <button id="toggle-destinations" 
+                    class="inline-flex items-center px-8 py-3 bg-gray-900 hover:bg-gray-800 text-white rounded-lg font-medium transition duration-300" 
+                    aria-expanded="false" 
+                    aria-controls="additional-destinations">
+                <span id="toggle-text">View All Destinations</span>
+                <svg id="toggle-icon" class="h-5 w-5 ml-2 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+            </button>
+        </div>
+    </div>
+</section>
+
+    <!-- Services Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4 text-gray-900">Our Comprehensive Services</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    From university selection to visa processing, we handle everything to make your study abroad journey smooth.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-gray-50 rounded-xl p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100">
+                    <div class="w-14 h-14 bg-yellow-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-yellow-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path d="M12 14l9-5-9-5-9 5 9 5z" />
+                            <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">University Selection</h3>
+                    <p class="text-gray-600 mb-4">
+                        We help you find the perfect university based on your academic profile, budget, and career goals.
+                    </p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            Personalized shortlisting
+                        </li>
+                        <li class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            Admission requirements
+                        </li>
+                        <li class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            Application strategy
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="bg-gray-50 rounded-xl p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100">
+                    <div class="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Visa Assistance</h3>
+                    <p class="text-gray-600 mb-4">
+                        Our visa experts guide you through the entire process with a 95% success rate.
+                    </p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            Document preparation
+                        </li>
+                        <li class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            Financial proof guidance
+                        </li>
+                        <li class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            Mock visa interviews
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="bg-gray-50 rounded-xl p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100">
+                    <div class="w-14 h-14 bg-purple-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Scholarship Guidance</h3>
+                    <p class="text-gray-600 mb-4">
+                        We help you identify and apply for scholarships to reduce your education costs.
+                    </p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            Merit-based scholarships
+                        </li>
+                        <li class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            Need-based financial aid
+                        </li>
+                        <li class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            Application essay review
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="bg-gray-50 rounded-xl p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100">
+                    <div class="w-14 h-14 bg-green-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Pre-Departure Support</h3>
+                    <p class="text-gray-600 mb-4">
+                        We prepare you for life abroad with comprehensive orientation sessions.
+                    </p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            Accommodation assistance
+                        </li>
+                        <li class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            Travel arrangements
+                        </li>
+                        <li class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            Cultural orientation
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="bg-gray-50 rounded-xl p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100">
+                    <div class="w-14 h-14 bg-red-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Test Preparation</h3>
+                    <p class="text-gray-600 mb-4">
+                        Expert coaching for IELTS, TOEFL, GRE, GMAT, SAT and other standardized tests.
+                    </p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            Diagnostic tests
+                        </li>
+                        <li class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            Personalized study plans
+                        </li>
+                        <li class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            Mock tests with feedback
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="bg-gray-50 rounded-xl p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100">
+                    <div class="w-14 h-14 bg-indigo-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Career Counseling</h3>
+                    <p class="text-gray-600 mb-4">
+                        We help align your education with your career aspirations for long-term success.
+                    </p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            Career assessment
+                        </li>
+                        <li class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            Industry trends
+                        </li>
+                        <li class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            Job market insights
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="py-16 bg-gradient-to-r from-sky-600 to-blue-800 text-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">Why Choose EDUHUB Global ?</h2>
+                <p class="text-lg text-gray-300 max-w-2xl mx-auto">
+                    We stand out from the crowd with our exceptional services and student-first approach.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-800 rounded-xl p-8 hover:bg-gray-700 transition duration-300">
+                    <div class="text-yellow-400 text-5xl font-bold mb-4">01</div>
+                    <h3 class="text-xl font-bold mb-3">10+ Years Experience</h3>
+                    <p class="text-gray-300">
+                        Our team brings decades of combined experience in international education consulting.
+                    </p>
+                </div>
+                
+                <div class="bg-gray-800 rounded-xl p-8 hover:bg-gray-700 transition duration-300">
+                    <div class="text-yellow-400 text-5xl font-bold mb-4">02</div>
+                    <h3 class="text-xl font-bold mb-3">50+ Partner Institutions</h3>
+                    <p class="text-gray-300">
+                        Strong relationships with top universities worldwide give our students an edge.
+                    </p>
+                </div>
+                
+                <div class="bg-gray-800 rounded-xl p-8 hover:bg-gray-700 transition duration-300">
+                    <div class="text-yellow-400 text-5xl font-bold mb-4">03</div>
+                    <h3 class="text-xl font-bold mb-3">End-to-End Support</h3>
+                    <p class="text-gray-300">
+                        From initial counseling to post-arrival support, we're with you at every step.
+                    </p>
+                </div>
+                
+                <div class="bg-gray-800 rounded-xl p-8 hover:bg-gray-700 transition duration-300">
+                    <div class="text-yellow-400 text-5xl font-bold mb-4">04</div>
+                    <h3 class="text-xl font-bold mb-3">95% Visa Success Rate</h3>
+                    <p class="text-gray-300">
+                        Our meticulous approach to visa applications ensures high approval rates.
+                    </p>
+                </div>
+                
+                <div class="bg-gray-800 rounded-xl p-8 hover:bg-gray-700 transition duration-300">
+                    <div class="text-yellow-400 text-5xl font-bold mb-4">05</div>
+                    <h3 class="text-xl font-bold mb-3">Scholarship Assistance</h3>
+                    <p class="text-gray-300">
+                        We've helped students secure over $10M in scholarships and financial aid.
+                    </p>
+                </div>
+                
+                <div class="bg-gray-800 rounded-xl p-8 hover:bg-gray-700 transition duration-300">
+                    <div class="text-yellow-400 text-5xl font-bold mb-4">06</div>
+                    <h3 class="text-xl font-bold mb-3">Post-Study Support</h3>
+                    <p class="text-gray-300">
+                        We continue to support students with internships and job placements after graduation.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4 text-gray-900">Success Stories</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Hear from our students who have achieved their study abroad dreams with our help.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-gray-50 rounded-xl p-8 hover:shadow-lg transition duration-300">
+                    <div class="flex items-center mb-6">
+                        <img src="{% static 'assets/student/bipson.jpg' %}" alt="Priya Patel" class="w-16 h-16 rounded-full mr-4 object-cover">
+                        <div>
+                            <h4 class="font-bold text-gray-900">Bipson Shrestha</h4>
+                            <p class="text-sm text-gray-500">Victoria University, Sydney</p>
+                            <div class="flex mt-1">
+                                <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                </svg>
+                                <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                </svg>
+                                <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                </svg>
+                                <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                </svg>
+                                <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">
+                        "Global Link made my Australian study dream come true. Their guidance on university selection and visa process was exceptional. I couldn't have done it without them!"
+                    </p>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-gray-50 rounded-xl p-8 hover:shadow-lg transition duration-300">
+                    <div class="flex items-center mb-6">
+                        <img src="{% static 'assets/student/nitesh.jpg' %}" alt="Rahul Sharma" class="w-16 h-16 rounded-full mr-4 object-cover">
+                        <div>
+                            <h4 class="font-bold text-gray-900">Nitesh Manandhar</h4>
+                            <p class="text-sm text-gray-500">Charles Darwin University, Australia</p>
+                            <div class="flex mt-1">
+                                <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                </svg>
+                                <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                </svg>
+                                <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                </svg>
+                                <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                </svg>
+                                <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">
+                        "The team helped me secure a 50% scholarship at Melbourne University. Their knowledge of the Australian education system was impressive and saved me thousands of dollars."
+                    </p>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-gray-50 rounded-xl p-8 hover:shadow-lg transition duration-300">
+                    <div class="flex items-center mb-6">
+                        <img src="{% static 'assets/student/smriti.jpeg' %}" alt="Smriti Basnet" class="w-16 h-16 rounded-full mr-4 object-cover">
+                        <div>
+                            <h4 class="font-bold text-gray-900">Smriti Basnet</h4>
+                            <p class="text-sm text-gray-500">Weber State University, US</p>
+                            <div class="flex mt-1">
+                                <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                </svg>
+                                <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                </svg>
+                                <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                </svg>
+                                <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                </svg>
+                                <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">
+                        "Getting into NYU was my dream. Global Link's counselors helped me craft the perfect application that stood out from thousands of applicants."
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Consultation Form Section -->
+    <section id="consultation-form" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden">
+                <div class="md:flex">
+                    <div class="md:w-1/2 bg-primary text-white p-8 md:p-12">
+                        <h2 class="text-3xl font-bold mb-4">Free Consultation</h2>
+                        <p class="mb-6">
+                            Book a free 30-minute consultation with our education experts to discuss your study abroad options.
+                        </p>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
+                                </svg>
+                                <div>
+                                    <h4 class="font-bold">Expert Advice</h4>
+                                    <p class="text-sm text-white/90">Get personalized recommendations from experienced counselors.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                                </svg>
+                                <div>
+                                    <h4 class="font-bold">Application Strategy</h4>
+                                    <p class="text-sm text-white/90">Learn how to strengthen your university applications.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                                <div>
+                                    <h4 class="font-bold">Scholarship Tips</h4>
+                                    <p class="text-sm text-white/90">Discover funding opportunities to reduce your costs.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 p-8 md:p-12">
+                        <form class="space-y-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+                                <input type="text" id="name" name="name" required 
+                                       class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary transition duration-300">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                                <input type="email" id="email" name="email" required 
+                                       class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary transition duration-300">
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" 
+                                       class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary transition duration-300">
+                            </div>
+                            <div>
+                                <label for="country" class="block text-sm font-medium text-gray-700 mb-1">Preferred Study Destination</label>
+                                <select id="country" name="country" 
+                                        class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary transition duration-300">
+                                    <option value="">Select Country</option>
+                                    <option value="USA">United States</option>
+                                    <option value="UK">United Kingdom</option>
+                                    <option value="Canada">Canada</option>
+                                    <option value="Australia">Australia</option>
+                                    <option value="Germany">Germany</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Your Message</label>
+                                <textarea id="message" name="message" rows="3" 
+                                          class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary transition duration-300"></textarea>
+                            </div>
+                            <button type="submit" 
+                                    class="w-full bg-primary hover:bg-primary-dark text-white font-bold py-3 px-4 rounded-lg transition duration-300">
+                                Book Free Consultation
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4 text-gray-900">Latest Study Abroad Insights</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Stay updated with the latest trends, tips, and news in international education.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Blog Post 1 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" 
+                         alt="Study in USA" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-2">
+                            <span>May 15, 2023</span>
+                            <span class="mx-2">•</span>
+                            <span>5 min read</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-gray-900">Top 10 Universities in the USA for International Students</h3>
+                        <p class="text-gray-600 mb-4">
+                            Discover the best universities in the United States that offer exceptional programs for international students.
+                        </p>
+                        
+                    </div>
+                </div>
+                
+                <!-- Blog Post 2 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" 
+                         alt="UK Student Visa" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-2">
+                            <span>April 28, 2023</span>
+                            <span class="mx-2">•</span>
+                            <span>4 min read</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-gray-900">UK Student Visa Process: A Step-by-Step Guide</h3>
+                        <p class="text-gray-600 mb-4">
+                            Everything you need to know about applying for a UK student visa, including documents and requirements.
+                        </p>
+                       
+                    </div>
+                </div>
+                
+                <!-- Blog Post 3 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1607237138185-eedd9c632b0b" 
+                         alt="Scholarships" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-2">
+                            <span>April 10, 2023</span>
+                            <span class="mx-2">•</span>
+                            <span>6 min read</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-gray-900">How to Secure Scholarships for Studying Abroad</h3>
+                        <p class="text-gray-600 mb-4">
+                            Proven strategies to find and win scholarships that can significantly reduce your education costs abroad.
+                        </p>
+                       
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="py-16 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Begin Your Study Abroad Journey?</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">
+                Take the first step towards your global education today. Our experts are ready to guide you.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="tel:+11234567890" 
+                   class="bg-white text-gray-900 hover:bg-gray-100 px-8 py-4 rounded-lg font-bold inline-flex items-center justify-center transition duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                    </svg>
+                    Call Now: 01-4167621
+                </a>
+                <a href="#consultation-form" 
+                   class="bg-transparent border-2 border-white hover:bg-white/10 px-8 py-4 rounded-lg font-bold inline-flex items-center justify-center transition duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                    Send Us a Message
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom Styles -->
+    <style>
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in {
+            animation: fadeIn 1s ease-out forwards;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-15px); }
+            60% { transform: translateY(-7px); }
+        }
+        .animate-bounce {
+            animation: bounce 2s infinite;
+        }
+
+        /* Hover Effects */
+        .transition-all {
+            transition-property: all;
+        }
+        .duration-300 {
+            transition-duration: 300ms;
+        }
+
+        /* Video Background */
+        video {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        #additional-destinations {
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition: max-height 0.6s ease-out, opacity 0.4s ease-out;
+    }
+
+    #additional-destinations:not(.collapsed) {
+        max-height: 2000px; /* Adjust based on content height */
+        opacity: 1;
+    }
+
+    #additional-destinations.collapsed .reveal {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+
+    #additional-destinations:not(.collapsed) .reveal {
+        animation: zoomIn 0.5s ease-out forwards;
+    }
+    </style>
+
+
+{% endblock %}
