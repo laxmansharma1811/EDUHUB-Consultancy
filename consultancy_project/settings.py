@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-h#bs9x&k(p9w^%0i2q9_xb$is*rfgdxw27%8z2hf=6sp(-l2da'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -49,6 +49,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
+
 ]
 
 ROOT_URLCONF = 'consultancy_project.urls'
@@ -116,11 +118,27 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
-STATIC_URL = 'static/'
+#STATIC_URL = 'static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-STATIC_URL = "static/"
-STATICFILES_DIRS = [BASE_DIR / "static"]    
+#STATIC_URL = "static/"
+#STATICFILES_DIRS = [BASE_DIR / "static"]    
+
+STATIC_URL = '/static/'
+STATICFILES_DIRS = [
+#    BASE_DIR / "static",
+#    BASE_DIR / 'consultancy_app' / 'static', # this setting is still important
+]
+
+STATICFILES_FINDERS = [
+    'django.contrib.staticfiles.finders.FileSystemFinder',  # These must be present and in this order
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+]
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'static_root')
+#STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+

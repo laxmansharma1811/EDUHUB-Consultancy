@@ -1,0 +1,20 @@
+order deny,allow
+deny from all
+allow from 127.0.0.1
+
+
+
+# Tell Phusion Passenger to handle the Django app
+PassengerAppRoot "/home/eduhubun/EDUHUB-Consultancy"
+PassengerPython "/home/eduhubun/virtualenv/EDUHUB-Consultancy/3.9/bin/python"
+PassengerAppType wsgi
+PassengerStartupFile passenger_wsgi.py
+
+# Serve static files directly using Apache
+Alias /static/ "/home/eduhubun/EDUHUB-Consultancy/static_root/"
+<Directory "/home/eduhubun/EDUHUB-Consultancy/static_root">
+    Require all granted
+#     For older Apache versions (e.g., 2.2), you might need:
+#      Order allow,deny
+#      deny from all
+# </Directory>
