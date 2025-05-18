@@ -35,8 +35,20 @@
                     'slide-right': 'slideRight 0.8s ease-out forwards',
                     'zoom-in': 'zoomIn 1s ease-out forwards',
                     'spin-slow': 'spin 8s linear infinite',
+                    scroll: 'scroll 40s linear infinite',
+                    'scroll-reverse': 'scroll-reverse 35s linear infinite'
                 }
             },
+            keyframes: {
+        scroll: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(calc(-50%))' }
+        },
+        'scroll-reverse': {
+          '0%': { transform: 'translateX(calc(-50%))' },
+          '100%': { transform: 'translateX(0)' }
+        }
+      },
         },
     }
 </script>
@@ -577,35 +589,71 @@
     {% endblock %}
 </main>
 
-<!-- College Images Slider -->
-<section class="college-slider bg-white py-6">
-    <div class="container mx-auto px-6">
-        <h2 class="text-4xl font-bold text-center text-gray-900 mb-4 reveal fade">Our Partner Universities</h2>
-        <div class="relative">
-            <div class="slider-track">
-                {% with numbers="1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30" %}
-                    {% for i in numbers.split %}
-                        <div class="slider-item">
-                            <img src="{% static 'assets/university/img' %}{{ i }}.jpeg" 
-                                 alt="Partner University {{ i }}" 
-                                 class="rounded-lg shadow-md">
-                        </div>
-                    {% endfor %}
-                {% endwith %}
+
+<!-- Partner Universities Showcase -->
+<section class="py-16 bg-gradient-to-r from-blue-50 to-indigo-50 overflow-hidden">
+  <div class="container mx-auto px-4">
+    <h2 class="text-4xl font-bold text-center text-gray-900 mb-10 relative">
+      <span class="relative inline-block">
+        Our Partner Universities
+        <span class="absolute bottom-0 left-0 w-full h-1 bg-indigo-500 transform translate-y-2"></span>
+      </span>
+    </h2>
+    
+    <!-- First Slider (Left to Right) -->
+    <div class="relative overflow-hidden mb-8">
+      <div class="flex space-x-6 animate-[scroll_40s_linear_infinite]">
+        {% with numbers="1 2 3 4 5 6 7 8 9 10 11 12 13 14 15" %}
+          {% for i in numbers.split %}
+            <div class="flex-shrink-0 transition-transform duration-300 hover:scale-105">
+              <div class="bg-white p-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 w-48 h-36 flex items-center justify-center">
+                <img src="{% static 'assets/university/img' %}{{ i }}.jpeg" 
+                     alt="Partner University {{ i }}" 
+                     class="max-w-full max-h-full object-contain rounded-lg">
+              </div>
             </div>
-            <!-- Navigation Arrows -->
-            <button class="slider-nav slider-prev" aria-label="Previous Slide">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-                </svg>
-            </button>
-            <button class="slider-nav slider-next" aria-label="Next Slide">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                </svg>
-            </button>
-        </div>
+          {% endfor %}
+          <!-- Duplicate first set for seamless looping -->
+          {% for i in numbers.split %}
+            <div class="flex-shrink-0 transition-transform duration-300 hover:scale-105">
+              <div class="bg-white p-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 w-48 h-36 flex items-center justify-center">
+                <img src="{% static 'assets/university/img' %}{{ i }}.jpeg" 
+                     alt="Partner University {{ i }}" 
+                     class="max-w-full max-h-full object-contain rounded-lg">
+              </div>
+            </div>
+          {% endfor %}
+        {% endwith %}
+      </div>
     </div>
+    
+    <!-- Second Slider (Right to Left) - Different Speed -->
+    <div class="relative overflow-hidden">
+      <div class="flex space-x-6 animate-[scroll-reverse_35s_linear_infinite]">
+        {% with numbers="16 17 18 19 20 21 22 23 24 25 26 27 28 29 30" %}
+          {% for i in numbers.split %}
+            <div class="flex-shrink-0 transition-transform duration-300 hover:scale-105">
+              <div class="bg-white p-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 w-48 h-36 flex items-center justify-center">
+                <img src="{% static 'assets/university/img' %}{{ i }}.jpeg" 
+                     alt="Partner University {{ i }}" 
+                     class="max-w-full max-h-full object-contain rounded-lg">
+              </div>
+            </div>
+          {% endfor %}
+          <!-- Duplicate second set for seamless looping -->
+          {% for i in numbers.split %}
+            <div class="flex-shrink-0 transition-transform duration-300 hover:scale-105">
+              <div class="bg-white p-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 w-48 h-36 flex items-center justify-center">
+                <img src="{% static 'assets/university/img' %}{{ i }}.jpeg" 
+                     alt="Partner University {{ i }}" 
+                     class="max-w-full max-h-full object-contain rounded-lg">
+              </div>
+            </div>
+          {% endfor %}
+        {% endwith %}
+      </div>
+    </div>
+  </div>
 </section>
 
 <!-- Consultation Modal -->
