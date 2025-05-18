@@ -1,5 +1,27 @@
 {% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
 
+{% block meta_description %}Explore world-class education in the United Kingdom with expert guidance from EDUHUB Universal Services. Join over 500,000 international students and achieve your academic dreams!{% endblock %}
+{% block meta_keywords %}Study in UK, UK universities, international students, world-class education, free consultation, study abroad, UK education system{% endblock %}
+{% block meta_og_title %}Study in France - EDUHUB Universal Services{% endblock %}
+{% block meta_og_description %}Join over 400,000 international students in France's prestigious universities and grandes écoles. Get expert guidance from EDUHUB Universal Services for a successful study abroad experience!{% endblock %}
+{% block meta_og_image %}{% static 'assets/front/2.jpeg' %}{% endblock %}
+{% block meta_og_url %}https://eduhub.com/study-in-malta{% endblock %}
+{% block meta_twitter_card %}summary_large_image{% endblock %}
+{% block meta_twitter_title %}Study in Malta - EDUHUB Universal Services{% endblock %}
+{% block meta_twitter_description %}Join thousands of international students in Malta’s English-taught programs and vibrant island life. Get expert guidance from EDUHUB Universal Services!{% endblock %}
+{% block meta_twitter_image %}{% static 'assets/front/2.jpeg' %}{% endblock %}
+{% block meta_canonical %}https://eduhub.com/study-in-malta{% endblock %}
+{% block meta_favicon %}{% static 'assets/front/favicon.ico' %}{% endblock %}
+{% block meta_theme_color %}#ffffff{% endblock %}
+{% block meta_author %}EDUHUB Universal Services{% endblock %}
+{% block meta_language %}en-US{% endblock %}
+{% block meta_charset %}UTF-8{% endblock %}
+{% block meta_viewport %}width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no{% endblock %}
+{% block meta_robots %}index, follow{% endblock %}
+{% block meta_googlebot %}index, follow{% endblock %}
+{% block meta_bingbot %}index, follow{% endblock %}
 {% block title %}Study in South Korea - EDUHUB Universal Services{% endblock %}
 {% block content %}
 
@@ -12,7 +34,7 @@
         <div class="flex flex-col lg:flex-row items-center gap-12">
             <div class="lg:w-1/2 mb-10 lg:mb-0" data-stagger="1">
                 <div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-6 py-2 inline-flex items-center mb-6">
-                    <img src="https://cdn-icons-png.flaticon.com/512/323/323374.png" alt="South Korea Flag" class="h-5 w-5 mr-2">
+                    <img src="https://th.bing.com/th/id/OIP.FGm6J2f_0wGshbWaQ8DsXwHaE5?rs=1&pid=ImgDetMain" alt="South Korea Flag" class="h-5 w-5 mr-2">
                     <span>STUDY IN SOUTH KOREA</span>
                 </div>
                 <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
@@ -40,7 +62,7 @@
             </div>
             <div class="lg:w-1/2" data-stagger="2">
                 <div class="relative">
-                    <img src="https://images.unsplash.com/photo-1517154421773-0529f29ea451?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                    <img src="{% static 'assets/front/5.jpeg' %}" 
                          alt="Students in South Korea" 
                          class="rounded-xl shadow-2xl w-full hover:scale-105 transition-transform duration-500">
                     <div class="absolute -bottom-6 -right-6 bg-white p-4 rounded-xl shadow-lg text-gray-800">
