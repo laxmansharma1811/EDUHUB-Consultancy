@@ -35,3 +35,6 @@ Thumbs.db
 
 
 db.sqlite3
+
+# Ignore static files
+/static/
