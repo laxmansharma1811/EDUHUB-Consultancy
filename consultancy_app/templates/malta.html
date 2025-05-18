@@ -1,5 +1,18 @@
 {% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
 
+{% block meta_description %}Explore world-class education in the United Kingdom with expert guidance from EDUHUB Universal Services. Join over 500,000 international students and achieve your academic dreams!{% endblock %}
+{% block meta_keywords %}Study in UK, UK universities, international students, world-class education, free consultation, study abroad, UK education system{% endblock %}
+{% block meta_og_title %}Study in France - EDUHUB Universal Services{% endblock %}
+{% block meta_og_description %}Join over 400,000 international students in France's prestigious universities and grandes écoles. Get expert guidance from EDUHUB Universal Services for a successful study abroad experience!{% endblock %}
+{% block meta_og_image %}{% static 'assets/front/2.jpeg' %}{% endblock %}
+{% block meta_og_url %}https://eduhub.com/study-in-malta{% endblock %}
+{% block meta_twitter_card %}summary_large_image{% endblock %}
+{% block meta_twitter_title %}Study in Malta - EDUHUB Universal Services{% endblock %}
+{% block meta_twitter_description %}Join thousands of international students in Malta’s English-taught programs and vibrant island life. Get expert guidance from EDUHUB Universal Services!{% endblock %}
+{% block meta_twitter_image %}{% static 'assets/front/2.jpeg' %}{% endblock %}
+{% block meta_canonical %}https://eduhub.com/study-in-malta{% endblock %}
 {% block title %}Study in Malta - EDUHUB Universal Services{% endblock %}
 {% block content %}
 
@@ -40,7 +53,7 @@
             </div>
             <div class="lg:w-1/2" data-stagger="2">
                 <div class="relative">
-                    <img src="https://images.unsplash.com/photo-1596436889106-be35e843f974?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                    <img src="{% static 'assets/front/4.jpeg' %}" 
                          alt="Students in Malta" 
                          class="rounded-xl shadow-2xl w-full hover:scale-105 transition-transform duration-500">
                     <div class="absolute -bottom-6 -right-6 bg-white p-4 rounded-xl shadow-lg text-gray-800">
