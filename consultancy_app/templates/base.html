@@ -5,6 +5,27 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" type="image/x-icon" href="{% static 'assets/logo.jpeg' %}">
+
+ <!-- Basic SEO Tags -->
+    <title>{% block title %}EduHub - Study Abroad Consultancy{% endblock %}</title>
+    <meta name="description" content="{% block meta_description %}EduHub helps you study in USA, UK, Australia and more. Expert guidance from start to visa!{% endblock %}">
+    <meta name="keywords" content="{% block meta_keywords %}study abroad, USA education, UK universities, visa assistance{% endblock %}">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="{{ request.build_absolute_uri }}">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="{% block og_title %}EduHub - Your Global Study Partner{% endblock %}">
+    <meta property="og:description" content="{% block og_description %}Trusted consultancy for studying in USA, UK, Canada, Australia, and more.{% endblock %}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ request.build_absolute_uri }}">
+    <meta property="og:image" content="{% static 'assets/logo.png' %}">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{% block twitter_title %}EduHub - Study Abroad{% endblock %}">
+    <meta name="twitter:description" content="{% block twitter_description %}Get expert study abroad guidance from EduHub!{% endblock %}">
+    <meta name="twitter:image" content="{% static 'assets/logo.png' %}">
+    
 <title>EDUHUB Universal - Study Abroad</title>
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
