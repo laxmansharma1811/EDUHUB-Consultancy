@@ -4,13 +4,13 @@
 {% block content %}
 
     <!-- Hero Section -->
-    <section class="relative min-h-[80vh] flex items-center overflow-hidden bg-gradient-to-r from-sky-500 to-blue-700 text-white">
+    <section class="relative min-h-[80vh] flex items-center overflow-hidden bg-gradient-to-r from-[#24c6e0] to-[#1a8fa3] text-white">
         <!-- Background Pattern -->
         <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/always-grey.png')]"></div>
         
         <div class="container mx-auto px-6 py-24 relative z-10">
             <div class="flex flex-col lg:flex-row items-center gap-12">
-                <div class="lg:w-1/2 mb-10 lg:mb-0 animate-fade-in">
+                <div class="lg:w-1/2 mb-10 lg:mb-0 transform transition-all duration-700 translate-y-0 opacity-100">
                     <div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-6 py-2 inline-flex items-center mb-6">
                         <img src="https://ts3.mm.bing.net/th?id=OIP.FJZuRfEGH6-THiUxkuyMWwHaEO&pid=15.1" alt="Canada Flag" class="h-5 w-5 mr-2">
                         <span>STUDY IN CANADA</span>
@@ -23,15 +23,14 @@
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4">
                         <a href="#consultation-form" data-modal="consultation" 
-                           class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 px-8 py-4 rounded-lg font-bold inline-flex items-center justify-center transition duration-300 animate-bounce canada-consultation"
-                           data-modal="consultation">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                           class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 px-8 py-4 rounded-lg font-bold inline-flex items-center justify-center transition duration-300 shadow-lg hover:shadow-xl group">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 group-hover:animate-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                             </svg>
                             Free Consultation
                         </a>
                         <a href="tel:01-4167621" 
-                           class="bg-transparent border-2 border-white hover:bg-white/10 px-8 py-4 rounded-lg font-bold inline-flex items-center justify-center transition duration-300">
+                           class="bg-transparent border-2 border-white hover:bg-white/10 px-8 py-4 rounded-lg font-bold inline-flex items-center justify-center transition duration-300 backdrop-blur-sm">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                             </svg>
@@ -39,13 +38,14 @@
                         </a>
                     </div>
                 </div>
-                <div class="lg:w-1/2 animate-slide-up" style="animation-delay: 0.2s;">
+                <div class="lg:w-1/2 transform transition-all duration-500">
                     <div class="relative">
+                        <div class="absolute -inset-4 bg-[#24c6e0]/20 rounded-xl blur-xl"></div>
                         <img src="{% static 'assets/shoot/IMG_2523.JPG' %}" 
                              alt="Canadian Education" 
-                             class="rounded-xl shadow-2xl w-full hover:scale-105 transition-transform duration-500">
-                        <div class="absolute -bottom-6 -right-6 bg-white p-4 rounded-xl shadow-lg text-gray-800">
-                            <div class="text-3xl font-bold text-sky-600">#1</div>
+                             class="relative rounded-xl shadow-2xl w-full hover:scale-105 transition-transform duration-500 z-10">
+                        <div class="absolute -bottom-6 -right-6 bg-white p-4 rounded-xl shadow-lg text-gray-800 z-20">
+                            <div class="text-3xl font-bold text-[#24c6e0]">#1</div>
                             <div class="text-sm">Welcoming Study Destination</div>
                         </div>
                     </div>
@@ -58,18 +58,21 @@
     <section class="py-16 bg-white">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold mb-4 text-gray-900">
-                    <span class="text-sky-600">Why Study</span> in Canada?
+                <span class="text-[#24c6e0] font-semibold text-sm uppercase tracking-wider">Discover Canada</span>
+                <h2 class="text-4xl font-bold mb-4 text-gray-900 mt-2">
+                    <span class="text-[#24c6e0]">Why Study</span> in Canada?
                 </h2>
+                <div class="w-24 h-1 bg-[#24c6e0] mx-auto mb-6 rounded-full"></div>
                 <p class="text-lg text-gray-600 max-w-3xl mx-auto">
                     Canada offers world-class education, a welcoming environment, and excellent career prospects.
                 </p>
             </div>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-gray-50 p-8 rounded-xl hover:shadow-lg hover:-translate-y-2 transition-all duration-300 border border-gray-100">
-                    <div class="w-16 h-16 bg-sky-100 rounded-lg flex items-center justify-center mb-6 mx-auto">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-sky-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Benefit 1 -->
+                <div class="bg-white p-8 rounded-xl hover:shadow-xl transition-all duration-300 border border-gray-100 group hover:border-[#24c6e0]/50">
+                    <div class="w-16 h-16 bg-[#24c6e0]/10 rounded-2xl flex items-center justify-center mb-6 mx-auto group-hover:bg-[#24c6e0] transition-colors duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-[#24c6e0] group-hover:text-white transition-colors duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z" />
                         </svg>
                     </div>
@@ -78,9 +81,11 @@
                         Globally recognized degrees with cutting-edge research opportunities.
                     </p>
                 </div>
-                <div class="bg-gray-50 p-8 rounded-xl hover:shadow-lg hover:-translate-y-2 transition-all duration-300 border border-gray-100">
-                    <div class="w-16 h-16 bg-sky-100 rounded-lg flex items-center justify-center mb-6 mx-auto">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-sky-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                
+                <!-- Benefit 2 -->
+                <div class="bg-white p-8 rounded-xl hover:shadow-xl transition-all duration-300 border border-gray-100 group hover:border-[#24c6e0]/50">
+                    <div class="w-16 h-16 bg-[#24c6e0]/10 rounded-2xl flex items-center justify-center mb-6 mx-auto group-hover:bg-[#24c6e0] transition-colors duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-[#24c6e0] group-hover:text-white transition-colors duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a2 2 0 00-2-2h-3m-2 4H2v-2a2 2 0 012-2h3m5-12V4m0 16v-2m0-4v-2m0-4V4" />
                         </svg>
                     </div>
@@ -89,15 +94,30 @@
                         Multicultural society with a high quality of life and inclusivity.
                     </p>
                 </div>
-                <div class="bg-gray-50 p-8 rounded-xl hover:shadow-lg hover:-translate-y-2 transition-all duration-300 border border-gray-100">
-                    <div class="w-16 h-16 bg-sky-100 rounded-lg flex items-center justify-center mb-6 mx-auto">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-sky-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                
+                <!-- Benefit 3 -->
+                <div class="bg-white p-8 rounded-xl hover:shadow-xl transition-all duration-300 border border-gray-100 group hover:border-[#24c6e0]/50">
+                    <div class="w-16 h-16 bg-[#24c6e0]/10 rounded-2xl flex items-center justify-center mb-6 mx-auto group-hover:bg-[#24c6e0] transition-colors duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-[#24c6e0] group-hover:text-white transition-colors duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3" />
                         </svg>
                     </div>
                     <h3 class="text-xl font-bold mb-3 text-center text-gray-900">Career Opportunities</h3>
                     <p class="text-gray-600 text-center">
                         Skills for the global workforce with work options during and after studies.
+                    </p>
+                </div>
+                
+                <!-- Benefit 4 -->
+                <div class="bg-white p-8 rounded-xl hover:shadow-xl transition-all duration-300 border border-gray-100 group hover:border-[#24c6e0]/50">
+                    <div class="w-16 h-16 bg-[#24c6e0]/10 rounded-2xl flex items-center justify-center mb-6 mx-auto group-hover:bg-[#24c6e0] transition-colors duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-[#24c6e0] group-hover:text-white transition-colors duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-center text-gray-900">Immigration Pathways</h3>
+                    <p class="text-gray-600 text-center">
+                        Clear routes to permanent residency after graduation.
                     </p>
                 </div>
             </div>
@@ -108,21 +128,23 @@
     <section class="py-16 bg-gray-50">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold mb-4 text-gray-900">
-                    <span class="text-sky-600">Top Universities</span> in Canada
+                <span class="text-[#24c6e0] font-semibold text-sm uppercase tracking-wider">Academic Excellence</span>
+                <h2 class="text-4xl font-bold mb-4 text-gray-900 mt-2">
+                    <span class="text-[#24c6e0]">Top Universities</span> in Canada
                 </h2>
+                <div class="w-24 h-1 bg-[#24c6e0] mx-auto mb-6 rounded-full"></div>
                 <p class="text-lg text-gray-600 max-w-3xl mx-auto">
                     Study at Canada's prestigious institutions known for academic excellence.
                 </p>
             </div>
             
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- University of Toronto -->
-                <div class="relative group overflow-hidden rounded-xl shadow-lg h-80">
+                <div class="relative group overflow-hidden rounded-xl shadow-lg h-80 transform transition duration-500 hover:scale-105 hover:shadow-xl">
                     <img src="{% static 'assets/canada/universityoftoronto.jpeg' %}" 
                          alt="University of Toronto" 
-                         class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
+                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent"></div>
                     <div class="absolute bottom-0 left-0 p-6 w-full">
                         <div class="flex items-center mb-2">
                             <img src="{% static 'assets/canada/Utoronto_coa.svg.png' %}" alt="Toronto Logo" class="h-6 w-6 mr-2">
@@ -130,17 +152,17 @@
                         </div>
                         <p class="text-white/90 mb-4">#23 in QS World Rankings 2023</p>
                     </div>
-                    <div class="absolute top-4 right-4 bg-sky-600 text-white px-3 py-1 rounded-full text-xs font-bold">
+                    <div class="absolute top-4 right-4 bg-[#24c6e0] text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg">
                         Top Ranked
                     </div>
                 </div>
     
                 <!-- University of British Columbia -->
-                <div class="relative group overflow-hidden rounded-xl shadow-lg h-80">
+                <div class="relative group overflow-hidden rounded-xl shadow-lg h-80 transform transition duration-500 hover:scale-105 hover:shadow-xl">
                     <img src="{% static 'assets/canada/universityBritishColumbia.jfif' %}" 
                          alt="University of British Columbia" 
-                         class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
+                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent"></div>
                     <div class="absolute bottom-0 left-0 p-6 w-full">
                         <div class="flex items-center mb-2">
                             <img src="https://th.bing.com/th/id/OSK.8rpth6Qcf5UVKmyh5mpgP1vuSyfgAKT57hoe5Gg9xYc?w=224&h=200&c=12&rs=1&o=6&dpr=1.3&pid=SANGAM" alt="UBC Logo" class="h-6 w-6 mr-2">
@@ -148,17 +170,17 @@
                         </div>
                         <p class="text-white/90 mb-4">#34 in QS World Rankings 2023</p>
                     </div>
-                    <div class="absolute top-4 right-4 bg-sky-600 text-white px-3 py-1 rounded-full text-xs font-bold">
+                    <div class="absolute top-4 right-4 bg-[#24c6e0] text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg">
                         Research Leader
                     </div>
                 </div>
     
                 <!-- McGill University -->
-                <div class="relative group overflow-hidden rounded-xl shadow-lg h-80">
+                <div class="relative group overflow-hidden rounded-xl shadow-lg h-80 transform transition duration-500 hover:scale-105 hover:shadow-xl">
                     <img src="{% static 'assets/canada/mcgill.jfif' %}" 
                          alt="McGill University" 
-                         class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
+                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent"></div>
                     <div class="absolute bottom-0 left-0 p-6 w-full">
                         <div class="flex items-center mb-2">
                             <img src="{% static 'assets/canada/mclogo.jpeg' %}" alt="McGill Logo" class="h-6 w-6 mr-2">
@@ -166,17 +188,17 @@
                         </div>
                         <p class="text-white/90 mb-4">#27 in QS World Rankings 2023</p>
                     </div>
-                    <div class="absolute top-4 right-4 bg-sky-600 text-white px-3 py-1 rounded-full text-xs font-bold">
+                    <div class="absolute top-4 right-4 bg-[#24c6e0] text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg">
                         Global Excellence
                     </div>
                 </div>
     
                 <!-- University of Alberta -->
-                <div class="relative group overflow-hidden rounded-xl shadow-lg h-80">
+                <div class="relative group overflow-hidden rounded-xl shadow-lg h-80 transform transition duration-500 hover:scale-105 hover:shadow-xl">
                     <img src="{% static 'assets/canada/universityofalberta.jfif' %}" 
                          alt="University of Alberta" 
-                         class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
+                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent"></div>
                     <div class="absolute bottom-0 left-0 p-6 w-full">
                         <div class="flex items-center mb-2">
                             <img src="{% static 'assets/canada/albertalogo.jfif' %}" alt="Alberta Logo" class="h-6 w-6 mr-2">
@@ -184,17 +206,17 @@
                         </div>
                         <p class="text-white/90 mb-4">Top 100 Worldwide</p>
                     </div>
-                    <div class="absolute top-4 right-4 bg-sky-600 text-white px-3 py-1 rounded-full text-xs font-bold">
+                    <div class="absolute top-4 right-4 bg-[#24c6e0] text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg">
                         STEM Excellence
                     </div>
                 </div>
     
                 <!-- University of Waterloo -->
-                <div class="relative group overflow-hidden rounded-xl shadow-lg h-80">
+                <div class="relative group overflow-hidden rounded-xl shadow-lg h-80 transform transition duration-500 hover:scale-105 hover:shadow-xl">
                     <img src="{% static 'assets/canada/waterloo.jfif' %}" 
                          alt="University of Waterloo" 
-                         class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
+                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent"></div>
                     <div class="absolute bottom-0 left-0 p-6 w-full">
                         <div class="flex items-center mb-2">
                             <img src="{% static 'assets/canada/waterloo logo.jfif' %}" alt="Waterloo Logo" class="h-6 w-6 mr-2">
@@ -202,17 +224,17 @@
                         </div>
                         <p class="text-white/90 mb-4">#154 in QS World Rankings 2023</p>
                     </div>
-                    <div class="absolute top-4 right-4 bg-sky-600 text-white px-3 py-1 rounded-full text-xs font-bold">
+                    <div class="absolute top-4 right-4 bg-[#24c6e0] text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg">
                         Tech Hub
                     </div>
                 </div>
     
                 <!-- University of Ottawa -->
-                <div class="relative group overflow-hidden rounded-xl shadow-lg h-80">
+                <div class="relative group overflow-hidden rounded-xl shadow-lg h-80 transform transition duration-500 hover:scale-105 hover:shadow-xl">
                     <img src="{% static 'assets/canada/ottawa.jfif' %}" 
                          alt="University of Ottawa" 
-                         class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
+                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent"></div>
                     <div class="absolute bottom-0 left-0 p-6 w-full">
                         <div class="flex items-center mb-2">
                             <img src="{% static 'assets/canada/ottawa logo.jfif' %}" alt="Ottawa Logo" class="h-6 w-6 mr-2">
@@ -220,13 +242,13 @@
                         </div>
                         <p class="text-white/90 mb-4">#237 in QS World Rankings 2023</p>
                     </div>
-                    <div class="absolute top-4 right-4 bg-sky-600 text-white px-3 py-1 rounded-full text-xs font-bold">
+                    <div class="absolute top-4 right-4 bg-[#24c6e0] text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg">
                         Bilingual Excellence
                     </div>
                 </div>
-    
-                <!-- Simon Fraser University -->
-                <div class="relative group overflow-hidden rounded-xl shadow-lg h-80">
+
+                 <!-- Simon Fraser University -->
+                <div class="relative group overflow-hidden rounded-xl shadow-lg h-80 transform transition duration-500 hover:scale-105 hover:shadow-xl">
                     <img src="{% static 'assets/canada/simon franser.jfif' %}" 
                          alt="Simon Fraser University" 
                          class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
@@ -238,13 +260,13 @@
                         </div>
                         <p class="text-white/90 mb-4">#298 in QS World Rankings 2023</p>
                     </div>
-                    <div class="absolute top-4 right-4 bg-sky-600 text-white px-3 py-1 rounded-full text-xs font-bold">
+                    <div class="absolute top-4 right-4 bg-[#24c6e0] text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg">
                         Innovative Learning
                     </div>
                 </div>
     
                 <!-- Queen's University -->
-                <div class="relative group overflow-hidden rounded-xl shadow-lg h-80">
+                <div class="relative group overflow-hidden rounded-xl shadow-lg h-80 transform transition duration-500 hover:scale-105 hover:shadow-xl">
                     <img src="{% static 'assets/canada/queen.jfif' %}" 
                          alt="Queen's University" 
                          class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
@@ -256,13 +278,13 @@
                         </div>
                         <p class="text-white/90 mb-4">#246 in QS World Rankings 2023</p>
                     </div>
-                    <div class="absolute top-4 right-4 bg-sky-600 text-white px-3 py-1 rounded-full text-xs font-bold">
+                    <div class="absolute top-4 right-4 bg-[#24c6e0] text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg">
                         Tradition & Innovation
                     </div>
                 </div>
     
                 <!-- Dalhousie University -->
-                <div class="relative group overflow-hidden rounded-xl shadow-lg h-80">
+                <div class="relative group overflow-hidden rounded-xl shadow-lg h-80 transform transition duration-500 hover:scale-105 hover:shadow-xl">
                     <img src="{% static 'assets/canada/dalhousie.jfif' %}" 
                          alt="Dalhousie University" 
                          class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
@@ -274,13 +296,13 @@
                         </div>
                         <p class="text-white/90 mb-4">#298 in QS World Rankings 2023</p>
                     </div>
-                    <div class="absolute top-4 right-4 bg-sky-600 text-white px-3 py-1 rounded-full text-xs font-bold">
+                    <div class="absolute top-4 right-4 bg-[#24c6e0] text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg">
                         East Coast Leader
                     </div>
                 </div>
     
                 <!-- Université de Montréal -->
-                <div class="relative group overflow-hidden rounded-xl shadow-lg h-80">
+                <div class="relative group overflow-hidden rounded-xl shadow-lg h-80 transform transition duration-500 hover:scale-105 hover:shadow-xl">
                     <img src="{% static 'assets/canada/montreal.jfif' %}" 
                          alt="Université de Montréal" 
                          class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
@@ -292,7 +314,7 @@
                         </div>
                         <p class="text-white/90 mb-4">#116 in QS World Rankings 2023</p>
                     </div>
-                    <div class="absolute top-4 right-4 bg-sky-600 text-white px-3 py-1 rounded-full text-xs font-bold">
+                    <div class="absolute top-4 right-4 bg-[#24c6e0] text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg">
                         Francophone Excellence
                     </div>
                 </div>
@@ -304,18 +326,22 @@
     <section class="py-16 bg-white">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold mb-4 text-gray-900">
-                    <span class="text-sky-600">Popular Programs</span> in Canada
+                <span class="text-[#24c6e0] font-semibold text-sm uppercase tracking-wider">Academic Offerings</span>
+                <h2 class="text-4xl font-bold mb-4 text-gray-900 mt-2">
+                    <span class="text-[#24c6e0]">Popular Programs</span> in Canada
                 </h2>
+                <div class="w-24 h-1 bg-[#24c6e0] mx-auto mb-6 rounded-full"></div>
                 <p class="text-lg text-gray-600 max-w-3xl mx-auto">
                     Explore diverse programs designed for global career success.
                 </p>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 border border-gray-100">
-                    <div class="h-48 bg-gradient-to-r from-sky-500 to-blue-700 flex items-center justify-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <!-- Business -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 border border-gray-100 group">
+                    <div class="h-48 bg-gradient-to-r from-[#24c6e0] to-[#1a8fa3] flex items-center justify-center relative overflow-hidden">
+                        <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-white relative z-10 transform transition-transform duration-500 group-hover:scale-110" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                         </svg>
                     </div>
@@ -325,16 +351,18 @@
                             Globally recognized business programs for leadership skills.
                         </p>
                         <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-sky-100 text-sky-800 text-xs px-3 py-1 rounded-full">Networking</span>
-                            <span class="bg-sky-100 text-sky-800 text-xs px-3 py-1 rounded-full">High ROI</span>
-                            <span class="bg-sky-100 text-sky-800 text-xs px-3 py-1 rounded-full">Leadership</span>
+                            <span class="bg-[#24c6e0]/10 text-[#24c6e0] text-xs px-3 py-1 rounded-full">Networking</span>
+                            <span class="bg-[#24c6e0]/10 text-[#24c6e0] text-xs px-3 py-1 rounded-full">High ROI</span>
+                            <span class="bg-[#24c6e0]/10 text-[#24c6e0] text-xs px-3 py-1 rounded-full">Leadership</span>
                         </div>
-                        
                     </div>
                 </div>
-                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 border border-gray-100">
-                    <div class="h-48 bg-gradient-to-r from-sky-500 to-blue-700 flex items-center justify-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                
+                <!-- Engineering -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 border border-gray-100 group">
+                    <div class="h-48 bg-gradient-to-r from-[#24c6e0] to-[#1a8fa3] flex items-center justify-center relative overflow-hidden">
+                        <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-white relative z-10 transform transition-transform duration-500 group-hover:scale-110" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
                         </svg>
                     </div>
@@ -344,16 +372,18 @@
                             Innovative engineering disciplines at top Canadian institutions.
                         </p>
                         <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-sky-100 text-sky-800 text-xs px-3 py-1 rounded-full">High Demand</span>
-                            <span class="bg-sky-100 text-sky-800 text-xs px-3 py-1 rounded-full">STEM</span>
-                            <span class="bg-sky-100 text-sky-800 text-xs px-3 py-1 rounded-full">Innovation</span>
+                            <span class="bg-[#24c6e0]/10 text-[#24c6e0] text-xs px-3 py-1 rounded-full">High Demand</span>
+                            <span class="bg-[#24c6e0]/10 text-[#24c6e0] text-xs px-3 py-1 rounded-full">STEM</span>
+                            <span class="bg-[#24c6e0]/10 text-[#24c6e0] text-xs px-3 py-1 rounded-full">Innovation</span>
                         </div>
-                        
                     </div>
                 </div>
-                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 border border-gray-100">
-                    <div class="h-48 bg-gradient-to-r from-sky-500 to-blue-700 flex items-center justify-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                
+                <!-- Computer Science -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 border border-gray-100 group">
+                    <div class="h-48 bg-gradient-to-r from-[#24c6e0] to-[#1a8fa3] flex items-center justify-center relative overflow-hidden">
+                        <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-white relative z-10 transform transition-transform duration-500 group-hover:scale-110" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                         </svg>
                     </div>
@@ -363,11 +393,10 @@
                             Cutting-edge degrees for a tech career.
                         </p>
                         <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-sky-100 text-sky-800 text-xs px-3 py-1 rounded-full">High Demand</span>
-                            <span class="bg-sky-100 text-sky-800 text-xs px-3 py-1 rounded-full">STEM</span>
-                            <span class="bg-sky-100 text-sky-800 text-xs px-3 py-1 rounded-full">Tech Hub</span>
+                            <span class="bg-[#24c6e0]/10 text-[#24c6e0] text-xs px-3 py-1 rounded-full">High Demand</span>
+                            <span class="bg-[#24c6e0]/10 text-[#24c6e0] text-xs px-3 py-1 rounded-full">STEM</span>
+                            <span class="bg-[#24c6e0]/10 text-[#24c6e0] text-xs px-3 py-1 rounded-full">Tech Hub</span>
                         </div>
-                        
                     </div>
                 </div>
             </div>
@@ -379,17 +408,19 @@
         <div class="container mx-auto px-6">
             <div class="flex flex-col lg:flex-row gap-12">
                 <div class="lg:w-1/2">
-                    <h2 class="text-4xl font-bold mb-6 text-gray-900">
-                        <span class="text-sky-600">Cost of Study</span> in Canada
+                    <span class="text-[#24c6e0] font-semibold text-sm uppercase tracking-wider">Financial Planning</span>
+                    <h2 class="text-4xl font-bold mb-6 text-gray-900 mt-2">
+                        <span class="text-[#24c6e0]">Cost of Study</span> in Canada
                     </h2>
-                    <div class="bg-gray-50 p-6 rounded-xl shadow-sm">
- มีการแปลต่อไปนี้:
-
-```html
+                    <div class="w-24 h-1 bg-[#24c6e0] mb-6 rounded-full"></div>
+                    
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition duration-300">
                         <div class="flex items-center mb-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-sky-600 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                            </svg>
+                            <div class="w-10 h-10 rounded-full bg-[#24c6e0]/10 flex items-center justify-center mr-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#24c6e0]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </div>
                             <h3 class="text-xl font-semibold">Tuition Fees</h3>
                         </div>
                         <ul class="space-y-4">
@@ -408,11 +439,13 @@
                         </ul>
                     </div>
                     
-                    <div class="bg-gray-50 p-6 rounded-xl shadow-sm mt-6">
+                    <div class="bg-white p-6 rounded-xl shadow-sm mt-6 border border-gray-100 hover:shadow-md transition duration-300">
                         <div class="flex items-center mb-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-sky-600 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-                            </svg>
+                            <div class="w-10 h-10 rounded-full bg-[#24c6e0]/10 flex items-center justify-center mr-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#24c6e0]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                                </svg>
+                            </div>
                             <h3 class="text-xl font-semibold">Living Expenses</h3>
                         </div>
                         <ul class="space-y-4">
@@ -426,19 +459,11 @@
                             </li>
                             <li class="flex justify-between border-b border-gray-200 pb-2">
                                 <span class="text-gray-600">Transportation</span>
-                                <span class="font-medium">$ 900 - 1,5000/year</span>
-                            </li>
-                            <li class="flex justify-between border-b border-gray-200 pb-2">
-                                <span class="text-gray-600">Books and Supplies</span>
-                                <span class="font-medium">$ 1,000 - 2,000/year</span>
+                                <span class="font-medium">$ 900 - 1,500/year</span>
                             </li>
                             <li class="flex justify-between border-b border-gray-200 pb-2">
                                 <span class="text-gray-600">Health and Insurance</span>
                                 <span class="font-medium">$ 600 - 1,000/year</span>
-                            </li>
-                            <li class="flex justify-between border-b border-gray-200 pb-2">
-                                <span class="text-gray-600">Miscellaneous</span>
-                                <span class="font-medium">$ 2,000 - 3,000/year</span>
                             </li>
                             <li class="flex justify-between border-b border-gray-200 pb-2">
                                 <span class="text-gray-600">Total Estimate</span>
@@ -449,47 +474,87 @@
                 </div>
                 
                 <div class="lg:w-1/2">
-                    <h2 class="text-4xl font-bold mb-6 text-gray-900">
-                        <span class="text-sky-600">Scholarships</span> & Financial Aid
+                    <span class="text-[#24c6e0] font-semibold text-sm uppercase tracking-wider">Financial Support</span>
+                    <h2 class="text-4xl font-bold mb-6 text-gray-900 mt-2">
+                        <span class="text-[#24c6e0]">Scholarships</span> & Financial Aid
                     </h2>
-                    <div class="bg-sky-50 border border-sky-100 rounded-xl p-6 mb-6">
-                        <h3 class="text-xl font-semibold mb-4 text-sky-800">Available Funding Options</h3>
+                    <div class="w-24 h-1 bg-[#24c6e0] mb-6 rounded-full"></div>
+                    
+                    <div class="bg-[#24c6e0]/5 border border-[#24c6e0]/20 rounded-xl p-6 mb-6 hover:shadow-md transition duration-300">
+                        <h3 class="text-xl font-semibold mb-4 text-[#24c6e0]">Available Funding Options</h3>
                         <ul class="space-y-4">
                             <li class="flex items-start">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-sky-600 mr-3 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
+                                <div class="w-8 h-8 rounded-full bg-[#24c6e0]/20 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-[#24c6e0]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                </div>
                                 <div>
                                     <h4 class="font-medium text-gray-900">Vanier Canada Graduate Scholarships</h4>
                                     <p class="text-gray-600 text-sm">Prestigious awards for doctoral students with academic excellence</p>
                                 </div>
                             </li>
                             <li class="flex items-start">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-sky-600 mr-3 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
+                                <div class="w-8 h-8 rounded-full bg-[#24c6e0]/20 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-[#24c6e0]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                </div>
                                 <div>
                                     <h4 class="font-medium text-gray-900">University Merit Scholarships</h4>
                                     <p class="text-gray-600 text-sm">Awards based on academic excellence from individual universities</p>
                                 </div>
                             </li>
                             <li class="flex items-start">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-sky-600 mr-3 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
+                                <div class="w-8 h-8 rounded-full bg-[#24c6e0]/20 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-[#24c6e0]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                </div>
                                 <div>
                                     <h4 class="font-medium text-gray-900">Government Grants</h4>
                                     <p class="text-gray-600 text-sm">Funding from Canadian government programs for international students</p>
                                 </div>
                             </li>
+                            <li class="flex items-start">
+                                <div class="w-8 h-8 rounded-full bg-[#24c6e0]/20 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-[#24c6e0]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-900">Country-Specific Scholarships</h4>
+                                    <p class="text-gray-600 text-sm">Special funding opportunities for students from specific countries</p>
+                                </div>
+                            </li>
                         </ul>
                     </div>
-                    <div class="bg-yellow-50 border border-yellow-100 rounded-xl p-6">
-                        <h3 class="text-xl font-semibold mb-4 text-yellow-800">Our Scholarship Success</h3>
+                    <div class="bg-yellow-50 border border-yellow-100 rounded-xl p-6 hover:shadow-md transition duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="w-10 h-10 rounded-full bg-yellow-100 flex items-center justify-center mr-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-yellow-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold text-yellow-800">Our Scholarship Success</h3>
+                        </div>
                         <p class="text-gray-700 mb-4">
                             Our students have secured over CAD 3 million in scholarships last year. We guide you to the best funding opportunities.
                         </p>
-                        
+                        <div class="flex items-center justify-between bg-white p-3 rounded-lg">
+                            <div class="text-center">
+                                <div class="text-2xl font-bold text-[#24c6e0]">300+</div>
+                                <div class="text-xs text-gray-500">Scholarships Won</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-2xl font-bold text-[#24c6e0]">$10,000</div>
+                                <div class="text-xs text-gray-500">Average Award</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-2xl font-bold text-[#24c6e0]">90%</div>
+                                <div class="text-xs text-gray-500">Success Rate</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -501,189 +566,263 @@
         <div class="container mx-auto px-6">
             <div class="flex flex-col lg:flex-row gap-12">
                 <div class="lg:w-1/2">
-                    <h2 class="text-4xl font-bold mb-6 text-gray-900">
-                        <span class="text-sky-600">Visa Process</span> for Canada
+                    <span class="text-[#24c6e0] font-semibold text-sm uppercase tracking-wider">Immigration</span>
+                    <h2 class="text-4xl font-bold mb-6 text-gray-900 mt-2">
+                        <span class="text-[#24c6e0]">Visa Process</span> for Canada
                     </h2>
-                    <div class="bg-white p-6 rounded-xl shadow-sm mb-6">
+                    <div class="w-24 h-1 bg-[#24c6e0] mb-6 rounded-full"></div>
+                    
+                    <div class="bg-white p-6 rounded-xl shadow-sm mb-6 border border-gray-100 hover:shadow-md transition duration-300">
                         <h3 class="text-xl font-semibold mb-4">Study Permit Requirements</h3>
                         <ul class="space-y-3">
                             <li class="flex items-start">
-                                <div class="bg-sky-100 text-sky-800 rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                                <div class="bg-[#24c6e0]/10 text-[#24c6e0] rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
                                     1
                                 </div>
                                 <span class="text-gray-600">Acceptance letter from a Designated Learning Institution (DLI)</span>
                             </li>
                             <li class="flex items-start">
-                                <div class="bg-sky-100 text-sky-800 rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                                <div class="bg-[#24c6e0]/10 text-[#24c6e0] rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
                                     2
                                 </div>
                                 <span class="text-gray-600">Proof of financial support for tuition and living expenses</span>
                             </li>
                             <li class="flex items-start">
-                                <div class="bg-sky-100 text-sky-800 rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                                <div class="bg-[#24c6e0]/10 text-[#24c6e0] rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
                                     3
                                 </div>
                                 <span class="text-gray-600">Valid passport and recent passport-sized photos</span>
                             </li>
                             <li class="flex items-start">
-                                <div class="bg-sky-100 text-sky-800 rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                                <div class="bg-[#24c6e0]/10 text-[#24c6e0] rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
                                     4
                                 </div>
                                 <span class="text-gray-600">English proficiency test results (e.g., IELTS, TOEFL)</span>
                             </li>
                             <li class="flex items-start">
-                                <div class="bg-sky-100 text-sky-800 rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                                <div class="bg-[#24c6e0]/10 text-[#24c6e0] rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
                                     5
                                 </div>
                                 <span class="text-gray-600">Medical examination (if required)</span>
                             </li>
                         </ul>
                     </div>
-                    <div class="bg-sky-50 border border-sky-100 rounded-xl p-6">
-                        <h3 class="text-xl font-semibold mb-4 text-sky-800">Our Visa Success Rate</h3>
+                    <div class="bg-[#24c6e0]/5 border border-[#24c6e0]/20 rounded-xl p-6 hover:shadow-md transition duration-300">
+                        <h3 class="text-xl font-semibold mb-4 text-[#24c6e0]">Our Visa Success Rate</h3>
                         <div class="flex items-center mb-4">
-                            <div class="text-4xl font-bold text-sky-600 mr-4">95%</div>
+                            <div class="text-5xl font-bold text-[#24c6e0] mr-4">95%</div>
                             <div class="text-gray-600">approval rate for our students in 2023</div>
                         </div>
                         <p class="text-gray-700">
                             Our visa experts provide comprehensive support, including documentation and interview preparation.
                         </p>
+                        <div class="mt-6 bg-white p-4 rounded-lg border border-[#24c6e0]/10 flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-[#24c6e0] mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                            </svg>
+                            <div>
+                                <div class="font-medium">Free Visa Assessment</div>
+                                <div class="text-sm text-gray-500">Get your eligibility checked by our experts</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 
                 <div class="lg:w-1/2">
-                    <h2 class="text-4xl font-bold mb-6 text-gray-900">
-                        <span class="text-sky-600">Work Opportunities</span> in Canada
+                    <span class="text-[#24c6e0] font-semibold text-sm uppercase tracking-wider">Employment</span>
+                    <h2 class="text-4xl font-bold mb-6 text-gray-900 mt-2">
+                        <span class="text-[#24c6e0]">Work Opportunities</span> in Canada
                     </h2>
-                    <div class="bg-white p-6 rounded-xl shadow-sm mb-6">
+                    <div class="w-24 h-1 bg-[#24c6e0] mb-6 rounded-full"></div>
+                    
+                    <div class="bg-white p-6 rounded-xl shadow-sm mb-6 border border-gray-100 hover:shadow-md transition duration-300">
                         <h3 class="text-xl font-semibold mb-4">During Studies</h3>
                         <ul class="space-y-3">
                             <li class="flex items-start">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-sky-600 mr-3 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                                </svg>
+                                <div class="w-8 h-8 rounded-full bg-[#24c6e0]/10 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-[#24c6e0]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                    </svg>
+                                </div>
                                 <div>
                                     <h4 class="font-medium text-gray-900">Part-Time Work</h4>
                                     <p class="text-gray-600 text-sm">Up to 20 hours/week on or off-campus during academic sessions</p>
                                 </div>
                             </li>
                             <li class="flex items-start">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-sky-600 mr-3 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                                </svg>
+                                <div class="w-8 h-8 rounded-full bg-[#24c6e0]/10 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-[#24c6e0]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                    </svg>
+                                </div>
                                 <div>
                                     <h4 class="font-medium text-gray-900">Co-op Programs</h4>
                                     <p class="text-gray-600 text-sm">Paid work terms integrated into your academic program</p>
                                 </div>
                             </li>
+                            <li class="flex items-start">
+                                <div class="w-8 h-8 rounded-full bg-[#24c6e0]/10 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-[#24c6e0]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-900">Full-Time During Breaks</h4>
+                                    <p class="text-gray-600 text-sm">Work full-time during scheduled breaks like summer vacation</p>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                     
-                    <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition duration-300">
                         <h3 class="text-xl font-semibold mb-4">After Graduation</h3>
                         <ul class="space-y-3">
                             <li class="flex items-start">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-sky-600 mr-3 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                                </svg>
+                                <div class="w-8 h-8 rounded-full bg-[#24c6e0]/10 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-[#24c6e0]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                    </svg>
+                                </div>
                                 <div>
                                     <h4 class="font-medium text-gray-900">Post-Graduation Work Permit (PGWP)</h4>
                                     <p class="text-gray-600 text-sm">Up to 3 years of work authorization after graduation</p>
                                 </div>
                             </li>
                             <li class="flex items-start">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-sky-600 mr-3 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                                </svg>
+                                <div class="w-8 h-8 rounded-full bg-[#24c6e0]/10 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-[#24c6e0]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                    </svg>
+                                </div>
                                 <div>
                                     <h4 class="font-medium text-gray-900">Permanent Residency Pathways</h4>
                                     <p class="text-gray-600 text-sm">Express Entry and Provincial Nominee Programs for skilled workers</p>
                                 </div>
                             </li>
                         </ul>
+                        <div class="mt-6 p-4 bg-[#24c6e0]/5 rounded-lg">
+                            <div class="flex items-center mb-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#24c6e0] mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                                <span class="font-medium">Did you know?</span>
+                            </div>
+                            <p class="text-sm text-gray-600">
+                                Canada aims to welcome over 500,000 new immigrants annually by 2025, with a significant portion coming through student pathways.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Call to Action -->
-    <section class="py-16 bg-gradient-to-r from-sky-500 to-blue-700 text-white text-center">
+    <!-- Application Process -->
+    <section class="py-16 bg-gray-50">
         <div class="container mx-auto px-6">
-            <h2 class="text-3xl md:text-4xl font-bold mb-6 animate-fade-in">
-                Ready to Start Your <span class="text-yellow-300">Canadian Journey</span>?
-            </h2>
-            <p class="text-lg md:text-xl mb-8 opacity-90 animate-fade-in">
-                Contact our expert consultants to guide you through the application process.
-            </p>
-            <a href="#consultation-form" 
-               class="canada-consultation bg-yellow-400 hover:bg-yellow-500 text-gray-900 px-8 py-4 rounded-lg font-bold inline-flex items-center justify-center transition duration-300 animate-bounce"
-               data-modal="consultation">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                </svg>
-                Book a Free Consultation
-            </a>
+            <div class="text-center mb-16">
+                <span class="text-[#24c6e0] font-semibold text-sm uppercase tracking-wider">Your Journey</span>
+                <h2 class="text-4xl font-bold mb-4 text-gray-900 mt-2">
+                    <span class="text-[#24c6e0]">Application Process</span> for Canadian Universities
+                </h2>
+                <div class="w-24 h-1 bg-[#24c6e0] mx-auto mb-6 rounded-full"></div>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Our step-by-step guidance ensures a smooth application journey
+                </p>
+            </div>
+            
+            <div class="relative">
+                <!-- Timeline -->
+                <div class="hidden lg:block absolute left-1/2 h-full w-1 bg-[#24c6e0]/20 -ml-0.5"></div>
+                
+                <!-- Steps -->
+                <div class="space-y-12">
+                    <!-- Step 1 -->
+                    <div class="relative flex flex-col lg:flex-row items-center gap-8">
+                        <div class="lg:w-1/2 lg:pr-12 lg:text-right order-1">
+                            <h3 class="text-2xl font-bold mb-3 text-gray-900">University Selection</h3>
+                            <p class="text-gray-600">
+                                We help you choose universities based on your profile, budget, and career goals.
+                            </p>
+                        </div>
+                        <div class="lg:w-1/2 lg:pl-12 order-2">
+                            <div class="w-16 h-16 rounded-full bg-[#24c6e0] text-white flex items-center justify-center text-2xl font-bold shadow-lg mx-auto lg:mx-0 lg:absolute lg:-left-8 z-10">
+                                1
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 2 -->
+                    <div class="relative flex flex-col lg:flex-row items-center gap-8">
+                        <div class="lg:w-1/2 lg:pl-12 order-2 lg:order-1">
+                            <div class="w-16 h-16 rounded-full bg-[#24c6e0] text-white flex items-center justify-center text-2xl font-bold shadow-lg mx-auto lg:mx-0 lg:absolute lg:-right-8 z-10">
+                                2
+                            </div>
+                        </div>
+                        <div class="lg:w-1/2 lg:pr-12 order-1 lg:order-2">
+                            <h3 class="text-2xl font-bold mb-3 text-gray-900">Test Preparation</h3>
+                            <p class="text-gray-600">
+                                Guidance for English tests (IELTS/TOEFL) and other required exams.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 3 -->
+                    <div class="relative flex flex-col lg:flex-row items-center gap-8">
+                        <div class="lg:w-1/2 lg:pr-12 lg:text-right order-1">
+                            <h3 class="text-2xl font-bold mb-3 text-gray-900">Application Submission</h3>
+                            <p class="text-gray-600">
+                                Crafting compelling personal statements, securing recommendations, and submitting applications.
+                            </p>
+                        </div>
+                        <div class="lg:w-1/2 lg:pl-12 order-2">
+                            <div class="w-16 h-16 rounded-full bg-[#24c6e0] text-white flex items-center justify-center text-2xl font-bold shadow-lg mx-auto lg:mx-0 lg:absolute lg:-left-8 z-10">
+                                3
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 4 -->
+                    <div class="relative flex flex-col lg:flex-row items-center gap-8">
+                        <div class="lg:w-1/2 lg:pl-12 order-2 lg:order-1">
+                            <div class="w-16 h-16 rounded-full bg-[#24c6e0] text-white flex items-center justify-center text-2xl font-bold shadow-lg mx-auto lg:mx-0 lg:absolute lg:-right-8 z-10">
+                                4
+                            </div>
+                        </div>
+                        <div class="lg:w-1/2 lg:pr-12 order-1 lg:order-2">
+                            <h3 class="text-2xl font-bold mb-3 text-gray-900">Visa Process</h3>
+                            <p class="text-gray-600">
+                                Financial documentation, study permit application, and interview preparation.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 5 -->
+                    <div class="relative flex flex-col lg:flex-row items-center gap-8">
+                        <div class="lg:w-1/2 lg:pr-12 lg:text-right order-1">
+                            <h3 class="text-2xl font-bold mb-3 text-gray-900">Pre-Departure</h3>
+                            <p class="text-gray-600">
+                                Orientation, accommodation, flights, and everything you need before traveling.
+                            </p>
+                        </div>
+                        <div class="lg:w-1/2 lg:pl-12 order-2">
+                            <div class="w-16 h-16 rounded-full bg-[#24c6e0] text-white flex items-center justify-center text-2xl font-bold shadow-lg mx-auto lg:mx-0 lg:absolute lg:-left-8 z-10">
+                                5
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-16">
+                <a href="#consultation-form" data-modal="consultation" class="inline-flex items-center px-8 py-4 bg-[#24c6e0] hover:bg-[#1da8bf] text-white rounded-lg font-bold transition duration-300 shadow-lg">
+                    Start Your Application
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                </a>
+            </div>
         </div>
     </section>
 
-    <!-- Inline CSS for Animations -->
-    <style>
-        /* Fade-in Animation */
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        .animate-fade-in {
-            animation: fadeIn 1s ease-out forwards;
-        }
-
-        /* Slide-up Animation */
-        @keyframes slideUp {
-            from { opacity: 0; transform: translateY(30px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        .animate-slide-up {
-            animation: slideUp 1s ease-out forwards;
-        }
-
-        /* Bounce Animation */
-        @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-            40% { transform: translateY(-10px); }
-            60% { transform: translateY(-5px); }
-        }
-        .animate-bounce:hover {
-            animation: bounce 1s;
-        }
-    </style>
-
-    <!-- Inline JavaScript -->
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            // Smooth Scroll for Anchor Links
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', (e) => {
-                    e.preventDefault();
-                    const target = document.querySelector(anchor.getAttribute('href'));
-                    if (target) {
-                        window.scrollTo({
-                            top: target.offsetTop - 80, // Adjust for navbar height
-                            behavior: 'smooth'
-                        });
-                    }
-                });
-            });
-
-            // Pre-select Canada in Consultation Modal
-            document.querySelectorAll('.canada-consultation').forEach(button => {
-                button.addEventListener('click', () => {
-                    const countrySelect = document.getElementById('country');
-                    if (countrySelect) {
-                        countrySelect.value = 'Canada';
-                    }
-                });
-            });
-        });
-    </script>
 {% endblock %}

@@ -4,7 +4,7 @@
 {% block content %}
 
     <!-- Hero Section with Video Background -->
-    <section class="relative min-h-[80vh] flex items-center overflow-hidden bg-gradient-to-r from-blue-800 to-sky-700 text-white">
+    <section class="relative min-h-[80vh] flex items-center overflow-hidden bg-gradient-to-r from-[#24c6e0] to-[#1a8fa3] text-white">
         <!-- Background Pattern -->
         <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/always-grey.png')]"></div>
         
@@ -23,8 +23,8 @@
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4">
                         <a href="#consultation-form" data-modal="consultation" 
-                           class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 px-8 py-4 rounded-lg font-bold inline-flex items-center justify-center transition duration-300 animate-bounce">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                           class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 px-8 py-4 rounded-lg font-bold inline-flex items-center justify-center transition duration-300 group">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 group-hover:animate-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                             </svg>
                             Free Consultation
@@ -38,13 +38,14 @@
                         </a>
                     </div>
                 </div>
-                <div class="lg:w-1/2 animate-slide-up" style="animation-delay: 0.2s;">
+                <div class="lg:w-1/2">
                     <div class="relative">
+                        <div class="absolute -inset-4 bg-[#24c6e0]/20 rounded-xl blur-xl"></div>
                         <img src="{% static 'assets/front/3.jpeg' %}" 
                              alt="Students in Australia" 
-                             class="rounded-xl shadow-2xl w-full hover:scale-105 transition-transform duration-500">
-                        <div class="absolute -bottom-6 -right-6 bg-white p-4 rounded-xl shadow-lg text-gray-800">
-                            <div class="text-3xl font-bold text-blue-600">#3</div>
+                             class="relative rounded-xl shadow-2xl w-full hover:scale-105 transition-transform duration-500 z-10">
+                        <div class="absolute -bottom-6 -right-6 bg-white p-4 rounded-xl shadow-lg text-gray-800 z-20">
+                            <div class="text-3xl font-bold text-[#24c6e0]">#3</div>
                             <div class="text-sm">Study Abroad Destination</div>
                         </div>
                     </div>
@@ -52,9 +53,9 @@
             </div>
         </div>
         
-        <div class="absolute bottom-8 left-0 right-0 flex justify-center z-10 animate-bounce">
-            <a href="#why-australia" class="text-white hover:text-sky-300">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <div class="absolute bottom-8 left-0 right-0 flex justify-center z-10">
+            <a href="#why-australia" class="text-white hover:text-yellow-300 transition-colors duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 animate-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
                 </svg>
             </a>
@@ -65,22 +66,22 @@
     <section id="why-australia" class="py-20 bg-gradient-to-b from-white to-gray-50">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16">
-                <span class="inline-block px-4 py-2 bg-sky-100 text-sky-700 rounded-full text-sm font-semibold mb-4 animate-fade-in">
-                    Why Choose Australia?
-                </span>
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 animate-fade-in">
-                    The Australian Advantage
+                <span class="text-[#24c6e0] font-semibold text-sm uppercase tracking-wider">Why Choose Australia?</span>
+                <h2 class="text-4xl font-bold mb-4 text-gray-900 mt-2">
+                    <span class="text-[#24c6e0]">The Australian</span> Advantage
                 </h2>
-                <p class="text-lg text-gray-600 max-w-3xl mx-auto animate-fade-in">
+                <div class="w-24 h-1 bg-[#24c6e0] mx-auto mb-6 rounded-full"></div>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
                     Australia offers an exceptional education experience with globally recognized qualifications, stunning natural beauty, and excellent post-study work opportunities.
                 </p>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <!-- Card 1 -->
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-500 transform hover:-translate-y-2 animate-fade-in-up">
-                    <div class="h-48 bg-gradient-to-r from-sky-500 to-blue-600 flex items-center justify-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 border border-gray-100 group hover:border-[#24c6e0]/50">
+                    <div class="h-48 bg-gradient-to-r from-[#24c6e0] to-[#1a8fa3] flex items-center justify-center relative overflow-hidden">
+                        <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-white relative z-10 transform transition-transform duration-500 group-hover:scale-110" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path d="M12 14l9-5-9-5-9 5 9 5z" />
                             <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
@@ -95,9 +96,10 @@
                 </div>
                 
                 <!-- Card 2 -->
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-500 transform hover:-translate-y-2 animate-fade-in-up" style="animation-delay: 0.1s;">
-                    <div class="h-48 bg-gradient-to-r from-blue-500 to-indigo-600 flex items-center justify-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 border border-gray-100 group hover:border-[#24c6e0]/50">
+                    <div class="h-48 bg-gradient-to-r from-[#24c6e0] to-[#1a8fa3] flex items-center justify-center relative overflow-hidden">
+                        <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-white relative z-10 transform transition-transform duration-500 group-hover:scale-110" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
                         </svg>
                     </div>
@@ -110,9 +112,10 @@
                 </div>
                 
                 <!-- Card 3 -->
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-500 transform hover:-translate-y-2 animate-fade-in-up" style="animation-delay: 0.2s;">
-                    <div class="h-48 bg-gradient-to-r from-indigo-500 to-purple-600 flex items-center justify-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 border border-gray-100 group hover:border-[#24c6e0]/50">
+                    <div class="h-48 bg-gradient-to-r from-[#24c6e0] to-[#1a8fa3] flex items-center justify-center relative overflow-hidden">
+                        <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-white relative z-10 transform transition-transform duration-500 group-hover:scale-110" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a2 2 0 00-2-2h-3m-2 4H2v-2a2 2 0 012-2h3m5-12V4m0 16v-2m0-4v-2m0-4V4" />
                         </svg>
                     </div>
@@ -125,9 +128,10 @@
                 </div>
                 
                 <!-- Card 4 -->
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-500 transform hover:-translate-y-2 animate-fade-in-up" style="animation-delay: 0.3s;">
-                    <div class="h-48 bg-gradient-to-r from-purple-500 to-pink-600 flex items-center justify-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 border border-gray-100 group hover:border-[#24c6e0]/50">
+                    <div class="h-48 bg-gradient-to-r from-[#24c6e0] to-[#1a8fa3] flex items-center justify-center relative overflow-hidden">
+                        <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-white relative z-10 transform transition-transform duration-500 group-hover:scale-110" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                         </svg>
                     </div>
@@ -142,143 +146,131 @@
         </div>
     </section>
 
-    <section class="py-20 from-white to-gray-50">
+    <!-- Top Universities Section -->
+    <section class="py-16 bg-gray-50">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16">
-                <span class="inline-block px-4 py-2 bg-sky-500/20 text-sky-400 rounded-full text-sm font-semibold mb-4 animate-fade-in">
-                    Excellence in Education
-                </span>
-                <h2 class="text-3xl md:text-4xl font-bold mb-4 animate-fade-in">
-                    Top Australian Universities
+                <span class="text-[#24c6e0] font-semibold text-sm uppercase tracking-wider">Excellence in Education</span>
+                <h2 class="text-4xl font-bold mb-4 text-gray-900 mt-2">
+                    <span class="text-[#24c6e0]">Top Universities</span> in Australia
                 </h2>
-                <p class="text-lg text-gray-600 max-w-3xl mx-auto animate-fade-in">
-                    Australia boasts some of the world's finest higher education institutions across its vibrant cities.
+                <div class="w-24 h-1 bg-[#24c6e0] mx-auto mb-6 rounded-full"></div>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Discover Australia's prestigious institutions known for academic excellence.
                 </p>
             </div>
             
-            <!-- Top Universities Section -->
-            <section class="py-16 bg-gray-50">
-                <div class="container mx-auto px-6">
-                    <div class="text-center mb-16">
-                        <h2 class="text-4xl font-bold mb-4 text-gray-900">
-                            <span class="text-blue-600">Top Universities</span> in Australia
-                        </h2>
-                        <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-                            Discover Australia's prestigious institutions known for academic excellence.
-                        </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Australian Catholic University -->
+                <div class="relative group overflow-hidden rounded-xl shadow-lg h-80 transform transition duration-500 hover:scale-105 hover:shadow-xl">
+                    <img src="https://th.bing.com/th/id/OIP.4iGb8wF-wXW2ILR4tt0NggHaFj?w=246&h=184&c=7&r=0&o=5&dpr=1.3&pid=1.7" 
+                         alt="ACU Campus" 
+                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-6 w-full">
+                        <div class="flex items-center mb-2">
+                            <img src="https://th.bing.com/th/id/OIP.XWQ663KRArcCrxtHlU4axAAAAA?w=167&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="ACU Logo" class="h-6 w-6 mr-2">
+                            <h3 class="text-xl font-bold text-white">Australian Catholic University</h3>
+                        </div>
+                        <p class="text-white/90 mb-4">Multiple Cities, AUS</p>
                     </div>
-                    
-                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                        <!-- Australian Catholic University -->
-                        <div class="relative group overflow-hidden rounded-xl shadow-lg h-80">
-                            <img src="https://th.bing.com/th/id/OIP.4iGb8wF-wXW2ILR4tt0NggHaFj?w=246&h=184&c=7&r=0&o=5&dpr=1.3&pid=1.7" 
-                                 alt="ACU Campus" 
-                                 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
-                            <div class="absolute bottom-0 left-0 p-6 w-full">
-                                <div class="flex items-center mb-2">
-                                    <img src="https://th.bing.com/th/id/OIP.XWQ663KRArcCrxtHlU4axAAAAA?w=167&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="ACU Logo" class="h-6 w-6 mr-2">
-                                    <h3 class="text-xl font-bold text-white">Australian Catholic University</h3>
-                                </div>
-                                <p class="text-white/90 mb-4">Multiple Cities, AUS</p>
-                            </div>
-                            <div class="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold">
-                                Top 10% Globally
-                            </div>
+                    <div class="absolute top-4 right-4 bg-[#24c6e0] text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg">
+                        Top 10% Globally
+                    </div>
+                </div>
+                
+                <!-- Australian National University -->
+                <div class="relative group overflow-hidden rounded-xl shadow-lg h-80 transform transition duration-500 hover:scale-105 hover:shadow-xl">
+                    <img src="https://th.bing.com/th/id/OIP.TiQqjcliEfE5tN5cVKr8-AHaEo?w=227&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" 
+                         alt="ANU Campus" 
+                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-6 w-full">
+                        <div class="flex items-center mb-2">
+                            <img src="https://th.bing.com/th/id/OIP.2MbBiUbhbtDkVc1hisWklgHaHa?w=168&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="ANU Logo" class="h-6 w-6 mr-2">
+                            <h3 class="text-xl font-bold text-white">Australian National University</h3>
                         </div>
-                        
-                        <!-- Australian National University -->
-                        <div class="relative group overflow-hidden rounded-xl shadow-lg h-80">
-                            <img src="https://th.bing.com/th/id/OIP.TiQqjcliEfE5tN5cVKr8-AHaEo?w=227&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" 
-                                 alt="ANU Campus" 
-                                 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
-                            <div class="absolute bottom-0 left-0 p-6 w-full">
-                                <div class="flex items-center mb-2">
-                                    <img src="https://th.bing.com/th/id/OIP.2MbBiUbhbtDkVc1hisWklgHaHa?w=168&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="ANU Logo" class="h-6 w-6 mr-2">
-                                    <h3 class="text-xl font-bold text-white">Australian National University</h3>
-                                </div>
-                                <p class="text-white/90 mb-4">Canberra, ACT</p>
-                            </div>
-                            <div class="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold">
-                                #30 Worldwide
-                            </div>
+                        <p class="text-white/90 mb-4">Canberra, ACT</p>
+                    </div>
+                    <div class="absolute top-4 right-4 bg-[#24c6e0] text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg">
+                        #30 Worldwide
+                    </div>
+                </div>
+                
+                <!-- Avondale University -->
+                <div class="relative group overflow-hidden rounded-xl shadow-lg h-80 transform transition duration-500 hover:scale-105 hover:shadow-xl">
+                    <img src="https://th.bing.com/th/id/OIP.hrR_dpRaeFXz4CtKH54ToQHaE8?rs=1&pid=ImgDetMain" 
+                         alt="Avondale Campus" 
+                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-6 w-full">
+                        <div class="flex items-center mb-2">
+                            <img src="https://th.bing.com/th/id/OIP.s-nxw6f4knnXNzyk5BiNNwAAAA?w=135&h=150&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Avondale Logo" class="h-6 w-6 mr-2">
+                            <h3 class="text-xl font-bold text-white">Avondale University</h3>
                         </div>
-                        
-                        <!-- Avondale University -->
-                        <div class="relative group overflow-hidden rounded-xl shadow-lg h-80">
-                            <img src="https://th.bing.com/th/id/OIP.hrR_dpRaeFXz4CtKH54ToQHaE8?rs=1&pid=ImgDetMain" 
-                                 alt="Avondale Campus" 
-                                 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
-                            <div class="absolute bottom-0 left-0 p-6 w-full">
-                                <div class="flex items-center mb-2">
-                                    <img src="https://th.bing.com/th/id/OIP.s-nxw6f4knnXNzyk5BiNNwAAAA?w=135&h=150&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Avondale Logo" class="h-6 w-6 mr-2">
-                                    <h3 class="text-xl font-bold text-white">Avondale University</h3>
-                                </div>
-                                <p class="text-white/90 mb-4">Cooranbong, NSW</p>
-                            </div>
-                            <div class="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold">
-                                Emerging Excellence
-                            </div>
+                        <p class="text-white/90 mb-4">Cooranbong, NSW</p>
+                    </div>
+                    <div class="absolute top-4 right-4 bg-[#24c6e0] text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg">
+                        Emerging Excellence
+                    </div>
+                </div>
+                
+                <!-- Bond University -->
+                <div class="relative group overflow-hidden rounded-xl shadow-lg h-80 transform transition duration-500 hover:scale-105 hover:shadow-xl">
+                    <img src="https://th.bing.com/th/id/OIP.YYRXf9v6qI0L8uRBio_G_wHaEc?w=263&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" 
+                         alt="Bond Campus" 
+                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-6 w-full">
+                        <div class="flex items-center mb-2">
+                            <img src="https://th.bing.com/th/id/OIP.O26-P5UUcKmT_EaPMK5YOwAAAA?w=134&h=150&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Bond Logo" class="h-6 w-6 mr-2">
+                            <h3 class="text-xl font-bold text-white">Bond University</h3>
                         </div>
-                        
-                        <!-- Bond University -->
-                        <div class="relative group overflow-hidden rounded-xl shadow-lg h-80">
-                            <img src="https://th.bing.com/th/id/OIP.YYRXf9v6qI0L8uRBio_G_wHaEc?w=263&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" 
-                                 alt="Bond Campus" 
-                                 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
-                            <div class="absolute bottom-0 left-0 p-6 w-full">
-                                <div class="flex items-center mb-2">
-                                    <img src="https://th.bing.com/th/id/OIP.O26-P5UUcKmT_EaPMK5YOwAAAA?w=134&h=150&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Bond Logo" class="h-6 w-6 mr-2">
-                                    <h3 class="text-xl font-bold text-white">Bond University</h3>
-                                </div>
-                                <p class="text-white/90 mb-4">Gold Coast, QLD</p>
-                            </div>
-                            <div class="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold">
-                                Private Excellence
-                            </div>
+                        <p class="text-white/90 mb-4">Gold Coast, QLD</p>
+                    </div>
+                    <div class="absolute top-4 right-4 bg-[#24c6e0] text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg">
+                        Private Excellence
+                    </div>
+                </div>
+                
+                <!-- Central Queensland University -->
+                <div class="relative group overflow-hidden rounded-xl shadow-lg h-80 transform transition duration-500 hover:scale-105 hover:shadow-xl">
+                    <img src="https://th.bing.com/th/id/OIP.WEOcvF_pIjj_M0CGCIXgPQHaEf?w=288&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" 
+                         alt="CQU Campus" 
+                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-6 w-full">
+                        <div class="flex items-center mb-2">
+                            <img src="https://th.bing.com/th/id/OIP.OVe1-3Is-eK_JXs094CsaAHaDa?w=310&h=160&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="CQU Logo" class="h-6 w-6 mr-2">
+                            <h3 class="text-xl font-bold text-white">Central Queensland University</h3>
                         </div>
-                        
-                        <!-- Central Queensland University -->
-                        <div class="relative group overflow-hidden rounded-xl shadow-lg h-80">
-                            <img src="https://th.bing.com/th/id/OIP.WEOcvF_pIjj_M0CGCIXgPQHaEf?w=288&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" 
-                                 alt="CQU Campus" 
-                                 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
-                            <div class="absolute bottom-0 left-0 p-6 w-full">
-                                <div class="flex items-center mb-2">
-                                    <img src="https://th.bing.com/th/id/OIP.OVe1-3Is-eK_JXs094CsaAHaDa?w=310&h=160&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="CQU Logo" class="h-6 w-6 mr-2">
-                                    <h3 class="text-xl font-bold text-white">Central Queensland University</h3>
-                                </div>
-                                <p class="text-white/90 mb-4">Rockhampton, QLD</p>
-                            </div>
-                            <div class="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold">
-                                Regional Leader
-                            </div>
+                        <p class="text-white/90 mb-4">Rockhampton, QLD</p>
+                    </div>
+                    <div class="absolute top-4 right-4 bg-[#24c6e0] text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg">
+                        Regional Leader
+                    </div>
+                </div>
+                
+                <!-- Charles Darwin University -->
+                <div class="relative group overflow-hidden rounded-xl shadow-lg h-80 transform transition duration-500 hover:scale-105 hover:shadow-xl">
+                    <img src="https://th.bing.com/th/id/OIP.KFPt_AqQEv6sztpvNFSxywHaEK?w=262&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" 
+                         alt="CDU Campus" 
+                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-6 w-full">
+                        <div class="flex items-center mb-2">
+                            <img src="https://th.bing.com/th/id/OIP.Xk68Ec50HRd9DdiG7TI-9gHaFz?w=246&h=193&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="CDU Logo" class="h-6 w-6 mr-2">
+                            <h3 class="text-xl font-bold text-white">Charles Darwin University</h3>
                         </div>
-                        
-                        <!-- Charles Darwin University -->
-                        <div class="relative group overflow-hidden rounded-xl shadow-lg h-80">
-                            <img src="https://th.bing.com/th/id/OIP.KFPt_AqQEv6sztpvNFSxywHaEK?w=262&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" 
-                                 alt="CDU Campus" 
-                                 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
-                            <div class="absolute bottom-0 left-0 p-6 w-full">
-                                <div class="flex items-center mb-2">
-                                    <img src="https://th.bing.com/th/id/OIP.Xk68Ec50HRd9DdiG7TI-9gHaFz?w=246&h=193&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="CDU Logo" class="h-6 w-6 mr-2">
-                                    <h3 class="text-xl font-bold text-white">Charles Darwin University</h3>
-                                </div>
-                                <p class="text-white/90 mb-4">Darwin, NT</p>
-                            </div>
-                            <div class="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold">
-                                Northern Excellence
-                            </div>
-                        </div>
-                        
-                        <!-- Charles Sturt University -->
-                        <div class="relative group overflow-hidden rounded-xl shadow-lg h-80">
+                        <p class="text-white/90 mb-4">Darwin, NT</p>
+                    </div>
+                    <div class="absolute top-4 right-4 bg-[#24c6e0] text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg">
+                        Northern Excellence
+                    </div>
+                </div>
+
+                <!-- Charles Sturt University -->
+                        <div class="relative group overflow-hidden rounded-xl shadow-lg h-80 transform transition duration-500 hover:scale-105 hover:shadow-xl">
                             <img src="https://th.bing.com/th/id/OIP.Y7qAukroJ5OTOUGUrYASCQHaE8?w=239&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" 
                                  alt="CSU Campus" 
                                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
@@ -290,13 +282,13 @@
                                 </div>
                                 <p class="text-white/90 mb-4">Bathurst, NSW</p>
                             </div>
-                            <div class="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold">
+                            <div class="absolute top-4 right-4 bg-[#24c6e0] text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg">
                                 Regional Focus
                             </div>
                         </div>
                         
                         <!-- Curtin University -->
-                        <div class="relative group overflow-hidden rounded-xl shadow-lg h-80">
+                        <div class="relative group overflow-hidden rounded-xl shadow-lg h-80 transform transition duration-500 hover:scale-105 hover:shadow-xl">
                             <img src="https://th.bing.com/th/id/OIP.HF9tSGbzmVWTMSPuW8zXrAHaDt?w=310&h=174&c=7&r=0&o=5&dpr=1.3&pid=1.7" 
                                  alt="Curtin Campus" 
                                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
@@ -308,13 +300,13 @@
                                 </div>
                                 <p class="text-white/90 mb-4">Perth, WA</p>
                             </div>
-                            <div class="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold">
+                            <div class="absolute top-4 right-4 bg-[#24c6e0] text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg">
                                 #174 Worldwide
                             </div>
                         </div>
                         
                         <!-- Deakin University -->
-                        <div class="relative group overflow-hidden rounded-xl shadow-lg h-80">
+                        <div class="relative group overflow-hidden rounded-xl shadow-lg h-80 transform transition duration-500 hover:scale-105 hover:shadow-xl">
                             <img src="https://th.bing.com/th/id/OIP.7aT6NvNY5Zetox26nxr2YgHaE7?w=242&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" 
                                  alt="Deakin Campus" 
                                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
@@ -326,13 +318,13 @@
                                 </div>
                                 <p class="text-white/90 mb-4">Melbourne, VIC</p>
                             </div>
-                            <div class="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold">
+                            <div class="absolute top-4 right-4 bg-[#24c6e0] text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg">
                                 #233 Worldwide
                             </div>
                         </div>
                         
                         <!-- Edith Cowan University -->
-                        <div class="relative group overflow-hidden rounded-xl shadow-lg h-80">
+                        <div class="relative group overflow-hidden rounded-xl shadow-lg h-80 transform transition duration-500 hover:scale-105 hover:shadow-xl">
                             <img src="https://th.bing.com/th/id/OIP.LlsqPB7TuWB3BtLqBYwABgHaE7?rs=1&pid=ImgDetMain" 
                                  alt="ECU Campus" 
                                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
@@ -344,13 +336,13 @@
                                 </div>
                                 <p class="text-white/90 mb-4">Perth, WA</p>
                             </div>
-                            <div class="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold">
+                            <div class="absolute top-4 right-4 bg-[#24c6e0] text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg">
                                 #529 Worldwide
                             </div>
                         </div>
                         
                         <!-- Federation University Australia -->
-                        <div class="relative group overflow-hidden rounded-xl shadow-lg h-80">
+                        <div class="relative group overflow-hidden rounded-xl shadow-lg h-80 transform transition duration-500 hover:scale-105 hover:shadow-xl">
                             <img src="https://th.bing.com/th/id/OSK.HEROzBRXtbVlSVFndIP4yMf2tryyMhnuzniE2vqcN_XQrUc?w=312&h=200&c=7&rs=1&o=6&dpr=1.3&pid=SANGAM" 
                                  alt="Federation Campus" 
                                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
@@ -362,13 +354,13 @@
                                 </div>
                                 <p class="text-white/90 mb-4">Ballarat, VIC</p>
                             </div>
-                            <div class="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold">
+                            <div class="absolute top-4 right-4 bg-[#24c6e0] text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg">
                                 Regional Excellence
                             </div>
                         </div>
                         
                         <!-- Flinders University -->
-                        <div class="relative group overflow-hidden rounded-xl shadow-lg h-80">
+                        <div class="relative group overflow-hidden rounded-xl shadow-lg h-80 transform transition duration-500 hover:scale-105 hover:shadow-xl">
                             <img src="https://th.bing.com/th/id/OSK.BZNN6gP3BSjuDL7tOj0593j2SPoe4NGMCGp-CV_z4Wc?w=224&h=200&c=12&rs=1&o=6&dpr=1.3&pid=SANGAM" 
                                  alt="Flinders Campus" 
                                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
@@ -380,13 +372,13 @@
                                 </div>
                                 <p class="text-white/90 mb-4">Adelaide, SA</p>
                             </div>
-                            <div class="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold">
+                            <div class="absolute top-4 right-4 bg-[#24c6e0] text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg">
                                 #425 Worldwide
                             </div>
                         </div>
                         
                         <!-- Griffith University -->
-                        <div class="relative group overflow-hidden rounded-xl shadow-lg h-80">
+                        <div class="relative group overflow-hidden rounded-xl shadow-lg h-80 transform transition duration-500 hover:scale-105 hover:shadow-xl">
                             <img src="https://th.bing.com/th/id/OIP.xhd1kvoAf5GllVPBHi1_AwHaE0?w=255&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" 
                                  alt="Griffith Campus" 
                                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
@@ -398,104 +390,100 @@
                                 </div>
                                 <p class="text-white/90 mb-4">Brisbane, QLD</p>
                             </div>
-                            <div class="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold">
+                            <div class="absolute top-4 right-4 bg-[#24c6e0] text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg">
                                 #243 Worldwide
                             </div>
                         </div>
-                    </div>
-                </div>
-            </section>
+            </div>
+        </div>
+    </section>
 
     <!-- Popular Programs Section -->
     <section id="programs" class="py-20 bg-white">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16">
-                <span class="inline-block px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold mb-4 animate-fade-in">
-                    Study Options
-                </span>
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 animate-fade-in">
-                    Popular Programs in Australia
+                <span class="text-[#24c6e0] font-semibold text-sm uppercase tracking-wider">Study Options</span>
+                <h2 class="text-4xl font-bold mb-4 text-gray-900 mt-2">
+                    <span class="text-[#24c6e0]">Popular Programs</span> in Australia
                 </h2>
-                <p class="text-lg text-gray-600 max-w-3xl mx-auto animate-fade-in">
+                <div class="w-24 h-1 bg-[#24c6e0] mx-auto mb-6 rounded-full"></div>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
                     Choose from a wide range of internationally recognized programs across various disciplines.
                 </p>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Program 1 -->
-                <div class="program-card bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 border border-gray-100 animate-fade-in-up">
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 border border-gray-100 group hover:border-[#24c6e0]/50">
                     <div class="h-48 relative overflow-hidden">
                         <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
                              alt="Information Technology" 
-                             class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
-                        <div class="absolute inset-0 bg-gradient-to-t from-blue-900/80 to-transparent"></div>
+                             class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#24c6e0]/90 to-transparent"></div>
                         <div class="absolute bottom-4 left-4">
-                            <span class="bg-blue-500 text-white text-xs font-bold px-3 py-1 rounded-full">High Demand</span>
+                            <span class="bg-white text-[#24c6e0] text-xs font-bold px-3 py-1 rounded-full shadow-md">High Demand</span>
                         </div>
                     </div>
                     <div class="p-6">
                         <div class="flex justify-between items-start mb-3">
                             <h3 class="text-xl font-bold text-gray-900">Information Technology</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">STEM</span>
+                            <span class="bg-[#24c6e0]/10 text-[#24c6e0] text-xs font-semibold px-2.5 py-0.5 rounded">STEM</span>
                         </div>
                         <p class="text-gray-600 mb-4">
                             Cutting-edge programs in AI, Cybersecurity, Data Science, and Software Engineering at Australia's top tech schools.
                         </p>
                         <div class="flex justify-between items-center">
                             <span class="text-sm font-semibold text-gray-500">Duration: 2-3 years</span>
-                           
                         </div>
                     </div>
                 </div>
                 
                 <!-- Program 2 -->
-                <div class="program-card bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 border border-gray-100 animate-fade-in-up" style="animation-delay: 0.1s;">
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 border border-gray-100 group hover:border-[#24c6e0]/50">
                     <div class="h-48 relative overflow-hidden">
                         <img src="https://images.unsplash.com/photo-1581056771107-24ca5f033842?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
                              alt="Nursing" 
-                             class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
-                        <div class="absolute inset-0 bg-gradient-to-t from-red-900/80 to-transparent"></div>
+                             class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#24c6e0]/90 to-transparent"></div>
                         <div class="absolute bottom-4 left-4">
-                            <span class="bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-full">PR Pathway</span>
+                            <span class="bg-white text-[#24c6e0] text-xs font-bold px-3 py-1 rounded-full shadow-md">PR Pathway</span>
                         </div>
                     </div>
                     <div class="p-6">
                         <div class="flex justify-between items-start mb-3">
                             <h3 class="text-xl font-bold text-gray-900">Nursing & Healthcare</h3>
-                            <span class="bg-red-100 text-red-800 text-xs font-semibold px-2.5 py-0.5 rounded">Health</span>
+                            <span class="bg-[#24c6e0]/10 text-[#24c6e0] text-xs font-semibold px-2.5 py-0.5 rounded">Health</span>
                         </div>
                         <p class="text-gray-600 mb-4">
                             World-class nursing programs with clinical placements and excellent job prospects in Australia's healthcare system.
                         </p>
                         <div class="flex justify-between items-center">
                             <span class="text-sm font-semibold text-gray-500">Duration: 3-4 years</span>
-                            
                         </div>
                     </div>
                 </div>
                 
                 <!-- Program 3 -->
-                <div class="program-card bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 border border-gray-100 animate-fade-in-up" style="animation-delay: 0.2s;">
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 border border-gray-100 group hover:border-[#24c6e0]/50">
                     <div class="h-48 relative overflow-hidden">
                         <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
                              alt="Business" 
-                             class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
-                        <div class="absolute inset-0 bg-gradient-to-t from-indigo-900/80 to-transparent"></div>
+                             class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#24c6e0]/90 to-transparent"></div>
                         <div class="absolute bottom-4 left-4">
-                            <span class="bg-indigo-500 text-white text-xs font-bold px-3 py-1 rounded-full">Triple Accredited</span>
+                            <span class="bg-white text-[#24c6e0] text-xs font-bold px-3 py-1 rounded-full shadow-md">Triple Accredited</span>
                         </div>
                     </div>
                     <div class="p-6">
                         <div class="flex justify-between items-start mb-3">
                             <h3 class="text-xl font-bold text-gray-900">Business & Management</h3>
-                            <span class="bg-indigo-100 text-indigo-800 text-xs font-semibold px-2.5 py-0.5 rounded">Business</span>
+                            <span class="bg-[#24c6e0]/10 text-[#24c6e0] text-xs font-semibold px-2.5 py-0.5 rounded">Business</span>
                         </div>
                         <p class="text-gray-600 mb-4">
                             MBA and specialized business degrees from AACSB, EQUIS, and AMBA accredited business schools.
                         </p>
                         <div class="flex justify-between items-center">
                             <span class="text-sm font-semibold text-gray-500">Duration: 1.5-2 years</span>
-                            
                         </div>
                     </div>
                 </div>
@@ -507,9 +495,11 @@
     <section class="py-20 bg-gray-50">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold mb-4 text-gray-900">
-                    <span class="text-blue-600">Study Levels</span> in Australia
+                <span class="text-[#24c6e0] font-semibold text-sm uppercase tracking-wider">Education Pathways</span>
+                <h2 class="text-4xl font-bold mb-4 text-gray-900 mt-2">
+                    <span class="text-[#24c6e0]">Study Levels</span> in Australia
                 </h2>
+                <div class="w-24 h-1 bg-[#24c6e0] mx-auto mb-6 rounded-full"></div>
                 <p class="text-lg text-gray-600 max-w-3xl mx-auto">
                     Australian education system offers pathways for students at all academic levels
                 </p>
@@ -517,27 +507,27 @@
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Undergraduate -->
-                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
-                    <div class="bg-blue-600 text-white p-6">
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 border border-gray-100">
+                    <div class="bg-[#24c6e0] text-white p-6">
                         <h3 class="text-xl font-bold mb-2">Undergraduate</h3>
                         <p class="opacity-90">Bachelor's Degrees (3-4 years)</p>
                     </div>
                     <div class="p-6">
                         <ul class="space-y-3 text-gray-600">
                             <li class="flex items-start">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#24c6e0] mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                                 </svg>
                                 <span>High school diploma required</span>
                             </li>
                             <li class="flex items-start">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#24c6e0] mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                                 </svg>
                                 <span>IELTS/TOEFL typically required</span>
                             </li>
                             <li class="flex items-start">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#24c6e0] mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                                 </svg>
                                 <span>Wide range of majors available</span>
@@ -548,58 +538,58 @@
                 </div>
                 
                 <!-- Graduate -->
-                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
-                    <div class="bg-blue-700 text-white p-6">
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 border border-gray-100">
+                    <div class="bg-[#1a8fa3] text-white p-6">
                         <h3 class="text-xl font-bold mb-2">Graduate</h3>
                         <p class="opacity-90">Master's & PhD Programs</p>
                     </div>
                     <div class="p-6">
                         <ul class="space-y-3 text-gray-600">
                             <li class="flex items-start">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#24c6e0] mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                                 </svg>
                                 <span>Bachelor's degree required</span>
                             </li>
                             <li class="flex items-start">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#24c6e0] mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                                 </svg>
                                 <span>GRE/GMAT often required</span>
                             </li>
                             <li class="flex items-start">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#24c6e0] mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                                 </svg>
                                 <span>Research or coursework options</span>
                             </li>
                         </ul>
-                       
+                        
                     </div>
                 </div>
                 
                 <!-- Vocational -->
-                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
-                    <div class="bg-blue-800 text-white p-6">
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 border border-gray-100">
+                    <div class="bg-[#148294] text-white p-6">
                         <h3 class="text-xl font-bold mb-2">Vocational Education</h3>
                         <p class="opacity-90">VET & TAFE Courses</p>
                     </div>
                     <div class="p-6">
                         <ul class="space-y-3 text-gray-600">
                             <li class="flex items-start">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#24c6e0] mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                                 </svg>
                                 <span>Practical, career-focused training</span>
                             </li>
                             <li class="flex items-start">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#24c6e0] mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                                 </svg>
                                 <span>Pathway to university degrees</span>
                             </li>
                             <li class="flex items-start">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#24c6e0] mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                                 </svg>
                                 <span>Certificate to Advanced Diploma levels</span>
@@ -617,14 +607,19 @@
         <div class="container mx-auto px-6">
             <div class="flex flex-col lg:flex-row gap-12">
                 <div class="lg:w-1/2">
-                    <h2 class="text-4xl font-bold mb-6 text-gray-900">
-                        <span class="text-blue-600">Cost of Study</span> in Australia
+                    <span class="text-[#24c6e0] font-semibold text-sm uppercase tracking-wider">Financial Planning</span>
+                    <h2 class="text-4xl font-bold mb-6 text-gray-900 mt-2">
+                        <span class="text-[#24c6e0]">Cost of Study</span> in Australia
                     </h2>
-                    <div class="bg-gray-50 p-6 rounded-xl shadow-sm">
+                    <div class="w-24 h-1 bg-[#24c6e0] mb-6 rounded-full"></div>
+                    
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition duration-300">
                         <div class="flex items-center mb-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                            </svg>
+                            <div class="w-10 h-10 rounded-full bg-[#24c6e0]/10 flex items-center justify-center mr-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#24c6e0]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </div>
                             <h3 class="text-xl font-semibold">Tuition Fees</h3>
                         </div>
                         <ul class="space-y-4">
@@ -643,17 +638,19 @@
                         </ul>
                     </div>
                     
-                    <div class="bg-gray-50 p-6 rounded-xl shadow-sm mt-6">
+                    <div class="bg-white p-6 rounded-xl shadow-sm mt-6 border border-gray-100 hover:shadow-md transition duration-300">
                         <div class="flex items-center mb-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-                            </svg>
+                            <div class="w-10 h-10 rounded-full bg-[#24c6e0]/10 flex items-center justify-center mr-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#24c6e0]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                                </svg>
+                            </div>
                             <h3 class="text-xl font-semibold">Living Expenses</h3>
                         </div>
                         <ul class="space-y-4">
                             <li class="flex justify-between border-b border-gray-200 pb-2">
                                 <span class="text-gray-600">Accommodation</span>
-                                <span class="font-medium">AUD 600 - 1,6000/month</span>
+                                <span class="font-medium">AUD 600 - 1,600/month</span>
                             </li>
                             <li class="flex justify-between border-b border-gray-200 pb-2">
                                 <span class="text-gray-600">Food & Groceries</span>
@@ -672,55 +669,62 @@
                                 <span class="font-medium">AUD 30 - 60/month</span>
                             </li>
                             <li class="flex justify-between border-b border-gray-200 pb-2">
-                                <span class="text-gray-600">Miscellaneous</span>
-                                <span class="font-medium">AUD 150 - 400/month</span>
-                            </li>
-                            <li class="flex justify-between border-b border-gray-200 pb-2">
-                                <span class="text-gray-600">Total</span>
-                                <span class="font-medium">AUD 1,300 - 31000/month</span>
+                                <span class="text-gray-600">Total (Monthly)</span>
+                                <span class="font-medium">AUD 1,300 - 3,000/month</span>
                             </li>
                         </ul>
                     </div>
                 </div>
                 
                 <div class="lg:w-1/2">
-                    <h2 class="text-4xl font-bold mb-6 text-gray-900">
-                        <span class="text-blue-600">Scholarships</span> & Financial Aid
+                    <span class="text-[#24c6e0] font-semibold text-sm uppercase tracking-wider">Financial Support</span>
+                    <h2 class="text-4xl font-bold mb-6 text-gray-900 mt-2">
+                        <span class="text-[#24c6e0]">Scholarships</span> & Financial Aid
                     </h2>
-                    <div class="bg-blue-50 border border-blue-100 rounded-xl p-6 mb-6">
-                        <h3 class="text-xl font-semibold mb-4 text-blue-800">Available Funding Options</h3>
+                    <div class="w-24 h-1 bg-[#24c6e0] mb-6 rounded-full"></div>
+                    
+                    <div class="bg-[#24c6e0]/5 border border-[#24c6e0]/20 rounded-xl p-6 mb-6 hover:shadow-md transition duration-300">
+                        <h3 class="text-xl font-semibold mb-4 text-[#24c6e0]">Available Funding Options</h3>
                         <ul class="space-y-4">
                             <li class="flex items-start">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600 mr-3 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
+                                <div class="w-8 h-8 rounded-full bg-[#24c6e0]/20 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-[#24c6e0]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                </div>
                                 <div>
                                     <h4 class="font-medium text-gray-900">Australia Awards Scholarships</h4>
                                     <p class="text-gray-600 text-sm">Prestigious government-funded awards for international students</p>
                                 </div>
                             </li>
                             <li class="flex items-start">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600 mr-3 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
+                                <div class="w-8 h-8 rounded-full bg-[#24c6e0]/20 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-[#24c6e0]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                </div>
                                 <div>
                                     <h4 class="font-medium text-gray-900">University Merit Scholarships</h4>
                                     <p class="text-gray-600 text-sm">Awards based on academic excellence from individual universities</p>
                                 </div>
                             </li>
                             <li class="flex items-start">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600 mr-3 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
+                                <div class="w-8 h-8 rounded-full bg-[#24c6e0]/20 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-[#24c6e0]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                </div>
                                 <div>
                                     <h4 class="font-medium text-gray-900">Destination Australia</h4>
                                     <p class="text-gray-600 text-sm">Scholarships for regional study locations</p>
                                 </div>
                             </li>
                             <li class="flex items-start">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600 mr-3 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
+                                <div class="w-8 h-8 rounded-full bg-[#24c6e0]/20 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-[#24c6e0]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                </div>
                                 <div>
                                     <h4 class="font-medium text-gray-900">Research Scholarships</h4>
                                     <p class="text-gray-600 text-sm">Funding for postgraduate research students</p>
@@ -728,12 +732,32 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="bg-yellow-50 border border-yellow-100 rounded-xl p-6">
-                        <h3 class="text-xl font-semibold mb-4 text-yellow-800">Our Scholarship Success</h3>
+                    <div class="bg-yellow-50 border border-yellow-100 rounded-xl p-6 hover:shadow-md transition duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="w-10 h-10 rounded-full bg-yellow-100 flex items-center justify-center mr-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-yellow-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold text-yellow-800">Our Scholarship Success</h3>
+                        </div>
                         <p class="text-gray-700 mb-4">
                             Our students have secured over $3 million in scholarships last year. We help you identify and apply for the best funding opportunities.
                         </p>
-                       
+                        <div class="flex items-center justify-between bg-white p-3 rounded-lg">
+                            <div class="text-center">
+                                <div class="text-2xl font-bold text-[#24c6e0]">400+</div>
+                                <div class="text-xs text-gray-500">Scholarships Won</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-2xl font-bold text-[#24c6e0]">$10,000</div>
+                                <div class="text-xs text-gray-500">Average Award</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-2xl font-bold text-[#24c6e0]">97%</div>
+                                <div class="text-xs text-gray-500">Success Rate</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -745,106 +769,151 @@
         <div class="container mx-auto px-6">
             <div class="flex flex-col lg:flex-row gap-12">
                 <div class="lg:w-1/2">
-                    <h2 class="text-4xl font-bold mb-6 text-gray-900">
-                        <span class="text-blue-600">Visa Process</span> for Australia
+                    <span class="text-[#24c6e0] font-semibold text-sm uppercase tracking-wider">Immigration</span>
+                    <h2 class="text-4xl font-bold mb-6 text-gray-900 mt-2">
+                        <span class="text-[#24c6e0]">Visa Process</span> for Australia
                     </h2>
-                    <div class="bg-white p-6 rounded-xl shadow-sm mb-6">
+                    <div class="w-24 h-1 bg-[#24c6e0] mb-6 rounded-full"></div>
+                    
+                    <div class="bg-white p-6 rounded-xl shadow-sm mb-6 border border-gray-100 hover:shadow-md transition duration-300">
                         <h3 class="text-xl font-semibold mb-4">Student Visa (Subclass 500) Requirements</h3>
                         <ul class="space-y-3">
                             <li class="flex items-start">
-                                <div class="bg-blue-100 text-blue-800 rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                                <div class="bg-[#24c6e0]/10 text-[#24c6e0] rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
                                     1
                                 </div>
                                 <span class="text-gray-600">Confirmation of Enrolment (CoE) from CRICOS-registered institution</span>
                             </li>
                             <li class="flex items-start">
-                                <div class="bg-blue-100 text-blue-800 rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                                <div class="bg-[#24c6e0]/10 text-[#24c6e0] rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
                                     2
                                 </div>
                                 <span class="text-gray-600">Proof of financial capacity (tuition + living)</span>
                             </li>
                             <li class="flex items-start">
-                                <div class="bg-blue-100 text-blue-800 rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                                <div class="bg-[#24c6e0]/10 text-[#24c6e0] rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
                                     3
                                 </div>
                                 <span class="text-gray-600">Overseas Student Health Cover (OSHC)</span>
                             </li>
                             <li class="flex items-start">
-                                <div class="bg-blue-100 text-blue-800 rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                                <div class="bg-[#24c6e0]/10 text-[#24c6e0] rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
                                     4
                                 </div>
                                 <span class="text-gray-600">English language proficiency (IELTS/TOEFL/PTE)</span>
                             </li>
                             <li class="flex items-start">
-                                <div class="bg-blue-100 text-blue-800 rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                                <div class="bg-[#24c6e0]/10 text-[#24c6e0] rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
                                     5
                                 </div>
                                 <span class="text-gray-600">Genuine Temporary Entrant (GTE) requirement</span>
                             </li>
                         </ul>
                     </div>
-                    <div class="bg-blue-50 border border-blue-100 rounded-xl p-6">
-                        <h3 class="text-xl font-semibold mb-4 text-blue-800">Our Visa Success Rate</h3>
+                    <div class="bg-[#24c6e0]/5 border border-[#24c6e0]/20 rounded-xl p-6 hover:shadow-md transition duration-300">
+                        <h3 class="text-xl font-semibold mb-4 text-[#24c6e0]">Our Visa Success Rate</h3>
                         <div class="flex items-center mb-4">
-                            <div class="text-4xl font-bold text-blue-600 mr-4">97%</div>
+                            <div class="text-5xl font-bold text-[#24c6e0] mr-4">97%</div>
                             <div class="text-gray-600">approval rate for our students in 2023</div>
                         </div>
                         <p class="text-gray-700">
                             Our visa experts provide complete documentation support and GTE statement preparation to maximize your chances.
                         </p>
+                        <div class="mt-6 bg-white p-4 rounded-lg border border-[#24c6e0]/10 flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-[#24c6e0] mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                            </svg>
+                            <div>
+                                <div class="font-medium">Free Visa Assessment</div>
+                                <div class="text-sm text-gray-500">Get your eligibility checked by our experts</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 
                 <div class="lg:w-1/2">
-                    <h2 class="text-4xl font-bold mb-6 text-gray-900">
-                        <span class="text-blue-600">Work Opportunities</span> in Australia
+                    <span class="text-[#24c6e0] font-semibold text-sm uppercase tracking-wider">Employment</span>
+                    <h2 class="text-4xl font-bold mb-6 text-gray-900 mt-2">
+                        <span class="text-[#24c6e0]">Work Opportunities</span> in Australia
                     </h2>
-                    <div class="bg-white p-6 rounded-xl shadow-sm mb-6">
+                    <div class="w-24 h-1 bg-[#24c6e0] mb-6 rounded-full"></div>
+                    
+                    <div class="bg-white p-6 rounded-xl shadow-sm mb-6 border border-gray-100 hover:shadow-md transition duration-300">
                         <h3 class="text-xl font-semibold mb-4">During Studies</h3>
                         <ul class="space-y-3">
                             <li class="flex items-start">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600 mr-3 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                                </svg>
+                                <div class="w-8 h-8 rounded-full bg-[#24c6e0]/10 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-[#24c6e0]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                    </svg>
+                                </div>
                                 <div>
                                     <h4 class="font-medium text-gray-900">Part-Time Work</h4>
                                     <p class="text-gray-600 text-sm">Up to 40 hours per fortnight during academic sessions</p>
                                 </div>
                             </li>
                             <li class="flex items-start">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600 mr-3 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                                </svg>
+                                <div class="w-8 h-8 rounded-full bg-[#24c6e0]/10 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-[#24c6e0]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                    </svg>
+                                </div>
                                 <div>
                                     <h4 class="font-medium text-gray-900">Full-Time During Breaks</h4>
                                     <p class="text-gray-600 text-sm">Unlimited hours during scheduled course breaks</p>
                                 </div>
                             </li>
+                            <li class="flex items-start">
+                                <div class="w-8 h-8 rounded-full bg-[#24c6e0]/10 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-[#24c6e0]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-900">On-Campus Employment</h4>
+                                    <p class="text-gray-600 text-sm">Opportunities to work at university facilities</p>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                     
-                    <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition duration-300">
                         <h3 class="text-xl font-semibold mb-4">After Graduation</h3>
                         <ul class="space-y-3">
                             <li class="flex items-start">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600 mr-3 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                                </svg>
+                                <div class="w-8 h-8 rounded-full bg-[#24c6e0]/10 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-[#24c6e0]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                    </svg>
+                                </div>
                                 <div>
                                     <h4 class="font-medium text-gray-900">Post-Study Work Visa</h4>
                                     <p class="text-gray-600 text-sm">2-6 years depending on qualification level and regional location</p>
                                 </div>
                             </li>
                             <li class="flex items-start">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600 mr-3 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                                </svg>
+                                <div class="w-8 h-8 rounded-full bg-[#24c6e0]/10 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-[#24c6e0]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                    </svg>
+                                </div>
                                 <div>
                                     <h4 class="font-medium text-gray-900">Permanent Residency Pathways</h4>
                                     <p class="text-gray-600 text-sm">Skilled migration options for eligible graduates</p>
                                 </div>
                             </li>
                         </ul>
+                        <div class="mt-6 p-4 bg-[#24c6e0]/5 rounded-lg">
+                            <div class="flex items-center mb-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#24c6e0] mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                                <span class="font-medium">Did you know?</span>
+                            </div>
+                            <p class="text-sm text-gray-600">
+                                Australia offers one of the most generous post-study work rights globally, with up to 6 years for PhD graduates in regional areas.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -854,13 +923,20 @@
     <!-- Application Process -->
     <section class="py-20 bg-white">
         <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold mb-12 text-center text-gray-900">
-                <span class="text-blue-600">Application Process</span> for Australian Universities
-            </h2>
+            <div class="text-center mb-16">
+                <span class="text-[#24c6e0] font-semibold text-sm uppercase tracking-wider">Your Journey</span>
+                <h2 class="text-4xl font-bold mb-4 text-gray-900 mt-2">
+                    <span class="text-[#24c6e0]">Application Process</span> for Australian Universities
+                </h2>
+                <div class="w-24 h-1 bg-[#24c6e0] mx-auto mb-6 rounded-full"></div>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Our step-by-step guidance ensures a smooth application journey
+                </p>
+            </div>
             
             <div class="relative">
                 <!-- Timeline -->
-                <div class="hidden lg:block absolute left-1/2 h-full w-1 bg-gray-200 -ml-0.5"></div>
+                <div class="hidden lg:block absolute left-1/2 h-full w-1 bg-[#24c6e0]/20 -ml-0.5"></div>
                 
                 <!-- Steps -->
                 <div class="space-y-12">
@@ -873,7 +949,7 @@
                             </p>
                         </div>
                         <div class="lg:w-1/2 lg:pl-12 order-2">
-                            <div class="w-16 h-16 rounded-full bg-blue-600 text-white flex items-center justify-center text-2xl font-bold shadow-lg mx-auto lg:mx-0 lg:absolute lg:-left-8">
+                            <div class="w-16 h-16 rounded-full bg-[#24c6e0] text-white flex items-center justify-center text-2xl font-bold shadow-lg mx-auto lg:mx-0 lg:absolute lg:-left-8 z-10">
                                 1
                             </div>
                         </div>
@@ -882,7 +958,7 @@
                     <!-- Step 2 -->
                     <div class="relative flex flex-col lg:flex-row items-center gap-8">
                         <div class="lg:w-1/2 lg:pl-12 order-2 lg:order-1">
-                            <div class="w-16 h-16 rounded-full bg-blue-600 text-white flex items-center justify-center text-2xl font-bold shadow-lg mx-auto lg:mx-0 lg:absolute lg:-right-8">
+                            <div class="w-16 h-16 rounded-full bg-[#24c6e0] text-white flex items-center justify-center text-2xl font-bold shadow-lg mx-auto lg:mx-0 lg:absolute lg:-right-8 z-10">
                                 2
                             </div>
                         </div>
@@ -903,7 +979,7 @@
                             </p>
                         </div>
                         <div class="lg:w-1/2 lg:pl-12 order-2">
-                            <div class="w-16 h-16 rounded-full bg-blue-600 text-white flex items-center justify-center text-2xl font-bold shadow-lg mx-auto lg:mx-0 lg:absolute lg:-left-8">
+                            <div class="w-16 h-16 rounded-full bg-[#24c6e0] text-white flex items-center justify-center text-2xl font-bold shadow-lg mx-auto lg:mx-0 lg:absolute lg:-left-8 z-10">
                                 3
                             </div>
                         </div>
@@ -912,7 +988,7 @@
                     <!-- Step 4 -->
                     <div class="relative flex flex-col lg:flex-row items-center gap-8">
                         <div class="lg:w-1/2 lg:pl-12 order-2 lg:order-1">
-                            <div class="w-16 h-16 rounded-full bg-blue-600 text-white flex items-center justify-center text-2xl font-bold shadow-lg mx-auto lg:mx-0 lg:absolute lg:-right-8">
+                            <div class="w-16 h-16 rounded-full bg-[#24c6e0] text-white flex items-center justify-center text-2xl font-bold shadow-lg mx-auto lg:mx-0 lg:absolute lg:-right-8 z-10">
                                 4
                             </div>
                         </div>
@@ -933,7 +1009,7 @@
                             </p>
                         </div>
                         <div class="lg:w-1/2 lg:pl-12 order-2">
-                            <div class="w-16 h-16 rounded-full bg-blue-600 text-white flex items-center justify-center text-2xl font-bold shadow-lg mx-auto lg:mx-0 lg:absolute lg:-left-8">
+                            <div class="w-16 h-16 rounded-full bg-[#24c6e0] text-white flex items-center justify-center text-2xl font-bold shadow-lg mx-auto lg:mx-0 lg:absolute lg:-left-8 z-10">
                                 5
                             </div>
                         </div>
@@ -941,95 +1017,12 @@
                 </div>
             </div>
             
-            
-        </div>
-    </section>
-
-    <!-- Consultation Form Section -->
-    <section id="consultation-form" class="py-20 bg-gradient-to-r from-blue-800 to-sky-700 text-white">
-        <div class="container mx-auto px-6">
-            <div class="max-w-4xl mx-auto">
-                <div class="text-center mb-12">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Start Your Australian Education Journey</h2>
-                    <p class="text-xl opacity-90">Get personalized advice from our Australia education experts</p>
-                </div>
-                
-                <form class="bg-white rounded-xl shadow-xl p-8 text-gray-800">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                        <div>
-                            <label for="name" class="block text-sm font-medium mb-2">Full Name</label>
-                            <input type="text" id="name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
-                        </div>
-                        <div>
-                            <label for="email" class="block text-sm font-medium mb-2">Email Address</label>
-                            <input type="email" id="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
-                        </div>
-                        <div>
-                            <label for="phone" class="block text-sm font-medium mb-2">Phone Number</label>
-                            <input type="tel" id="phone" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
-                        </div>
-                        <div>
-                            <label for="country" class="block text-sm font-medium mb-2">Current Country</label>
-                            <select id="country" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
-                                <option value="">Select Country</option>
-                                <option value="India">India</option>
-                                <option value="China">China</option>
-                                <option value="Nepal">Nepal</option>
-                                <option value="Other">Other</option>
-                            </select>
-                        </div>
-                    </div>
-                    
-                    <div class="mb-6">
-                        <label for="interest" class="block text-sm font-medium mb-2">Study Interest</label>
-                        <select id="interest" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
-                            <option value="">Select Program</option>
-                            <option value="IT">Information Technology</option>
-                            <option value="Business">Business & Management</option>
-                            <option value="Engineering">Engineering</option>
-                            <option value="Health">Health Sciences</option>
-                            <option value="Other">Other</option>
-                        </select>
-                    </div>
-                    
-                    <div class="mb-6">
-                        <label for="message" class="block text-sm font-medium mb-2">Your Questions</label>
-                        <textarea id="message" rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500"></textarea>
-                    </div>
-                    
-                    <div class="flex items-center mb-6">
-                        <input id="consent" type="checkbox" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
-                        <label for="consent" class="ml-2 block text-sm text-gray-700">
-                            I agree to receive information about studying in Australia
-                        </label>
-                    </div>
-                    
-                    <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-6 rounded-lg transition duration-300">
-                        Book Free Consultation
-                    </button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-   
-    <!-- Final CTA Section -->
-    <section class="py-20 bg-gradient-to-r from-blue-900 to-blue-700 text-white">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Begin Your Australian Education Journey?</h2>
-            <p class="text-xl mb-8 max-w-3xl mx-auto">Our expert consultants will guide you through every step of the process</p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="#consultation-form" class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 px-8 py-4 rounded-lg font-bold inline-flex items-center justify-center transition duration-300">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+            <div class="text-center mt-16">
+                <a href="#consultation-form" data-modal="consultation" class="inline-flex items-center px-8 py-4 bg-[#24c6e0] hover:bg-[#1a8fa3] text-white rounded-lg font-bold transition duration-300 shadow-lg">
+                    Start Your Application
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                     </svg>
-                    Book Free Consultation
-                </a>
-                <a href="tel:+11234567890" class="bg-transparent border-2 border-white hover:bg-white/10 px-8 py-4 rounded-lg font-bold inline-flex items-center justify-center transition duration-300">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                    </svg>
-                    Call Now
                 </a>
             </div>
         </div>
@@ -1078,21 +1071,6 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // University carousel navigation
-            const carousel = document.querySelector('.university-carousel');
-            const prevBtn = document.querySelector('.carousel-prev');
-            const nextBtn = document.querySelector('.carousel-next');
-            
-            if (carousel && prevBtn && nextBtn) {
-                prevBtn.addEventListener('click', () => {
-                    carousel.scrollBy({ left: -300, behavior: 'smooth' });
-                });
-                
-                nextBtn.addEventListener('click', () => {
-                    carousel.scrollBy({ left: 300, behavior: 'smooth' });
-                });
-            }
-            
             // Smooth scroll for anchor links
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function(e) {
@@ -1110,6 +1088,5 @@
                 });
             });
         });
-        
     </script>
 {% endblock %}
