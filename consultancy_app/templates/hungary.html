@@ -5,7 +5,7 @@
 {% block content %}
 
 <!-- Hero Section -->
-<section class="relative min-h-[80vh] flex items-center overflow-hidden bg-gradient-to-r from-blue-600 to-blue-800 text-white" data-reveal>
+<section class="relative min-h-[80vh] flex items-center overflow-hidden bg-gradient-to-r from-[#24c6e0] to-[#1a8fa3] text-white" data-reveal>
     <!-- Background Pattern -->
     <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/always-grey.png')]"></div>
     
@@ -13,19 +13,19 @@
         <div class="flex flex-col lg:flex-row items-center gap-12">
             <div class="lg:w-1/2 mb-10 lg:mb-0" data-stagger="1">
                 <div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-6 py-2 inline-flex items-center mb-6">
-                    <img src="https://cdn-icons-png.flaticon.com/512/323/323373.png" alt="Hungary Flag" class="h-5 w-5 mr-2">
+                    <img src="https://clipground.com/images/hungarian-flag-clipart-10.jpg" alt="Hungary Flag" class="h-5 w-5 mr-2">
                     <span>STUDY IN HUNGARY</span>
                 </div>
                 <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                    Study in <span class="text-white">Hungary</span> - Affordable Excellence
+                    Study in <span class="text-yellow-300">Hungary</span> - Affordable Excellence
                 </h1>
                 <p class="text-xl mb-8 opacity-90">
                     Discover world-class education and vibrant culture in the heart of Europe.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
                     <a href="#consultation-form" data-modal="consultation" 
-                       class="bg-white hover:bg-gray-100 text-blue-600 px-8 py-4 rounded-lg font-bold inline-flex items-center justify-center transition duration-300 animate-bounce smooth-scroll">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                       class="bg-white hover:bg-gray-100 text-[#24c6e0] px-8 py-4 rounded-lg font-bold inline-flex items-center justify-center transition duration-300 group">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 group-hover:animate-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                         </svg>
                         Free Consultation
@@ -41,26 +41,37 @@
             </div>
             <div class="lg:w-1/2" data-stagger="2">
                 <div class="relative">
-                    <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                    <div class="absolute -inset-4 bg-[#24c6e0]/20 rounded-xl blur-xl"></div>
+                    <img src="{% static 'assets/front/7.jpeg' %}" 
                          alt="Budapest, Hungary" 
-                         class="rounded-xl shadow-2xl w-full hover:scale-105 transition-transform duration-500">
-                    <div class="absolute -bottom-6 -right-6 bg-white p-4 rounded-xl shadow-lg text-gray-800">
-                        <div class="text-3xl font-bold text-blue-600">Top</div>
+                         class="relative rounded-xl shadow-2xl w-full hover:scale-105 transition-transform duration-500 z-10">
+                    <div class="absolute -bottom-6 -right-6 bg-white p-4 rounded-xl shadow-lg text-gray-800 z-20">
+                        <div class="text-3xl font-bold text-[#24c6e0]">Top</div>
                         <div class="text-sm">Affordable Education</div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    
+    <div class="absolute bottom-8 left-0 right-0 flex justify-center z-10">
+        <a href="#why-hungary" class="text-white hover:text-yellow-300 transition-colors duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 animate-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+            </svg>
+        </a>
+    </div>
 </section>
 
 <!-- Why Hungary Section -->
-<section class="py-16 bg-white" data-reveal>
+<section id="why-hungary" class="py-16 bg-white" data-reveal>
     <div class="container mx-auto px-6">
         <div class="text-center mb-16" data-stagger="1">
-            <h2 class="text-4xl font-bold mb-4 text-gray-900">
-                <span class="text-blue-600">Why Study</span> in Hungary?
+            <span class="text-[#24c6e0] font-semibold text-sm uppercase tracking-wider">Why Choose Hungary?</span>
+            <h2 class="text-4xl font-bold mb-4 text-gray-900 mt-2">
+                <span class="text-[#24c6e0]">Why Study</span> in Hungary?
             </h2>
+            <div class="w-24 h-1 bg-[#24c6e0] mx-auto mb-6 rounded-full"></div>
             <p class="text-lg text-gray-600 max-w-3xl mx-auto">
                 Hungary offers affordable education, top medical programs, and a vibrant cultural experience in Europe.
             </p>
@@ -68,9 +79,9 @@
         
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <!-- Benefit 1 -->
-            <div class="bg-gray-50 p-8 rounded-xl hover:shadow-lg hover:-translate-y-2 transition-all duration-300 border border-gray-100" data-stagger="2">
-                <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-6 mx-auto">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <div class="bg-white p-8 rounded-xl hover:shadow-lg hover:-translate-y-2 transition-all duration-300 border border-gray-100 group hover:border-[#24c6e0]/50" data-stagger="2">
+                <div class="w-16 h-16 bg-[#24c6e0]/10 rounded-lg flex items-center justify-center mb-6 mx-auto group-hover:bg-[#24c6e0]/20 transition-colors duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-[#24c6e0]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                     </svg>
                 </div>
@@ -81,9 +92,9 @@
             </div>
             
             <!-- Benefit 2 -->
-            <div class="bg-gray-50 p-8 rounded-xl hover:shadow-lg hover:-translate-y-2 transition-all duration-300 border border-gray-100" data-stagger="3">
-                <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-6 mx-auto">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <div class="bg-white p-8 rounded-xl hover:shadow-lg hover:-translate-y-2 transition-all duration-300 border border-gray-100 group hover:border-[#24c6e0]/50" data-stagger="3">
+                <div class="w-16 h-16 bg-[#24c6e0]/10 rounded-lg flex items-center justify-center mb-6 mx-auto group-hover:bg-[#24c6e0]/20 transition-colors duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-[#24c6e0]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
                     </svg>
                 </div>
@@ -94,9 +105,9 @@
             </div>
             
             <!-- Benefit 3 -->
-            <div class="bg-gray-50 p-8 rounded-xl hover:shadow-lg hover:-translate-y-2 transition-all duration-300 border border-gray-100" data-stagger="4">
-                <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-6 mx-auto">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <div class="bg-white p-8 rounded-xl hover:shadow-lg hover:-translate-y-2 transition-all duration-300 border border-gray-100 group hover:border-[#24c6e0]/50" data-stagger="4">
+                <div class="w-16 h-16 bg-[#24c6e0]/10 rounded-lg flex items-center justify-center mb-6 mx-auto group-hover:bg-[#24c6e0]/20 transition-colors duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-[#24c6e0]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
                     </svg>
                 </div>
@@ -107,9 +118,9 @@
             </div>
             
             <!-- Benefit 4 -->
-            <div class="bg-gray-50 p-8 rounded-xl hover:shadow-lg hover:-translate-y-2 transition-all duration-300 border border-gray-100" data-stagger="5">
-                <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-6 mx-auto">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <div class="bg-white p-8 rounded-xl hover:shadow-lg hover:-translate-y-2 transition-all duration-300 border border-gray-100 group hover:border-[#24c6e0]/50" data-stagger="5">
+                <div class="w-16 h-16 bg-[#24c6e0]/10 rounded-lg flex items-center justify-center mb-6 mx-auto group-hover:bg-[#24c6e0]/20 transition-colors duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-[#24c6e0]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a2 2 0 00-2-2h-3m-2 4H2v-2a2 2 0 012-2h3m5-12V4m0 16v-2m0-4v-2m0-4V4" />
                     </svg>
                 </div>
@@ -126,59 +137,62 @@
 <section class="py-16 bg-gray-50" data-reveal>
     <div class="container mx-auto px-6">
         <div class="text-center mb-16" data-stagger="1">
-            <h2 class="text-4xl font-bold mb-4 text-gray-900">
-                <span class="text-blue-600">Top Universities</span> in Hungary
+            <span class="text-[#24c6e0] font-semibold text-sm uppercase tracking-wider">Excellence in Education</span>
+            <h2 class="text-4xl font-bold mb-4 text-gray-900 mt-2">
+                <span class="text-[#24c6e0]">Top Universities</span> in Hungary
             </h2>
+            <div class="w-24 h-1 bg-[#24c6e0] mx-auto mb-6 rounded-full"></div>
             <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-                Partner with Hungary’s leading institutions offering diverse programs
+                Partner with Hungary's leading institutions offering diverse programs
             </p>
         </div>
         
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <!-- University of Debrecen -->
-            <div class="relative group overflow-hidden rounded-xl shadow-lg h-80" data-stagger="2">
+            <div class="relative group overflow-hidden rounded-xl shadow-lg h-80 transform transition duration-500 hover:scale-105 hover:shadow-xl" data-stagger="2">
                 <img src="https://th.bing.com/th/id/OIP.WIiq9Xcv7QP2bPqbGy0PBwHaE8?rs=1&pid=ImgDetMain" 
                      alt="University of Debrecen" 
-                     class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
-                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
+                     class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent"></div>
                 <div class="absolute bottom-0 left-0 p-6 w-full">
                     <div class="flex items-center mb-2">
                         <img src="https://th.bing.com/th/id/OIP.g13v67rU6JywpJK5MoULGQHaHa?w=151&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Debrecen Logo" class="h-6 w-6 mr-2">
                         <h3 class="text-xl font-bold text-white">University of Debrecen</h3>
                     </div>
                     <p class="text-white/90 mb-4">Leader in medical and engineering programs</p>
-                    
                 </div>
-                <div class="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold">
+                <div class="absolute top-4 right-4 bg-[#24c6e0] text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg">
                     Medical Excellence
                 </div>
             </div>
             
-           
-        </div>
-        
-    </div>
 </section>
 
 <!-- Popular Programs Section -->
 <section class="py-16 bg-white" data-reveal>
     <div class="container mx-auto px-6">
         <div class="text-center mb-16" data-stagger="1">
-            <h2 class="text-4xl font-bold mb-4 text-gray-900">
-                <span class="text-blue-600">Popular Programs</span> in Hungary
+            <span class="text-[#24c6e0] font-semibold text-sm uppercase tracking-wider">Study Options</span>
+            <h2 class="text-4xl font-bold mb-4 text-gray-900 mt-2">
+                <span class="text-[#24c6e0]">Popular Programs</span> in Hungary
             </h2>
+            <div class="w-24 h-1 bg-[#24c6e0] mx-auto mb-6 rounded-full"></div>
             <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-                Explore high-demand programs in Hungary’s top universities
+                Explore high-demand programs in Hungary's top universities
             </p>
         </div>
         
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <!-- Medicine & Health Sciences -->
-            <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 border border-gray-100" data-stagger="2">
-                <div class="h-48 bg-gradient-to-r from-blue-500 to-blue-700 flex items-center justify-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                    </svg>
+            <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 border border-gray-100 group hover:border-[#24c6e0]/50" data-stagger="2">
+                <div class="h-48 relative overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" 
+                         alt="Medicine & Health Sciences" 
+                         class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#24c6e0]/90 to-transparent"></div>
+                    <div class="absolute bottom-4 left-4">
+                        <span class="bg-white text-[#24c6e0] text-xs font-bold px-3 py-1 rounded-full shadow-md">High Demand</span>
+                    </div>
                 </div>
                 <div class="p-6">
                     <h3 class="text-xl font-bold mb-3 text-gray-900">Medicine & Health Sciences</h3>
@@ -186,19 +200,22 @@
                         MBBS, Dentistry, and Veterinary Medicine programs
                     </p>
                     <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Medical</span>
-                        <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Global Recognition</span>
+                        <span class="bg-[#24c6e0]/10 text-[#24c6e0] text-xs px-3 py-1 rounded-full">Medical</span>
+                        <span class="bg-[#24c6e0]/10 text-[#24c6e0] text-xs px-3 py-1 rounded-full">Global Recognition</span>
                     </div>
-                    
                 </div>
             </div>
             
             <!-- Engineering & Technology -->
-            <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 border border-gray-100" data-stagger="3">
-                <div class="h-48 bg-gradient-to-r from-blue-500 to-blue-700 flex items-center justify-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 14l6-6m-5.5.5h.01m4.99 5h.01M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16l3.5-2 3.5 2 3.5-2 3.5 2zM10 8.5a.5.5 0 11-1 0 .5.5 0 011 0zm5 5a.5.5 0 11-1 0 .5.5 0 011 0z" />
-                    </svg>
+            <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 border border-gray-100 group hover:border-[#24c6e0]/50" data-stagger="3">
+                <div class="h-48 relative overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" 
+                         alt="Engineering & Technology" 
+                         class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#24c6e0]/90 to-transparent"></div>
+                    <div class="absolute bottom-4 left-4">
+                        <span class="bg-white text-[#24c6e0] text-xs font-bold px-3 py-1 rounded-full shadow-md">Innovation</span>
+                    </div>
                 </div>
                 <div class="p-6">
                     <h3 class="text-xl font-bold mb-3 text-gray-900">Engineering & Technology</h3>
@@ -206,19 +223,22 @@
                         Mechanical, Electrical, and IT Engineering programs
                     </p>
                     <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Innovation</span>
-                        <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Tech</span>
+                        <span class="bg-[#24c6e0]/10 text-[#24c6e0] text-xs px-3 py-1 rounded-full">Innovation</span>
+                        <span class="bg-[#24c6e0]/10 text-[#24c6e0] text-xs px-3 py-1 rounded-full">Tech</span>
                     </div>
-                    
                 </div>
             </div>
             
             <!-- Business & Economics -->
-            <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 border border-gray-100" data-stagger="4">
-                <div class="h-48 bg-gradient-to-r from-blue-500 to-blue-700 flex items-center justify-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a2 2 0 00-2-2h-3m-2 4H2v-2a2 2 0 012-2h3m5-12V4m0 16v-2m0-4v-2m0-4V4" />
-                    </svg>
+            <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 border border-gray-100 group hover:border-[#24c6e0]/50" data-stagger="4">
+                <div class="h-48 relative overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" 
+                         alt="Business & Economics" 
+                         class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#24c6e0]/90 to-transparent"></div>
+                    <div class="absolute bottom-4 left-4">
+                        <span class="bg-white text-[#24c6e0] text-xs font-bold px-3 py-1 rounded-full shadow-md">Global Markets</span>
+                    </div>
                 </div>
                 <div class="p-6">
                     <h3 class="text-xl font-bold mb-3 text-gray-900">Business & Economics</h3>
@@ -226,10 +246,9 @@
                         International Business and Finance programs
                     </p>
                     <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Global Markets</span>
-                        <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Leadership</span>
+                        <span class="bg-[#24c6e0]/10 text-[#24c6e0] text-xs px-3 py-1 rounded-full">Global Markets</span>
+                        <span class="bg-[#24c6e0]/10 text-[#24c6e0] text-xs px-3 py-1 rounded-full">Leadership</span>
                     </div>
-                    
                 </div>
             </div>
         </div>
@@ -240,37 +259,39 @@
 <section class="py-16 bg-gray-50" data-reveal>
     <div class="container mx-auto px-6">
         <div class="text-center mb-16" data-stagger="1">
-            <h2 class="text-4xl font-bold mb-4 text-gray-900">
-                <span class="text-blue-600">Study Levels</span> in Hungary
+            <span class="text-[#24c6e0] font-semibold text-sm uppercase tracking-wider">Education Pathways</span>
+            <h2 class="text-4xl font-bold mb-4 text-gray-900 mt-2">
+                <span class="text-[#24c6e0]">Study Levels</span> in Hungary
             </h2>
+            <div class="w-24 h-1 bg-[#24c6e0] mx-auto mb-6 rounded-full"></div>
             <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-                Hungary’s education system offers pathways for all academic levels
+                Hungary's education system offers pathways for all academic levels
             </p>
         </div>
         
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <!-- Undergraduate -->
-            <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300" data-stagger="2">
-                <div class="bg-blue-600 text-white p-6">
+            <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 border border-gray-100" data-stagger="2">
+                <div class="bg-[#24c6e0] text-white p-6">
                     <h3 class="text-xl font-bold mb-2">Undergraduate</h3>
-                    <p class="opacity-90">Bachelor’s Degrees (3–4 years)</p>
+                    <p class="opacity-90">Bachelor's Degrees (3–4 years)</p>
                 </div>
                 <div class="p-6">
                     <ul class="space-y-3 text-gray-600">
                         <li class="flex items-start">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#24c6e0] mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                             </svg>
                             <span>High school diploma required</span>
                         </li>
                         <li class="flex items-start">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#24c6e0] mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                             </svg>
                             <span>English-taught programs available</span>
                         </li>
                         <li class="flex items-start">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#24c6e0] mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                             </svg>
                             <span>Industry-focused and affordable</span>
@@ -281,27 +302,27 @@
             </div>
             
             <!-- Graduate -->
-            <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300" data-stagger="3">
-                <div class="bg-blue-700 text-white p-6">
+            <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 border border-gray-100" data-stagger="3">
+                <div class="bg-[#1a8fa3] text-white p-6">
                     <h3 class="text-xl font-bold mb-2">Graduate</h3>
-                    <p class="opacity-90">Master’s & PhD Programs</p>
+                    <p class="opacity-90">Master's & PhD Programs</p>
                 </div>
                 <div class="p-6">
                     <ul class="space-y-3 text-gray-600">
                         <li class="flex items-start">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#24c6e0] mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                             </svg>
-                            <span>Bachelor’s degree required</span>
+                            <span>Bachelor's degree required</span>
                         </li>
                         <li class="flex items-start">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#24c6e0] mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                             </svg>
-                            <span>English-taught master’s programs</span>
+                            <span>English-taught master's programs</span>
                         </li>
                         <li class="flex items-start">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#24c6e0] mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                             </svg>
                             <span>Research and professional tracks</span>
@@ -312,33 +333,33 @@
             </div>
             
             <!-- Short-Term Programs -->
-            <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300" data-stagger="4">
-                <div class="bg-blue-800 text-white p-6">
+            <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 border border-gray-100" data-stagger="4">
+                <div class="bg-[#148294] text-white p-6">
                     <h3 class="text-xl font-bold mb-2">Short-Term Programs</h3>
                     <p class="opacity-90">Summer Schools & Language</p>
                 </div>
                 <div class="p-6">
                     <ul class="space-y-3 text-gray-600">
                         <li class="flex items-start">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#24c6e0] mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                             </svg>
                             <span>Hungarian language courses</span>
                         </li>
                         <li class="flex items-start">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#24c6e0] mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                             </svg>
                             <span>Summer schools in culture and history</span>
                         </li>
                         <li class="flex items-start">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#24c6e0] mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                             </svg>
                             <span>Pathway to degree programs</span>
                         </li>
                     </ul>
-                   
+                    
                 </div>
             </div>
         </div>
@@ -350,14 +371,19 @@
     <div class="container mx-auto px-6">
         <div class="flex flex-col lg:flex-row gap-12">
             <div class="lg:w-1/2">
-                <h2 class="text-4xl font-bold mb-6 text-gray-900" data-stagger="1">
-                    <span class="text-blue-600">Cost of Study</span> in Hungary
+                <span class="text-[#24c6e0] font-semibold text-sm uppercase tracking-wider">Financial Planning</span>
+                <h2 class="text-4xl font-bold mb-6 text-gray-900 mt-2" data-stagger="1">
+                    <span class="text-[#24c6e0]">Cost of Study</span> in Hungary
                 </h2>
-                <div class="bg-gray-50 p-6 rounded-xl shadow-sm" data-stagger="2">
+                <div class="w-24 h-1 bg-[#24c6e0] mb-6 rounded-full"></div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition duration-300" data-stagger="2">
                     <div class="flex items-center mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
+                        <div class="w-10 h-10 rounded-full bg-[#24c6e0]/10 flex items-center justify-center mr-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#24c6e0]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
                         <h3 class="text-xl font-semibold">Tuition Fees</h3>
                     </div>
                     <ul class="space-y-4">
@@ -370,17 +396,19 @@
                             <span class="font-medium">$6,000–$8,000/year</span>
                         </li>
                         <li class="flex justify-between border-b border-gray-200 pb-2">
-                            <span class="text-gray-600">Master’s Programs</span>
+                            <span class="text-gray-600">Master's Programs</span>
                             <span class="font-medium">$3,000–$6,000/year</span>
                         </li>
                     </ul>
                 </div>
                 
-                <div class="bg-gray-50 p-6 rounded-xl shadow-sm mt-6" data-stagger="3">
+                <div class="bg-white p-6 rounded-xl shadow-sm mt-6 border border-gray-100 hover:shadow-md transition duration-300" data-stagger="3">
                     <div class="flex items-center mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-                        </svg>
+                        <div class="w-10 h-10 rounded-full bg-[#24c6e0]/10 flex items-center justify-center mr-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#24c6e0]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                            </svg>
+                        </div>
                         <h3 class="text-xl font-semibold">Living Expenses</h3>
                     </div>
                     <ul class="space-y-4">
@@ -405,34 +433,43 @@
             </div>
             
             <div class="lg:w-1/2">
-                <h2 class="text-4xl font-bold mb-6 text-gray-900" data-stagger="4">
-                    <span class="text-blue-600">Scholarships</span> & Financial Aid
+                <span class="text-[#24c6e0] font-semibold text-sm uppercase tracking-wider">Financial Support</span>
+                <h2 class="text-4xl font-bold mb-6 text-gray-900 mt-2" data-stagger="4">
+                    <span class="text-[#24c6e0]">Scholarships</span> & Financial Aid
                 </h2>
-                <div class="bg-blue-50 border border-blue-100 rounded-xl p-6 mb-6" data-stagger="5">
-                    <h3 class="text-xl font-semibold mb-4 text-blue-800">Available Funding Options</h3>
+                <div class="w-24 h-1 bg-[#24c6e0] mb-6 rounded-full"></div>
+                
+                <div class="bg-[#24c6e0]/5 border border-[#24c6e0]/20 rounded-xl p-6 mb-6 hover:shadow-md transition duration-300" data-stagger="5">
+                    <h3 class="text-xl font-semibold mb-4 text-[#24c6e0]">Available Funding Options</h3>
                     <ul class="space-y-4">
                         <li class="flex items-start">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600 mr-3 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                            </svg>
+                            <div class="w-8 h-8 rounded-full bg-[#24c6e0]/20 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-[#24c6e0]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </div>
                             <div>
                                 <h4 class="font-medium text-gray-900">Stipendium Hungaricum</h4>
                                 <p class="text-gray-600 text-sm">Full tuition and living stipend for international students</p>
                             </div>
                         </li>
                         <li class="flex items-start">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600 mr-3 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                            </svg>
+                            <div class="w-8 h-8 rounded-full bg-[#24c6e0]/20 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-[#24c6e0]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </div>
                             <div>
                                 <h4 class="font-medium text-gray-900">University Scholarships</h4>
                                 <p class="text-gray-600 text-sm">Merit-based awards from institutions like Semmelweis</p>
                             </div>
                         </li>
                         <li class="flex items-start">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600 mr-3 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                            </svg>
+                            <div class="w-8 h-8 rounded-full bg-[#24c6e0]/20 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-[#24c6e0]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </div>
                             <div>
                                 <h4 class="font-medium text-gray-900">Erasmus+ Funding</h4>
                                 <p class="text-gray-600 text-sm">Support for exchange and joint programs</p>
@@ -440,12 +477,32 @@
                         </li>
                     </ul>
                 </div>
-                <div class="bg-white border border-gray-100 rounded-xl p-6" data-stagger="6">
-                    <h3 class="text-xl font-semibold mb-4 text-blue-800">Our Scholarship Success</h3>
+                <div class="bg-yellow-50 border border-yellow-100 rounded-xl p-6 hover:shadow-md transition duration-300" data-stagger="6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 rounded-full bg-yellow-100 flex items-center justify-center mr-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-yellow-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-yellow-800">Our Scholarship Success</h3>
+                    </div>
                     <p class="text-gray-700 mb-4">
                         Our students secured over $400,000 in scholarships last year. We guide you to the best funding opportunities.
                     </p>
-                    
+                    <div class="flex items-center justify-between bg-white p-3 rounded-lg">
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-[#24c6e0]">150+</div>
+                            <div class="text-xs text-gray-500">Scholarships Won</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-[#24c6e0]">$5,000</div>
+                            <div class="text-xs text-gray-500">Average Award</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-[#24c6e0]">95%</div>
+                            <div class="text-xs text-gray-500">Success Rate</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -457,106 +514,151 @@
     <div class="container mx-auto px-6">
         <div class="flex flex-col lg:flex-row gap-12">
             <div class="lg:w-1/2">
-                <h2 class="text-4xl font-bold mb-6 text-gray-900" data-stagger="1">
-                    <span class="text-blue-600">Visa Process</span> for Hungary
+                <span class="text-[#24c6e0] font-semibold text-sm uppercase tracking-wider">Immigration</span>
+                <h2 class="text-4xl font-bold mb-6 text-gray-900 mt-2" data-stagger="1">
+                    <span class="text-[#24c6e0]">Visa Process</span> for Hungary
                 </h2>
-                <div class="bg-white p-6 rounded-xl shadow-sm mb-6" data-stagger="2">
+                <div class="w-24 h-1 bg-[#24c6e0] mb-6 rounded-full"></div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-sm mb-6 border border-gray-100 hover:shadow-md transition duration-300" data-stagger="2">
                     <h3 class="text-xl font-semibold mb-4">Residence Permit for Study</h3>
                     <ul class="space-y-3">
                         <li class="flex items-start">
-                            <div class="bg-blue-100 text-blue-800 rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                            <div class="bg-[#24c6e0]/10 text-[#24c6e0] rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
                                 1
                             </div>
                             <span class="text-gray-600">Admission letter from a Hungarian institution</span>
                         </li>
                         <li class="flex items-start">
-                            <div class="bg-blue-100 text-blue-800 rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                            <div class="bg-[#24c6e0]/10 text-[#24c6e0] rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
                                 2
                             </div>
                             <span class="text-gray-600">Proof of financial support ($5,000–$10,000)</span>
                         </li>
                         <li class="flex items-start">
-                            <div class="bg-blue-100 text-blue-800 rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                            <div class="bg-[#24c6e0]/10 text-[#24c6e0] rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
                                 3
                             </div>
                             <span class="text-gray-600">Valid passport</span>
                         </li>
                         <li class="flex items-start">
-                            <div class="bg-blue-100 text-blue-800 rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                            <div class="bg-[#24c6e0]/10 text-[#24c6e0] rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
                                 4
                             </div>
                             <span class="text-gray-600">Health insurance coverage</span>
                         </li>
                         <li class="flex items-start">
-                            <div class="bg-blue-100 text-blue-800 rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                            <div class="bg-[#24c6e0]/10 text-[#24c6e0] rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
                                 5
                             </div>
                             <span class="text-gray-600">Application via Hungarian consulate or immigration office</span>
                         </li>
                     </ul>
                 </div>
-                <div class="bg-blue-50 border border-blue-100 rounded-xl p-6" data-stagger="3">
-                    <h3 class="text-xl font-semibold mb-4 text-blue-800">Our Visa Success Rate</h3>
+                <div class="bg-[#24c6e0]/5 border border-[#24c6e0]/20 rounded-xl p-6 hover:shadow-md transition duration-300" data-stagger="3">
+                    <h3 class="text-xl font-semibold mb-4 text-[#24c6e0]">Our Visa Success Rate</h3>
                     <div class="flex items-center mb-4">
-                        <div class="text-4xl font-bold text-blue-600 mr-4">95%</div>
+                        <div class="text-5xl font-bold text-[#24c6e0] mr-4">95%</div>
                         <div class="text-gray-600">approval rate for our students in 2023</div>
                     </div>
                     <p class="text-gray-700">
                         Our visa experts provide complete documentation support and application guidance.
                     </p>
+                    <div class="mt-6 bg-white p-4 rounded-lg border border-[#24c6e0]/10 flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-[#24c6e0] mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                        </svg>
+                        <div>
+                            <div class="font-medium">Free Visa Assessment</div>
+                            <div class="text-sm text-gray-500">Get your eligibility checked by our experts</div>
+                        </div>
+                    </div>
                 </div>
             </div>
             
             <div class="lg:w-1/2">
-                <h2 class="text-4xl font-bold mb-6 text-gray-900" data-stagger="4">
-                    <span class="text-blue-600">Work Opportunities</span> in Hungary
+                <span class="text-[#24c6e0] font-semibold text-sm uppercase tracking-wider">Employment</span>
+                <h2 class="text-4xl font-bold mb-6 text-gray-900 mt-2" data-stagger="4">
+                    <span class="text-[#24c6e0]">Work Opportunities</span> in Hungary
                 </h2>
-                <div class="bg-white p-6 rounded-xl shadow-sm mb-6" data-stagger="5">
+                <div class="w-24 h-1 bg-[#24c6e0] mb-6 rounded-full"></div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-sm mb-6 border border-gray-100 hover:shadow-md transition duration-300" data-stagger="5">
                     <h3 class="text-xl font-semibold mb-4">During Studies</h3>
                     <ul class="space-y-3">
                         <li class="flex items-start">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600 mr-3 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                            </svg>
+                            <div class="w-8 h-8 rounded-full bg-[#24c6e0]/10 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-[#24c6e0]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                </svg>
+                            </div>
                             <div>
                                 <h4 class="font-medium text-gray-900">Part-Time Work</h4>
                                 <p class="text-gray-600 text-sm">Up to 24 hours/week with student permit</p>
                             </div>
                         </li>
                         <li class="flex items-start">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600 mr-3 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                            </svg>
+                            <div class="w-8 h-8 rounded-full bg-[#24c6e0]/10 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-[#24c6e0]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                </svg>
+                            </div>
                             <div>
                                 <h4 class="font-medium text-gray-900">Internships</h4>
                                 <p class="text-gray-600 text-sm">Paid internships in business and tech</p>
                             </div>
                         </li>
+                        <li class="flex items-start">
+                            <div class="w-8 h-8 rounded-full bg-[#24c6e0]/10 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-[#24c6e0]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-900">On-Campus Jobs</h4>
+                                <p class="text-gray-600 text-sm">Work opportunities at university facilities</p>
+                            </div>
+                        </li>
                     </ul>
                 </div>
                 
-                <div class="bg-white p-6 rounded-xl shadow-sm" data-stagger="6">
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition duration-300" data-stagger="6">
                     <h3 class="text-xl font-semibold mb-4">After Graduation</h3>
                     <ul class="space-y-3">
                         <li class="flex items-start">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600 mr-3 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                            </svg>
+                            <div class="w-8 h-8 rounded-full bg-[#24c6e0]/10 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-[#24c6e0]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                </svg>
+                            </div>
                             <div>
                                 <h4 class="font-medium text-gray-900">Job Search Permit</h4>
                                 <p class="text-gray-600 text-sm">9-month permit to seek employment</p>
                             </div>
                         </li>
                         <li class="flex items-start">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600 mr-3 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                            </svg>
+                            <div class="w-8 h-8 rounded-full bg-[#24c6e0]/10 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-[#24c6e0]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                </svg>
+                            </div>
                             <div>
                                 <h4 class="font-medium text-gray-900">Work Permit</h4>
                                 <p class="text-gray-600 text-sm">EU Blue Card for skilled professionals</p>
                             </div>
                         </li>
                     </ul>
+                    <div class="mt-6 p-4 bg-[#24c6e0]/5 rounded-lg">
+                        <div class="flex items-center mb-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#24c6e0] mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <span class="font-medium">Did you know?</span>
+                        </div>
+                        <p class="text-sm text-gray-600">
+                            Hungary offers excellent opportunities for graduates in IT, engineering, and healthcare sectors with competitive salaries.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -566,13 +668,20 @@
 <!-- Application Process -->
 <section class="py-16 bg-white" data-reveal>
     <div class="container mx-auto px-6">
-        <h2 class="text-4xl font-bold mb-12 text-center text-gray-900" data-stagger="1">
-            <span class="text-blue-600">Application Process</span> for Hungarian Universities
-        </h2>
+        <div class="text-center mb-16">
+            <span class="text-[#24c6e0] font-semibold text-sm uppercase tracking-wider">Your Journey</span>
+            <h2 class="text-4xl font-bold mb-4 text-gray-900 mt-2" data-stagger="1">
+                <span class="text-[#24c6e0]">Application Process</span> for Hungarian Universities
+            </h2>
+            <div class="w-24 h-1 bg-[#24c6e0] mx-auto mb-6 rounded-full"></div>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                Our step-by-step guidance ensures a smooth application journey
+            </p>
+        </div>
         
         <div class="relative">
             <!-- Timeline -->
-            <div class="hidden lg:block absolute left-1/2 h-full w-1 bg-gray-200 -ml-0.5"></div>
+            <div class="hidden lg:block absolute left-1/2 h-full w-1 bg-[#24c6e0]/20 -ml-0.5"></div>
             
             <!-- Steps -->
             <div class="space-y-12">
@@ -585,7 +694,7 @@
                         </p>
                     </div>
                     <div class="lg:w-1/2 lg:pl-12 order-2">
-                        <div class="w-16 h-16 rounded-full bg-blue-600 text-white flex items-center justify-center text-2xl font-bold shadow-lg mx-auto lg:mx-0 lg:absolute lg:-left-8">
+                        <div class="w-16 h-16 rounded-full bg-[#24c6e0] text-white flex items-center justify-center text-2xl font-bold shadow-lg mx-auto lg:mx-0 lg:absolute lg:-left-8 z-10">
                             1
                         </div>
                     </div>
@@ -594,7 +703,7 @@
                 <!-- Step 2 -->
                 <div class="relative flex flex-col lg:flex-row items-center gap-8" data-stagger="3">
                     <div class="lg:w-1/2 lg:pl-12 order-2 lg:order-1">
-                        <div class="w-16 h-16 rounded-full bg-blue-600 text-white flex items-center justify-center text-2xl font-bold shadow-lg mx-auto lg:mx-0 lg:absolute lg:-right-8">
+                        <div class="w-16 h-16 rounded-full bg-[#24c6e0] text-white flex items-center justify-center text-2xl font-bold shadow-lg mx-auto lg:mx-0 lg:absolute lg:-right-8 z-10">
                             2
                         </div>
                     </div>
@@ -615,7 +724,7 @@
                         </p>
                     </div>
                     <div class="lg:w-1/2 lg:pl-12 order-2">
-                        <div class="w-16 h-16 rounded-full bg-blue-600 text-white flex items-center justify-center text-2xl font-bold shadow-lg mx-auto lg:mx-0 lg:absolute lg:-left-8">
+                        <div class="w-16 h-16 rounded-full bg-[#24c6e0] text-white flex items-center justify-center text-2xl font-bold shadow-lg mx-auto lg:mx-0 lg:absolute lg:-left-8 z-10">
                             3
                         </div>
                     </div>
@@ -624,7 +733,7 @@
                 <!-- Step 4 -->
                 <div class="relative flex flex-col lg:flex-row items-center gap-8" data-stagger="5">
                     <div class="lg:w-1/2 lg:pl-12 order-2 lg:order-1">
-                        <div class="w-16 h-16 rounded-full bg-blue-600 text-white flex items-center justify-center text-2xl font-bold shadow-lg mx-auto lg:mx-0 lg:absolute lg:-right-8">
+                        <div class="w-16 h-16 rounded-full bg-[#24c6e0] text-white flex items-center justify-center text-2xl font-bold shadow-lg mx-auto lg:mx-0 lg:absolute lg:-right-8 z-10">
                             4
                         </div>
                     </div>
@@ -645,7 +754,7 @@
                         </p>
                     </div>
                     <div class="lg:w-1/2 lg:pl-12 order-2">
-                        <div class="w-16 h-16 rounded-full bg-blue-600 text-white flex items-center justify-center text-2xl font-bold shadow-lg mx-auto lg:mx-0 lg:absolute lg:-left-8">
+                        <div class="w-16 h-16 rounded-full bg-[#24c6e0] text-white flex items-center justify-center text-2xl font-bold shadow-lg mx-auto lg:mx-0 lg:absolute lg:-left-8 z-10">
                             5
                         </div>
                     </div>
@@ -653,8 +762,93 @@
             </div>
         </div>
         
-        
+        <div class="text-center mt-16">
+            <a href="#consultation-form" data-modal="consultation" class="inline-flex items-center px-8 py-4 bg-[#24c6e0] hover:bg-[#1a8fa3] text-white rounded-lg font-bold transition duration-300 shadow-lg">
+                Start Your Application
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+            </a>
+        </div>
     </div>
 </section>
 
+<style>
+    /* Animations */
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    [data-reveal] {
+        opacity: 0;
+        animation: fadeIn 1s ease-out forwards;
+    }
+    [data-reveal].revealed {
+        opacity: 1;
+    }
+    
+    [data-stagger="1"] { animation-delay: 0.1s; }
+    [data-stagger="2"] { animation-delay: 0.2s; }
+    [data-stagger="3"] { animation-delay: 0.3s; }
+    [data-stagger="4"] { animation-delay: 0.4s; }
+    [data-stagger="5"] { animation-delay: 0.5s; }
+    [data-stagger="6"] { animation-delay: 0.6s; }
+
+    @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+        40% { transform: translateY(-20px); }
+        60% { transform: translateY(-10px); }
+    }
+    .animate-bounce {
+        animation: bounce 2s infinite;
+    }
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Reveal animations on scroll
+        const revealElements = document.querySelectorAll('[data-reveal]');
+        
+        function revealOnScroll() {
+            for (let i = 0; i < revealElements.length; i++) {
+                const windowHeight = window.innerHeight;
+                const elementTop = revealElements[i].getBoundingClientRect().top;
+                const elementVisible = 150;
+                
+                if (elementTop < windowHeight - elementVisible) {
+                    revealElements[i].classList.add('revealed');
+                }
+            }
+        }
+        
+        window.addEventListener('scroll', revealOnScroll);
+        revealOnScroll(); // Check on load
+        
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    });
+</script>
 {% endblock %}
+
+<Actions>
+  <Action name="Add interactive university map" description="Create an interactive map showing Hungarian university locations" />
+  <Action name="Implement dark mode toggle" description="Add a switch to toggle between light and dark color schemes" />
+  <Action name="Add student testimonials slider" description="Create a carousel of international student experiences" />
+  <Action name="Create FAQ accordion section" description="Add expandable frequently asked questions about studying in Hungary" />
+  <Action name="Add cost calculator" description="Create an interactive tool to estimate study and living costs" />
+</Actions>
+
