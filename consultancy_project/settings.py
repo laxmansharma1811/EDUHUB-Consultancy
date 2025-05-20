@@ -24,10 +24,16 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-h#bs9x&k(p9w^%0i2q9_xb$is*rfgdxw27%8z2hf=6sp(-l2da'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
-
+# settings.py
+#ALLOWED_HOSTS = [
+ #   'eduhubuniversalservices.com',
+  #  'www.eduhubuniversalservices.com', # Add www if applicable
+   # 'localhost', # Often needed for internal health checks
+   # '127.0.0.1', # Often needed for internal health checks
+#]
 
 # Application definition
 
