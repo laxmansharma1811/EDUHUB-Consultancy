@@ -25,7 +25,6 @@ ALLOWED_HOSTS = ['www.eduhubuniversalservices.com', 'eduhubuniversalservices.com
 # Add any other domains or subdomains that will point to this Django app.
 # Example: ALLOWED_HOSTS = ['www.eduhubuniversalservices.com', 'eduhubuniversalservices.com', 'eduhubun.yourcpanelserver.com'] (if cPanel uses a temp domain)
 
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -152,3 +151,13 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # SECURE_BROWSER_XSS_FILTER = True
 # SECURE_CONTENT_TYPE_NOSNIFF = True
 # X_FRAME_OPTIONS = 'DENY' # Or 'SAMEORIGIN'
+
+if DEBUG:
+  STATIC_URL = "static/"
+  STATICFILES_DIRS = [BASE_DIR / "static"]    
+
+  STATIC_URL = '/static/'
+  STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # For production
+  STATICFILES_DIRS = [
+      os.path.join(BASE_DIR, 'consultancy_app/static'),  # Your app-specific static files
+  ]
