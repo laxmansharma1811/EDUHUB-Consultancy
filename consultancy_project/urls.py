@@ -16,10 +16,25 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from django.conf import settings
-from django.conf.urls.static import static
+from django.conf import settings  # Ensure settings is imported
+from django.conf.urls.static import static  # Ensure static is imported
 
+# Define your primary URL patterns first
 urlpatterns = [
     path('eduhub-admin/', admin.site.urls),
-    path('', include('consultancy_app.urls'))
-]+ static(settings.STATIC_URL, document_root=settings.STATICFILES_DIRS[0])
+    path('', include('consultancy_app.urls')),
+]
+
+# Conditionally add static and media file serving patterns
+# ONLY for use during DEVELOPMENT (when DEBUG = True)
+if settings.DEBUG:
+    # This helps the Django development server find and serve static files
+    # from your STATIC_ROOT (after you've run collectstatic) or from STATICFILES_DIRS.
+    # For production, WhiteNoise (or Nginx/Apache) handles this.
+    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+
+    # If you are also using user-uploaded media files (MEDIA_URL and MEDIA_ROOT)
+    # and want the development server to serve them, add this:
+    # Ensure MEDIA_URL and MEDIA_ROOT are defined in settings.py if you uncomment.
+    # if getattr(settings, 'MEDIA_URL', None) and getattr(settings, 'MEDIA_ROOT', None):
+    #     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
