@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-h#bs9x&k(p9w^%0i2q9_xb$is*rfgdxw27%8z2hf=6sp(-l2da'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['www.eduhubuniversalservices.com', 'eduhubuniversalservices.com', '*']
 
@@ -125,8 +125,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 STATIC_URL = "static/"
 STATICFILES_DIRS = [BASE_DIR / "static"]    
 
-
-import os
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # For production
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "static"),
+    os.path.join(BASE_DIR, 'consultancy_app/static'),  # Your app-specific static files
 ]
