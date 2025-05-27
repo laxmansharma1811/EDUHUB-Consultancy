@@ -21,7 +21,7 @@ SECRET_KEY = 'django-insecure-h#bs9x&k(p9w^%0i2q9_xb$is*rfgdxw27%8z2hf=6sp(-l2da
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False # MUST be False for production
 #DEBUG=True
-ALLOWED_HOSTS = ['www.eduhubuniversalservices.com', 'eduhubuniversalservices.com', "*"]
+ALLOWED_HOSTS = ['www.eduhubuniversalservices.com', 'eduhubuniversalservices.com']
 # Add any other domains or subdomains that will point to this Django app.
 # Example: ALLOWED_HOSTS = ['www.eduhubuniversalservices.com', 'eduhubuniversalservices.com', 'eduhubun.yourcpanelserver.com'] (if cPanel uses a temp domain)
 
@@ -127,6 +127,27 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') # All static files will be c
 # WhiteNoise configuration for efficient static file serving (compression, cache-busting)
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
+
+import os
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'file': {
+            'level': 'ERROR',
+            'class': 'logging.FileHandler',
+            'filename': os.path.join(BASE_DIR, 'django_error.log'),
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['file'],
+            'level': 'ERROR',
+            'propagate': True,
+        },
+    },
+}
 
 # Media files (User-uploaded content like images or documents)
 # If your application allows users to upload files, configure these.
