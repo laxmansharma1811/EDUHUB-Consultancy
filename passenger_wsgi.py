@@ -42,7 +42,8 @@ try:
     sys.stderr.write("passenger_wsgi.py: Django WSGI application obtained.\n")
 
     sys.stderr.write("passenger_wsgi.py: Attempting to wrap with WhiteNoise...\n")
-    application = WhiteNoise(_django_application)
+    application = WhiteNoise(_django_application, root='/home/eduhubun/EDUHUB-Consultancy/staticfiles')
+
     sys.stderr.write("passenger_wsgi.py: Application wrapped with WhiteNoise.\n")
 
     # Optional MEDIA serving
